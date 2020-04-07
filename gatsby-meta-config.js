@@ -3,7 +3,7 @@ module.exports = {
   description: `천천히 꾸준히 개발하자 | programmer`,
   author: `[Soobin Bak]`,
   introduction: `여행하는 것을 좋아하고, 멋진 삶을 살고싶다. 🏄🏻‍♀️`,
-  siteUrl: `https://soobing.netlify.com`, // Your blog site url
+  siteUrl: `https://soobing.github.io`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `soobing`, // Your GitHub account
