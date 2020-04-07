@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://soobing.github.io/sitemap.xml
-Host: https://soobing.github.io
+Disallow:
