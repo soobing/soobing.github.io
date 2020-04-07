@@ -31,7 +31,7 @@ export const Top = ({ title, location, rootPath }) => {
         </Home>
 
       )}
-      {typeof window !== 'undefined' && <P5Wrapper sketch={Wave} />}
+      {/* {typeof window !== 'undefined' && <P5Wrapper sketch={Wave} />} */}
     </Wrapper>
   )
 }
