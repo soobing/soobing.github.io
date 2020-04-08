@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Apr 2020 16:44:39 GMT</lastBuildDate><item><title><![CDATA[👅 Happy Number]]></title><description><![CDATA[오늘의 마지막 문제풀이😆 이것은 happy number에 대한 지식이 있으면 좀 더 풀기 쉬웠을 문제이다.  문제 요약 happy number이면 true 아니면 false를 반환해라!
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 08 Apr 2020 11:35:01 GMT</lastBuildDate><item><title><![CDATA[💊Middle of the Linked List]]></title><description><![CDATA[2주차가 시작됬습니다 💛 오늘 문제는 나 또한 나쁘지 않게 풀었다고 생각했는데 solution을 보니 완전 ㅋㅋ 대박 입이 떡벌어졌다 (오우~ 이렇게도 생각할 수 있구나~!)  문제 요약 링크드 리스트의 head를 input…]]></description><link>https://soobing.github.io/algorithm/11-middle-of-the-linked-list/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/11-middle-of-the-linked-list/</guid><pubDate>Wed, 08 Apr 2020 19:04:10 GMT</pubDate><content:encoded>&lt;p&gt;2주차가 시작됬습니다 💛 오늘 &lt;a href=&quot;https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3290/&quot;&gt;문제&lt;/a&gt;는 나 또한 나쁘지 않게 풀었다고 생각했는데 solution을 보니 완전 ㅋㅋ 대박 입이 떡벌어졌다 (오우~ 이렇게도 생각할 수 있구나~!)&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 72.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAduyQD//xAAXEAADAQAAAAAAAAAAAAAAAAAAECER/9oACAEBAAEFAoRY/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAbEAACAQUAAAAAAAAAAAAAAAAAAREQIVFhcf/aAAgBAQABPyFMzkWOiN0//9oADAMBAAIAAwAAABCAz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQACAQUAAAAAAAAAAAAAAAEAEUExUXGR0f/aAAgBAQABPxDUCDxBt0rAggq3RB14JVZn/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;middle-of-the-linked-list&quot;
+        title=&quot;middle-of-the-linked-list&quot;
+        src=&quot;/static/ba38f910ae1f5e50eedacc665a63cb95/e5166/middle-of-the-linked-list.jpg&quot;
+        srcset=&quot;/static/ba38f910ae1f5e50eedacc665a63cb95/f93b5/middle-of-the-linked-list.jpg 300w,
+/static/ba38f910ae1f5e50eedacc665a63cb95/b4294/middle-of-the-linked-list.jpg 600w,
+/static/ba38f910ae1f5e50eedacc665a63cb95/e5166/middle-of-the-linked-list.jpg 1200w,
+/static/ba38f910ae1f5e50eedacc665a63cb95/8351c/middle-of-the-linked-list.jpg 1254w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;문제-요약&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%9A%94%EC%95%BD&quot; aria-label=&quot;문제 요약 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 요약&lt;/h1&gt;
+&lt;p&gt;링크드 리스트의 head를 input으로 주고 링크드리스트의 중앙을 찾는 문제&lt;/p&gt;
+&lt;h1 id=&quot;문제-해결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0&quot; aria-label=&quot;문제 해결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 해결&lt;/h1&gt;
+&lt;p&gt;일단 확실한건 length를 모르니 길이를 알아야 한다. 그러려면 무조건 링크드리스트를 처음부터 끝까지 순회해야한다.
+내 풀이는 전체 순회후 length값을 얻어서 중간 노드를 구했고, 솔루션의 두번쨰 문제풀이는 순회시 slow pointer와 faster pointer를 둬서 2배속 빠르게 순회하고 순회가 끝나면 바로 중간노드를 찾을 수 있도록 했다. 와우 굳굳🐧&lt;/p&gt;
+&lt;h2 id=&quot;1-traverse-and-get-length-and-then-traverse-again&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-traverse-and-get-length-and-then-traverse-again&quot; aria-label=&quot;1 traverse and get length and then traverse again permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1) Traverse and Get Length and then Traverse again&lt;/h2&gt;
+&lt;p&gt;링크드리스트의 길이는 전체를 순회하는 수 밖에 없다. 그런 다음 다시 반만큼 순회하여 그 노드를 리턴하면 된다고 생각했다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;시간 복잡도: O(N)&lt;/li&gt;
+&lt;li&gt;공간 복잡도: O(1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;문제에서 제시하는 첫번째 솔루션은 나와 비슷한데, length를 찾기위해 순회할때 모든 노드를 배열에 저장한다. 그래서 순회가 완료되면 length의 반을 잘라 반을 기준으로 오른쪽 배열을 리턴하도록 한다. 이렇게 풀면&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;시간 복잡도: O(N)&lt;/li&gt;
+&lt;li&gt;공간 복잡도: O(N)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 된다. 공간복잡도는 늘어나지만 다시 순회할 필요가 없기에 내가 푼 풀이보다 빠르려나? &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;middleNode&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; node &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; head&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        length&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        node &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    node &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; head&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;length&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        node &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;2-fast-and-slow-pointer&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-fast-and-slow-pointer&quot; aria-label=&quot;2 fast and slow pointer permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2) Fast and Slow Pointer&lt;/h2&gt;
+&lt;p&gt;위에서 대략 설명했듯이 2배속으로 순회하는 포인터와 1배속으로 순회하는 포인터를 둬서 2배속으로 순회하는 포인터가 끝에 다다르면 1배속 포인터는 링크드리스트의 중앙을 기르키니, 1배속 포인터를 리턴하는 방식이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;middleNode&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    slow &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fast &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; head&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fast &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; fast&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        slow &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; slow&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        fast &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fast&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;next&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; slow&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;소감&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%86%8C%EA%B0%90&quot; aria-label=&quot;소감 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;소감&lt;/h2&gt;
+&lt;p&gt;왼지 모르게 자꾸만 릿코드 유료결제를 하고싶다. ㅋㅋㅋ 솔루션이 너무 좋아서 보고싶어진다 물론 무료인 것들도 많지만 🐶&lt;/p&gt;</content:encoded></item><item><title><![CDATA[👅 Happy Number]]></title><description><![CDATA[오늘의 마지막 문제풀이😆 이것은 happy number에 대한 지식이 있으면 좀 더 풀기 쉬웠을 문제이다.  문제 요약 happy number이면 true 아니면 false를 반환해라!
 그렇다면 happy number는 무엇인가? happy…]]></description><link>https://soobing.github.io/algorithm/10-happy-number/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/10-happy-number/</guid><pubDate>Wed, 08 Apr 2020 00:04:49 GMT</pubDate><content:encoded>&lt;p&gt;오늘의 마지막 문제풀이😆 이것은 happy number에 대한 지식이 있으면 좀 더 풀기 쉬웠을 &lt;a href=&quot;https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3284/&quot;&gt;문제&lt;/a&gt;이다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
