@@ -1,4 +1,181 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 10 Apr 2020 15:34:11 GMT</lastBuildDate><item><title><![CDATA[🌬Backspace String Compare]]></title><description><![CDATA[어제 문제만 풀고 포스팅을 못해서 잔디를 못심었네 ㅠㅠ 속상☔️ 오늘 문제는 easy 문제라서 그런지 쉽고 빠르게 풀 수 있었다. (easy를 풀때는 언제나 즐겁지요~~~)  문제 요약 문제에서 두개의 string…]]></description><link>https://soobing.github.io/algorithm/12-backspace-string-compare/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/12-backspace-string-compare/</guid><pubDate>Fri, 10 Apr 2020 23:05:25 GMT</pubDate><content:encoded>&lt;p&gt;어제 문제만 풀고 포스팅을 못해서 잔디를 못심었네 ㅠㅠ 속상☔️ 오늘 &lt;a href=&quot;https://leetcode.com/problems/backspace-string-compare/&quot;&gt;문제&lt;/a&gt;는 easy 문제라서 그런지 쉽고 빠르게 풀 수 있었다. (easy를 풀때는 언제나 즐겁지요~~~)&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 12 Apr 2020 14:57:14 GMT</lastBuildDate><item><title><![CDATA[XSS and Content Security Policy]]></title><description><![CDATA[이 이슈를 알아보게 된 계기 이 전의 포스팅을 보면 이런 에러가 떴음 볼 수 있다.
+ favicon…]]></description><link>https://soobing.github.io/javascript/xss-and-content-security-policy/</link><guid isPermaLink="false">https://soobing.github.io/javascript/xss-and-content-security-policy/</guid><pubDate>Sun, 12 Apr 2020 21:05:20 GMT</pubDate><content:encoded>&lt;h1 id=&quot;이-이슈를-알아보게-된-계기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4-%EC%9D%B4%EC%8A%88%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B2%8C-%EB%90%9C-%EA%B3%84%EA%B8%B0&quot; aria-label=&quot;이 이슈를 알아보게 된 계기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이 이슈를 알아보게 된 계기&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://soobing.github.io/javascript/failed-to-load-resource-404/&quot;&gt;이 전의 포스팅&lt;/a&gt;을 보면 이런 에러가 떴음 볼 수 있다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 9%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAiUlEQVQI1x2MTQuCQBRFZyGi6HypJQouat2qoEDJCp2xEar//2tuFxcXHofzjvjVNZaiQChLrFyoKrimgW9bhK6D576HIyaykZ4zFrMxeCmFN/2nVBjyHI/dHletIQKlxVo4beApbrfSmKTEhw8L+Uo2M9AnCfo0xT3Ltl2iCCchcI5jDOzcGPwDx0s3cJqqNlkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;error1&quot;
+        title=&quot;error1&quot;
+        src=&quot;/static/4a18bcf1ec6e7bc243c1a9fa006c7621/c1b63/error1.png&quot;
+        srcset=&quot;/static/4a18bcf1ec6e7bc243c1a9fa006c7621/5a46d/error1.png 300w,
+/static/4a18bcf1ec6e7bc243c1a9fa006c7621/0a47e/error1.png 600w,
+/static/4a18bcf1ec6e7bc243c1a9fa006c7621/c1b63/error1.png 1200w,
+/static/4a18bcf1ec6e7bc243c1a9fa006c7621/f4b34/error1.png 1457w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;favicon에 접근할 수 없다는 에러인데 결론적으로 먼저 말하면 저 에러는 웹팩 설정 때문에 발생했던 이슈였다. 그 수식어들이 오우~ 공포 그자체 ㅠ &lt;code class=&quot;language-text&quot;&gt;콘텐츠 보안 정책&lt;/code&gt; 어쩌고저쩌고 이야기를하는데 이 에러를 해결하려고 검색하다 보니 콘텐츠 보안 정책이 있다는 사실을 알았다.&lt;br&gt;
+이 포스팅에서는 &lt;del&gt;덕분에 알게된&lt;/del&gt; &lt;code class=&quot;language-text&quot;&gt;콘텐츠 보안 정책&lt;/code&gt;에 대해서 이것은 왜 나온 것이며, 어떻게 쓰면 되는지 다뤄보려고 한다.&lt;/p&gt;
+&lt;h1 id=&quot;콘텐츠-보안-정책content-security-policy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BD%98%ED%85%90%EC%B8%A0-%EB%B3%B4%EC%95%88-%EC%A0%95%EC%B1%85content-security-policy&quot; aria-label=&quot;콘텐츠 보안 정책content security policy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;콘텐츠 보안 정책(Content Security Policy)&lt;/h1&gt;
+&lt;h2 id=&quot;왜-나온-것인가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%99%9C-%EB%82%98%EC%98%A8-%EA%B2%83%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;왜 나온 것인가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;왜 나온 것인가?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;XSS 공격의 방어책&lt;/b&gt; &lt;/li&gt;
+&lt;li&gt;XSS 공격은 들어본 적이 있을 것이다. 기본적으로 웹의 보안 모델은 &lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy&quot;&gt;동일 출처 정책(Same Origin Policy)&lt;/a&gt;을 따르는데, 어떤 출처에서 불러온 문서(HTML)나 스크립트(JS)가 다른 출처에서 가져온 리소스와 상호작용하는 것을 제한하는 중요한 보안 방식이다. &lt;br/&gt;즉, 간략히 말하면 다른 URL의 리소스와 함부로 상호작용할 수 없다는 것이다.&lt;/li&gt;
+&lt;li&gt;[용어] &lt;code class=&quot;language-text&quot;&gt;동일한 출처&lt;/code&gt;라는 것은 URL의 프로토콜, 포트, 호스트가 모두 같은 것을 의미&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;ul&gt;
+&lt;li&gt;그치만 공격자는 영리하게도 Cross-site scripting(XSS) 기법을 사용해서 동일 출처 정책(Same Origin Policy)을 우회하는데, Cross-site scripting(XSS) 기법이란 클라이언트 측 스크립트(= javascript)를 웹 페이지 에 삽입하는 것을 말한다. &lt;/li&gt;
+&lt;li&gt;공격자인데 좋은 코드를 삽입하진 않겠지? 공격자는 악의적인 스크립트를 웹 페이지에 주입하는 방법을 찾아 민감한 페이지 콘텐츠, 세션 쿠키 및 사용자 대신 브라우저에서 유지 관리하는 다양한 기타 정보에 대한 높은 액세스 권한을 얻을 수 있다. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;어쨌든 이런 XSS 공격을 방어하기 위한 방어책이 &lt;code class=&quot;language-text&quot;&gt;콘텐츠 보안 정책(CSP)&lt;/code&gt;라는 것이다.&lt;/p&gt;
+&lt;h2 id=&quot;지원&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A7%80%EC%9B%90&quot; aria-label=&quot;지원 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;지원&lt;/h2&gt;
+&lt;p&gt;콘텐츠 보안 정책(Content Security Policy)은 &lt;a href=&quot;https://caniuse.com/#search=CSP&quot;&gt;모든 모던 브라우저&lt;/a&gt;에서 지원한다.&lt;/p&gt;
+&lt;h2 id=&quot;방식&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%A9%EC%8B%9D&quot; aria-label=&quot;방식 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;방식&lt;/h2&gt;
+&lt;p&gt;이 보안 정책은 허용되는 것과 허용되지 않는 것을 정리하여 &lt;code class=&quot;language-text&quot;&gt;허용 목록&lt;/code&gt;을 클라이언트에게 알려준다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ex) 수빈 생일파티에 guest list가 있고 여기에 이름이 있으면 입장할 수 있지만, 없으면 입장할 수 없는 방식&lt;/li&gt;
+&lt;li&gt;ex) guest list에 작성된 리스트를 보니, https로만 요청해야 들어올 수 있고, img는 ‘가’라는 출처에서온 애들만 가능하고, font는 ‘google’에서 온애들만 가능하고 ~ 이런식으로 쫙 적혀있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;구체적인-사용-방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B5%AC%EC%B2%B4%EC%A0%81%EC%9D%B8-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;구체적인 사용 방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;구체적인 사용 방법&lt;/h1&gt;
+&lt;p&gt;콘텐츠 보안 정책을 선언할 수 있는 두가지 방법이 있다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Content-Security-Policy를 HTTP header에 포함하는 방법&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;meta http-equiv=&amp;quot;Content-Security-Policy&amp;quot;&amp;gt;&lt;/code&gt; 태그를 이용하는 방법&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;1-content-security-policy를-http-header에-포함하는-방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-content-security-policy%EB%A5%BC-http-header%EC%97%90-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;1 content security policy를 http header에 포함하는 방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Content-Security-Policy를 HTTP header에 포함하는 방법&lt;/h2&gt;
+&lt;p&gt;서버에서 제공하는 모든것을 맹목적으로 신뢰하는 대신 신뢰할 수 있는 콘텐츠 소스의 허용 목록을 생성할 수 있게 Content-Security-Policy HTTP 헤더를 정의하고 브라우저에는 이런 소스에서 받은 리소스만 실행하거나 렌더링할 것을 지시한다. 공격자가 스크립트를 주입할 허점을 찾을 수도 있겠지만, 그 스크립트가 허용 목록과 일치하지 않을 것이므로 실행할 수 없다.&lt;/p&gt;
+&lt;p&gt;예) HTTP 헤더에 코드의 출처가 자신과 동일한 출처(self) 이거나 &lt;a href=&quot;https://apis.google.com&quot;&gt;https://apis.google.com&lt;/a&gt; 두 가지 소스 중 하나일 때만 스크립트 실행을 허용하도록 정책을 정의해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// HTTP header
+Content-Security-Policy: script-src &amp;#39;self&amp;#39; https://apis.google.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;쉽게말하면 위에서 말했던 guest list를 HTTP 헤더에 정의한다는 소리. 아마도 요청에 대한 응답으로 리소스를 주니까 서버에서 CSP를 정의할 수 있는 방법일 것 같다. (이건 내생각. 정확하진 않음.)&lt;/p&gt;
+&lt;h2 id=&quot;2-code-classlanguage-textltmeta-http-equivquotcontent-security-policyquotgtcode-태그를-이용하는-방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-code-classlanguage-textltmeta-http-equivquotcontent-security-policyquotgtcode-%ED%83%9C%EA%B7%B8%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;2 code classlanguage textltmeta http equivquotcontent security policyquotgtcode 태그를 이용하는 방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. &lt;code class=&quot;language-text&quot;&gt;&amp;lt;meta http-equiv=&amp;quot;Content-Security-Policy&amp;quot;&amp;gt;&lt;/code&gt; 태그를 이용하는 방법&lt;/h2&gt;
+&lt;p&gt;우리는 HTTP 헤더를 제어할 수 없으므로 (프론트 개발자니까 &gt;ㅁ&amp;#x3C;) 마크업에서 페이지에 대한 정책을 직접 설정하는 방법을 주로 사용하게 될 것이다.
+&lt;code class=&quot;language-text&quot;&gt;http-equiv&lt;/code&gt; 속성을 포함한 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;meta&amp;gt; 태그&lt;/code&gt;를 사용하여 설정할 수 있다. &lt;code class=&quot;language-text&quot;&gt;meta 태그&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;head 태그&lt;/code&gt; 안에 넣어주면 된다.&lt;/p&gt;
+&lt;p&gt;예) 안전하지 않은 inline이나 eval 함수를 disable 시키고, https를 통해서만 resources(images, fonts, scripts, etc.)를 로딩 가능하게 하자&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;http-equiv&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;Content-Security-Policy&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;default-src https:&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;리소스별로-정책-적용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EC%86%8C%EC%8A%A4%EB%B3%84%EB%A1%9C-%EC%A0%95%EC%B1%85-%EC%A0%81%EC%9A%A9&quot; aria-label=&quot;리소스별로 정책 적용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리소스별로 정책 적용&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/security/csp?hl=ko#%ED%8F%AD%EB%84%93%EA%B3%A0_%EB%8B%A4%EC%96%91%ED%95%9C_%EB%A6%AC%EC%86%8C%EC%8A%A4%EC%97%90_%EC%A0%95%EC%B1%85_%EC%A0%81%EC%9A%A9&quot;&gt;폭넓고 다양한 리소스에 정책을 적용&lt;/a&gt;할 수 있는데, 자세한 사항은 링크를 참고하면 된다.
+크게 HTTP 메세지에 CSP를 정의할 수 있고, meta 태그에도 정의할 수 있다는 것을 알면된다.&lt;/p&gt;
+&lt;h1 id=&quot;참고&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0&quot; aria-label=&quot;참고 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/security/csp?hl=ko&quot;&gt;https://developers.google.com/web/fundamentals/security/csp?hl=ko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://telerik.com/blogs/on-cross-site-scripting-and-content-security-policy&quot;&gt;http://telerik.com/blogs/on-cross-site-scripting-and-content-security-policy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Security-Policy&quot;&gt;https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Security-Policy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Failed to load resource 404 (Webpack)]]></title><description><![CDATA[에러 프로젝트를 구성하는 중 이런에러가 발생했다. 처음 보는 에러였다. 무엇이 문제일까?  favicon 없다는 둥 쌸라쌸라 뜨는 에러와 함께 에러 콜스텍의 맨밑에 Failed to load resource 40…]]></description><link>https://soobing.github.io/javascript/failed-to-load-resource-404/</link><guid isPermaLink="false">https://soobing.github.io/javascript/failed-to-load-resource-404/</guid><pubDate>Sun, 12 Apr 2020 20:05:08 GMT</pubDate><content:encoded>&lt;h1 id=&quot;에러&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%97%90%EB%9F%AC&quot; aria-label=&quot;에러 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;에러&lt;/h1&gt;
+&lt;p&gt;프로젝트를 구성하는 중 이런에러가 발생했다. 처음 보는 에러였다. 무엇이 문제일까?&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 510px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABDklEQVQoz52Oy06DQBSGeQxNjC7c1EjLrRSKAuVmFXoxxrYmRuNbw44lCwgNKewIvzNj0sQYo+0kX/4zc06+M9xIu4E+NkGTMjYsqCMDt6YD03IhKxoGgoz+QMY1LzAEUQHflwjiHvreu+LBCeIQ1sSDMtQhSiomTkAGZKw3r5gvnnB+cUnkNhzXh03mVusXvL1/4Hm1QTRbQNMNstiBJKs4OT0DF0ZL0ngkLBFGC8zmXzXlIZxjeh/B8++IMCDLfFJPWe16AUvbdtkiiySFK8sSeZ4zttstsixDURSoqgp1Xf9gt9t9uzdNs08KEyZJgjRNmTCOYyZv2xbHHO63Rtd1R8H9Z+igH/4lOlT4CVqN7/h1BfuoAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;error2&quot;
+        title=&quot;error2&quot;
+        src=&quot;/static/68c13a5b8dd20ca4e27469743415d1c8/0abdd/error2.png&quot;
+        srcset=&quot;/static/68c13a5b8dd20ca4e27469743415d1c8/5a46d/error2.png 300w,
+/static/68c13a5b8dd20ca4e27469743415d1c8/0abdd/error2.png 510w&quot;
+        sizes=&quot;(max-width: 510px) 100vw, 510px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;favicon 없다는 둥 쌸라쌸라 뜨는 에러와 함께 에러 콜스텍의 맨밑에 Failed to load resource 404 와 같은 에러가 뜬다면
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 9%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAiUlEQVQI1x2MTQuCQBRFZyGi6HypJQouat2qoEDJCp2xEar//2tuFxcXHofzjvjVNZaiQChLrFyoKrimgW9bhK6D576HIyaykZ4zFrMxeCmFN/2nVBjyHI/dHletIQKlxVo4beApbrfSmKTEhw8L+Uo2M9AnCfo0xT3Ltl2iCCchcI5jDOzcGPwDx0s3cJqqNlkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;error1&quot;
+        title=&quot;error1&quot;
+        src=&quot;/static/4a18bcf1ec6e7bc243c1a9fa006c7621/c1b63/error1.png&quot;
+        srcset=&quot;/static/4a18bcf1ec6e7bc243c1a9fa006c7621/5a46d/error1.png 300w,
+/static/4a18bcf1ec6e7bc243c1a9fa006c7621/0a47e/error1.png 600w,
+/static/4a18bcf1ec6e7bc243c1a9fa006c7621/c1b63/error1.png 1200w,
+/static/4a18bcf1ec6e7bc243c1a9fa006c7621/f4b34/error1.png 1457w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1121px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 6.333333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAABYlAAAWJQFJUiTwAAAASklEQVQI12PwFhb57ych8d9LVBRMuwoJ/bfl5f1vxc0Dpm2A2JqH578LUNyen/+/FZANEgPJmXBw/LcQFv5vJy393xJI67Kw/AcATuUbTmvhLaoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;error2&quot;
+        title=&quot;error2&quot;
+        src=&quot;/static/18b51564d5fd859fac4120653ed8ec15/bb3ba/error3.png&quot;
+        srcset=&quot;/static/18b51564d5fd859fac4120653ed8ec15/5a46d/error3.png 300w,
+/static/18b51564d5fd859fac4120653ed8ec15/0a47e/error3.png 600w,
+/static/18b51564d5fd859fac4120653ed8ec15/bb3ba/error3.png 1121w&quot;
+        sizes=&quot;(max-width: 1121px) 100vw, 1121px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;해결방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;해결방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;해결방법&lt;/h1&gt;
+&lt;p&gt;나의 경우에는 webpack.config.js 파일에서 output의 publicPath를 ‘./‘로 했더니 발생했던 문제였다.
+아래쳐럼 publicPath를 ’/‘로 고쳐보면 문제를 해결할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// webpack.config.js&lt;/span&gt;
+...
+output&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    filename&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &apos;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;.js&apos;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    path&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; path.resolve(&lt;span class=&quot;token string&quot;&gt;&quot;./dist&quot;&lt;/span&gt;)&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    publicPath&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &apos;/&apos;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[📏Diameter of Binary Tree]]></title><link>https://soobing.github.io/algorithm/13-diameter-of-binary-tree/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/13-diameter-of-binary-tree/</guid><pubDate>Sat, 11 Apr 2020 21:04:44 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/**
+ * @param {TreeNode} root
+ * @return {number}
+ */&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; max&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;diameterOfBinaryTree&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    max&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;root&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; max&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; left &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; right &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;dfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    max &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;max&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;left&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🌬Backspace String Compare]]></title><description><![CDATA[어제 문제만 풀고 포스팅을 못해서 잔디를 못심었네 ㅠㅠ 속상☔️ 오늘 문제는 easy 문제라서 그런지 쉽고 빠르게 풀 수 있었다. (easy를 풀때는 언제나 즐겁지요~~~)  문제 요약 문제에서 두개의 string…]]></description><link>https://soobing.github.io/algorithm/12-backspace-string-compare/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/12-backspace-string-compare/</guid><pubDate>Fri, 10 Apr 2020 23:05:25 GMT</pubDate><content:encoded>&lt;p&gt;어제 문제만 풀고 포스팅을 못해서 잔디를 못심었네 ㅠㅠ 속상☔️ 오늘 &lt;a href=&quot;https://leetcode.com/problems/backspace-string-compare/&quot;&gt;문제&lt;/a&gt;는 easy 문제라서 그런지 쉽고 빠르게 풀 수 있었다. (easy를 풀때는 언제나 즐겁지요~~~)&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
