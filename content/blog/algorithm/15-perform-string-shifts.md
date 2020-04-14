@@ -2,13 +2,13 @@
 title: 👣 Perform String Shifts
 date: 2020-04-14 23:04:73
 category: algorithm
-thumbnail: { thumbnailSrc }
+thumbnail: './images/perform-string-shifts.jpg'
 draft: false
 ---
 
 벌써 Day14!! 뜨악 =_= 오늘 [문제](https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3299/)는 easy 문제일것 같은데, 검색해도 나오지않고 day30에만 존재하는 문제이다.
 
-![last-stone-weight](./images/last-stone-weight.jpg)
+![perform-string-shifts](./images/perform-string-shifts.jpg)
 
 # 문제 요약
 0이 들어오면 왼쪽으로 shift(사실상 index는 1 증가), 1이 들어오면 오른쪽으로 shift(사실상 index는 1감소)하여 최종 string을 구하는 것.
