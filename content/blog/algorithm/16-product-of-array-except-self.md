@@ -23,6 +23,7 @@ draft: false
 ## 1) Multiply all items and divide only self
   * 시간 복잡도: O(N) ? 이라고 해야하나?
   * 공간 복잡도: O(1)
+  
 ```js
 /**
  * @param {number[]} nums
