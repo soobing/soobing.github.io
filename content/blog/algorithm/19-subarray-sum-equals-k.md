@@ -6,7 +6,7 @@ thumbnail: './images/subarray-sum-equals-k.jpg'
 draft: false
 ---
 
-오늘의 [문제](https://leetcode.com/problems/subarray-sum-equals-k/)또한 너무 하기 싫었지만, 스스로 해결했다. 난의도는 medium 이었다 :) 실력이 늘긴 늘었나봄
+오늘의 [문제](https://leetcode.com/problems/subarray-sum-equals-k/) 또한 너무 하기 싫었지만 스스로 해결했다. 난의도는 medium 이었다 :) 실력이 늘긴 늘었나봄
 
 ![subarray-sum-equals-k](./images/subarray-sum-equals-k.jpg)
 
