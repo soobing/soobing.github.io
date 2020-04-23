@@ -78,7 +78,7 @@
     "lh": "lighthousebot",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --host localhost --port 8002",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "start": "npm run develop",
     "serve": "gatsby serve",
