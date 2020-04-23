@@ -1,4 +1,8 @@
 body.dark {
+  .top .link {
+    color: $dark-category-text-color;
+  }
+
   background-color: $dark-background-color;
   text-shadow: $dark-text-shadow;
   color: $dark-light-font-color;
