@@ -1,4 +1,262 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 22 Apr 2020 14:59:42 GMT</lastBuildDate><item><title><![CDATA[🥂Subarray Sum Equals K]]></title><description><![CDATA[오늘의 문제 또한 너무 하기 싫었지만 스스로 해결했다. 난의도는 medium 이었다 :) 실력이 늘긴 늘었나봄  문제 요약 더해서 k가 되는 모든 부분집합 구하기 문제 문제 해결 Brute Force…]]></description><link>https://soobing.github.io/algorithm/19-subarray-sum-equals-k/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/19-subarray-sum-equals-k/</guid><pubDate>Wed, 22 Apr 2020 23:04:18 GMT</pubDate><content:encoded>&lt;p&gt;오늘의 &lt;a href=&quot;https://leetcode.com/problems/subarray-sum-equals-k/&quot;&gt;문제&lt;/a&gt; 또한 너무 하기 싫었지만 스스로 해결했다. 난의도는 medium 이었다 :) 실력이 늘긴 늘었나봄&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 29 Apr 2020 09:30:24 GMT</lastBuildDate><item><title><![CDATA[🍳 LRU Cache]]></title><description><![CDATA[밀렸던거 다풀라니까 마음이 안따라줘서 쉽지가 않네 😋. 
+어제의 두번째 문제는 Least Recently Used (LRU) cache…]]></description><link>https://soobing.github.io/algorithm/21-lru-cache/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/21-lru-cache/</guid><pubDate>Tue, 28 Apr 2020 19:05:10 GMT</pubDate><content:encoded>&lt;p&gt;밀렸던거 다풀라니까 마음이 안따라줘서 쉽지가 않네 😋.
+어제의 두번째 &lt;a href=&quot;https://leetcode.com/problems/lru-cache/&quot;&gt;문제&lt;/a&gt;는 &lt;a href=&quot;https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU&quot;&gt;Least Recently Used (LRU) cache&lt;/a&gt; 문제였다. 어디서 많이 봤다~ 싶었는데 운영체제에서 배웠었다 ㅋㅋㅋ 운체 ㅜㅜ 짱싫어했었다… 지금처럼 공부했으면 참 좋았을텐데!란 갑분 아쉬움이 남는 문제.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 76.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3KmgD//EABYQAQEBAAAAAAAAAAAAAAAAABABEf/aAAgBAQABBQJyv//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABgQAAMBAQAAAAAAAAAAAAAAAAAQEQGB/9oACAEBAAE/IeEIiav/2gAMAwEAAgADAAAAEIMP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxABAQACAwEAAAAAAAAAAAAAAQARUTFBYaH/2gAIAQEAAT8QDQsvIPZA65+Rggb/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;lru-cache&quot;
+        title=&quot;lru-cache&quot;
+        src=&quot;/static/d86d75aec13e1bf188675671968a25f5/e5166/lru-cache.jpg&quot;
+        srcset=&quot;/static/d86d75aec13e1bf188675671968a25f5/f93b5/lru-cache.jpg 300w,
+/static/d86d75aec13e1bf188675671968a25f5/b4294/lru-cache.jpg 600w,
+/static/d86d75aec13e1bf188675671968a25f5/e5166/lru-cache.jpg 1200w,
+/static/d86d75aec13e1bf188675671968a25f5/5df6d/lru-cache.jpg 1482w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;문제-요약&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%9A%94%EC%95%BD&quot; aria-label=&quot;문제 요약 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 요약&lt;/h1&gt;
+&lt;p&gt;Least Recently Used(LRU) 알고리즘을 구현하는 문제
+근데!!! 😎 LRU가 뭔질 알아야 문제를 풀지;;;&lt;/p&gt;
+&lt;p&gt;그래서 이것저것 유투브에 찾아봤는데 &lt;a href=&quot;https://www.youtube.com/watch?v=S6IfqDXWa10&quot;&gt;이 영상&lt;/a&gt;이 도움이 많이 되었다.
+예제를 잘 보면 &lt;code class=&quot;language-text&quot;&gt;put&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;get&lt;/code&gt;이 나온다. 간단히 요약하면 &lt;code class=&quot;language-text&quot;&gt;put&lt;/code&gt;은 메모리에 할당하는 것이고, &lt;code class=&quot;language-text&quot;&gt;get&lt;/code&gt;은 이미 메모리에 할당되있는 값을 반환하는 것이다.
+조금 더 자세히 어떻게 구현할지 알아보자. &lt;/p&gt;
+&lt;h2 id=&quot;0-자료구조는-queue&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#0-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EB%8A%94-queue&quot; aria-label=&quot;0 자료구조는 queue permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;0. 자료구조는? queue&lt;/h2&gt;
+&lt;p&gt;queue를 사용해서 구현하면 쉽다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAB0UlEQVQoz42ST08TURTFz5vptFOmrU5jNRaliH8AKcSmLYhV0aSEGBqKIS6EQEgTNBowrlwYjYmsdAsxsRQ3sGXtd3DnQr+A38CVC+nzvOktabCJ3uSXe9+/8867eYCE1iW8rLrWfMGxqnnH1noBcRdJx8Yol2+SATJMqiRNLpMnZIaskDkyhX/EsOQhSyHG7JFzJC7zRviE5PPB/PhFW5mVV/PunaVSeH06G3r8YMKpPS1HFsvZ0LNKzln2PZURgQtkmtjkLrlHxohzZOHb+0SQm/t+/uB57NHnF7El5pXGmrf6+r67sb3a83DwrJUye5RCrzw/QkbFrScXtCISOirN5BlxYfpziWRknCXXZC6M/4kvmwkVDSNpW7jBfhXJJHtRZr4lgjlxZckR1VVoF1rNYbO96JNeDk6LmyzrpNRGsD+JvuBN7/AjOLADjTqa3V26SJje3BYn10VkkhRJXlrCN3vB/k8U+ys+4jCzB+29wVfjbkTBKjBfNbU4a9djEcRzaYxcaZ37HTW5HjjsEKbdBVJpQBsnUQuh1PFLe+C75r+VUEtt4WeN+5fJbFdBEx/wS73F9/bQkV7a8tx+9v9U+6/tQ5+kmM/eOQ0R6hT8A84IVzQmEWEdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;queue&quot;
+        title=&quot;queue&quot;
+        src=&quot;/static/63bbf0fbd1c41bef7c7aa0da7ad2caa9/c1b63/lru-cache-3.png&quot;
+        srcset=&quot;/static/63bbf0fbd1c41bef7c7aa0da7ad2caa9/5a46d/lru-cache-3.png 300w,
+/static/63bbf0fbd1c41bef7c7aa0da7ad2caa9/0a47e/lru-cache-3.png 600w,
+/static/63bbf0fbd1c41bef7c7aa0da7ad2caa9/c1b63/lru-cache-3.png 1200w,
+/static/63bbf0fbd1c41bef7c7aa0da7ad2caa9/d61c2/lru-cache-3.png 1800w,
+/static/63bbf0fbd1c41bef7c7aa0da7ad2caa9/29beb/lru-cache-3.png 1830w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-put&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-put&quot; aria-label=&quot;1 put permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. put&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;put&lt;/code&gt;을 할 때, 이미 메모리가 꽉 차있는 경우에는 가장 최근에 사용안했던 부분을 제거하고 새로운 메모리를 할당하는 것이다. 근데 새로운 메모리를 할당한다는 것은 가장 최근에 사용한 의미가 아닌가? 그래서 가장 앞쪽으로 위치해주는 작업을 함께 해주어야한다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 122%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAADQ0lEQVQ4y61VS0hUURj+zh1nNB2tyZQ0Nd/vcdR8jZOlJGqjPazISmnRomVQUKugaBNhBNFEZe8iITdhLXMfBC1btG1TtIsMCszTd+751ZnxUUEHPs65d+7/nf/1/QPYtZfYRVQTXvzHtYEIE41EKVFI1AnqiUrC9zdESvZy4hDRT6tQKonobhef24gDRB+RLVGsJzLWIjPLQ+Qo+3G5eFQiqCXK5FwhKEqyX8bsl3C90/RuBgi+IVG2JTNeNhNNQrqV2LQSj7kpEPdcy7g2axITpUQbmRoMoQPUcN8v+TWX1KwQJc4QVeawA/nuDxqZPg3VTbIhIlpmi1Ll2C7oJ1qIVg98xks+jKjntFpY6YQTfwOvTntNkkk4jY9YnDx6bKqsbJgmb00KToh7XrzdRBypu2L47nsGnZOLYEE6uk2Y+UCKMSoSMrdAHniLTUu1Y7SjDccC09CZ1/DFGxfzjLvfhc6YwPzwY+h9r6Dr/tRrk9C996GP0maMtllIdPeXuz+AVlfxKW0UtzxBRN2cOvAoSbwLPza5+xhue2KYTaet653Pzd7ShyxdOLliSlmy1fo2YQVQsHo4Fa5A1ly+AAoXi5mC1MWLTNVCcjZ56BGVeERqw0RE9HyQiErfmiI1iN4H5X2zbT/g8MKt8qNRhV/6LSLNXyUqicjZZ51RzJ/KIahrJxPSg/F9aGI9R//7HCvDMdHwoPQdo1HRf5phHhtShqTAkNAD5MYNCoaZUi1hr0m0sDZ2Au2cV+EWq1czC7fbkCvp7aUe2/TXmQpN4nnKcZ4DWh9JINRLuyLqiHwi1GEHQa0Db4kt1ATzeJND4rIh4VD+wYs05amj0tTz7v7TLRgwS33zTWSOFSfhAF0MmgKxwY2nu5kJ5vHlONBRv2KoRtRTxDt5fovWtM9A53t2wEdgZ5GtckjBawYuyS+OAKfozYtuuP8ZT9j9WiF5OJzA04VjFns+2E6SbJvDYpKZSm8BTlNOF4Zs5U+S8IoM2fNUmk4cOxS4n+H3x/AtEoOuSbxum7J1m/IP4GyKeTOOD7038LWLdgN3MJe5bI6RzMtz1z3oIU6RYtv19ezYnKTiaVdmD6HD/PY47faQdJ159xuGFaiBKwliYQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;put&quot;
+        title=&quot;put&quot;
+        src=&quot;/static/9d3ffadb4693960fa53446e9492efb91/00d43/lru-cache-4.png&quot;
+        srcset=&quot;/static/9d3ffadb4693960fa53446e9492efb91/5a46d/lru-cache-4.png 300w,
+/static/9d3ffadb4693960fa53446e9492efb91/0a47e/lru-cache-4.png 600w,
+/static/9d3ffadb4693960fa53446e9492efb91/00d43/lru-cache-4.png 1000w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-get&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-get&quot; aria-label=&quot;2 get permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. get&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;get&lt;/code&gt;의 경우에는 찾으려고하는 key의 value를 리턴해주면 되고, 만약 찾으려는 key값이 없는 경우에는 -1을 리턴해준다. 여기서 찾으려했던 값이 있었으면 그 값을 읽는 작업은 해당 메모리가 사용된거니까 앞쪽으로 위치해주는 작업을 해줘야한다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 176.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAjCAYAAACU9ioYAAAACXBIWXMAAAsSAAALEgHS3X78AAADyElEQVRIx62WSU9TURTHTwttochULEMptNTSgdaCBaWIA1AmjYKYGBMcNmpiMDHRRN0ogWhM3Lly48oPYIhfQRNXbgATiJioWxONiXEp9X/f+z+5lDIZT/LrG3rvuWe894mI1IJB0AjswAnKwB5QDmpABZ+rgZfP6r4eREA7qBJNYmAAHANxMAGOggQ4D7pBEKTACbCf4/pADw2q1hW6aEELJya4cjNo4+R9tMhLb/bKDsRORSla0QE6QZT3IS6mXGzV5tgLKbPxGgAHGccDoIlKLGsDDFEkb96mCkN0L0Ar0+AQ72toXYrub6lQSSUnDFCJsiqpuejjglHGcVspoXUWXVRWB/zMqno3DEaZoC2lGJxmyag4jXGiUjYEskxOggt6ZBdSqylQiekFDfKfJKzdO1gmjs3KJV98jFWUCRhmxo/xvUpOhh1zkSEp3apsVFYn2VJpTk7wOsBEuNnnXobGtp2VauI4E1PL5NTTYvduYmWt5NTetdDqoFaHRf+SiGr2sV9bpIyZdjEhxVo/2/InN7F3mxmzNOMkWjZVJ42AKdbqAMMxwRivq7mTrLsUay5ZoFdL6HY5F4kzznXa4hskpN0XbZPB2s0y2sEaOwsOg3MMQwV7eUzrEishQY5N0f2/Emfgu7jDdGg7dIbKOgsY4uS4dCFLHTwXetkJMdZdOyd5CsTTR+/UokfYCOrZcMtLF2Kc3Ezl8byY6lLOHm+icq+1sHVcJnm6ddPKCW5lGRZ3U17d7VjaGBfrGtI6JX/ztDkKHHN++OdGhKPYMlIwy4lBEbRCK4qrEkFrwX8ptEgQRdgOJWk0cwYZdOUwfxlKc9RlXa8wjkMMagMPpBEeSiqOx3kShrVjdZ1YymQJ1uEhArwg8QvJwNUD6kE0Zw5uAK0gDCpBFnSuivTj2pMzDTKV4qf8N/78gVPsEwZ8Q5HCjcA8avIzSglmud8gjitYbAG9fgtfDN9NRWEoTIBgztws1qy0BH40PoXrj7EbnzE7J0T3u9jnCWZbNnVZ3XwUl1EGP2EBtptTKmZQOhkxlSaRiEGYEAOpKrEbiX0pLpUM22p+UubkmXxlB3wRZzdc7FcFfg/9nDa3s4DN7ATVs8lxeWQsnpWbxpwZmZdpWVxv7nOZMQbdhzu3xX7pjsiFq2aBp4vWvhqS/J7xc4NFoQ4XruQHslgzK4t91+X16GWZ9F8zNtJSd7HZRWVF4lTniKNPbnim5FX2rrztnZEl42MJ1tk2WPhC3kHp+/AT+RDcqoXmJOd8KCujs7IcnZYFHxWuc/kPJBmZb8RuQHoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;get&quot;
+        title=&quot;get&quot;
+        src=&quot;/static/9be165c109f14d620c80cb9fe8ee50ca/00d43/lru-cache-5.png&quot;
+        srcset=&quot;/static/9be165c109f14d620c80cb9fe8ee50ca/5a46d/lru-cache-5.png 300w,
+/static/9be165c109f14d620c80cb9fe8ee50ca/0a47e/lru-cache-5.png 600w,
+/static/9be165c109f14d620c80cb9fe8ee50ca/00d43/lru-cache-5.png 1000w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;예제-이해하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%88%EC%A0%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0&quot; aria-label=&quot;예제 이해하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;예제 이해하기&lt;/h2&gt;
+&lt;p&gt;그래서 예제를 이해하면 다음과 같다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1000px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 201.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAACXBIWXMAAAsSAAALEgHS3X78AAAD7ElEQVRIx51WS08TURS+M9NCS0EKpTzlJVBsBUHkIQ8BRRQfFaMbjSYkotGNRuNWE3fGhSsT4y9woX/CuHHhyrhx5VL/gU+kfqfnG7mOpS09ycmdTu+c5/ede40pIk+4/obm+IzVhXZDd+F9GusI3zfkTAnBBodr9zdj6vjamzWmH2uD/PhqTA0Mh43lVKQGWg2tonry8in//GlM6C0ik2d4SGPDQBQqe2GkCf/HbYOnofPQceh+aB+00/f04v/AJboJT1P1YCQBg7tsg0lrs2N/GbKeEV5El/zrRL0xMXm/ge83AwZFZHMdU4/Ribtly+yGdkMzRlPtCOmzIyn/Chi8Dh2DpqF7oG189vi/1PQ4tAd6AHoI2gUvx1jDxPeAwY4SzRbDo3QiBgelziH9LUaaNgqkXEoEFnGWJu8kyZqyy/8Y9BuRYIeHoPugrVZvpqCzjLJF0ICUjxoFdv1nqGx8EzAoG5ZZxxQd+I6moXvpSEo0DoNHsA4LQ77Q4M0AShLbpFvFhoijeh8VAHYT1qikDK01FUijdJdNag4pjMLPQQKEflaghfBO+BjsZCeHyBaBzhzp6JFJUr+D5PCQq3sH14zpRejn8bwCgxd8pozRaBtBLIaa2BCXtRXcTbIp03i5ILW+CyrC0xk8r7sKq7JEDEfpSBxE6ki9R6gtUs5KoxDhYZvDHje7QU4Xk4/GtM9reSTqjKlUHm7NysYbioKWCKP2IbPExsgY693GjhhplrqHdZ1D2+9AT7Ecf0UAu86miLf2IsEJLmM9Ssc6dHn6soJ+xxKxuCwpRTm+aq8qZXtcRUs+jVrCoZ1zMWmsepDX/rQReE06OsZmwMkUPlw0Cp08DuXDi+TyHD+aJdV8EWOrRhkh0Sw4SoApnAOZfuW+GDvnz7toiXQTZNAI0+4K6eTueY/MBjW6WUcbWvg8KVdQw/iaDt0GzzrcyhHHcupkeeaIwRnl+oKr1KwsQn8646BvLja+3HINrmxF2PhBR5uZsL6XMyGr+/LFTtuYK3C+DDl6LGTR8ksphY1nbxKGLJAFLVSvQA19iccVGbHbcH6f58+7CpoaDjqSQ8qvYS5QO48gj7EEwZRbOTSkJC1h5XzqFoiQ0xuH2Qx4vkYmCNEXeaDb6U7w9JPpnXF1vXISl60cr3ObgQ+GaTiIOV/6yBQxnODdZvQeGORHuFEEwDvBYyJXwVXEZSn6OTTaXc0og3m1+Iq32WeBj2YInWXetmyQR61LqeBvytGpNAzyrj7mJeFBAYNJHqPpwH/VbMg41352eQBsWHpNprzcIQZjjDTCS6XUOvwJcMrxQp8rY6qUHA4ybX5YOPwDiEWQ/0PjmmoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;예제를 눈으로 정리&quot;
+        title=&quot;예제를 눈으로 정리&quot;
+        src=&quot;/static/2745e0af1024bc9192e5dc232686c462/00d43/lru-cache-2.png&quot;
+        srcset=&quot;/static/2745e0af1024bc9192e5dc232686c462/5a46d/lru-cache-2.png 300w,
+/static/2745e0af1024bc9192e5dc232686c462/0a47e/lru-cache-2.png 600w,
+/static/2745e0af1024bc9192e5dc232686c462/00d43/lru-cache-2.png 1000w&quot;
+        sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;문제-해결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0&quot; aria-label=&quot;문제 해결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 해결&lt;/h1&gt;
+&lt;p&gt;생성자에서 호출될때 용량이 얼마인지를 &lt;code class=&quot;language-text&quot;&gt;this.capacity&lt;/code&gt;에 저장하고 &lt;code class=&quot;language-text&quot;&gt;this.keys&lt;/code&gt;에 데이터들을 저장하도록 했다.&lt;/p&gt;
+&lt;h2 id=&quot;code&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code&quot; aria-label=&quot;code permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;code&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+ * @param {number} capacity
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;LRUCache&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;capacity&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;capacity &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; capacity&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;/** 
+ * @param {number} key
+ * @return {number}
+ */&lt;/span&gt;
+&lt;span class=&quot;token class-name&quot;&gt;LRUCache&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;key &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; tmp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tmp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; tmp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;/** 
+ * @param {number} key 
+ * @param {number} value
+ * @return {void}
+ */&lt;/span&gt;
+&lt;span class=&quot;token class-name&quot;&gt;LRUCache&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;put&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;key&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;key &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                key&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; key&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                value&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; value
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;key&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; key&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; value&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;capacity&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;/** 
+ * Your LRUCache object will be instantiated and called as such:
+ * var obj = new LRUCache(capacity)
+ * var param_1 = obj.get(key)
+ * obj.put(key,value)
+ */&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🍑 Bitwise AND of Numbers Range]]></title><description><![CDATA[끄악 너무 많이 밀려버렸다 🍗 밀렸던 문제부터 하나씩 이번달 끝나기전에 다풀기 도전한다. 오 이 문제도 풀었는데 난이도 medium 이었음!  문제 요약 m부터 n까지 비트연산한 결과 출력 문제 해결 또, Brute Force…]]></description><link>https://soobing.github.io/algorithm/20-bitwise-and-of-numbers-range/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/20-bitwise-and-of-numbers-range/</guid><pubDate>Sat, 25 Apr 2020 23:05:14 GMT</pubDate><content:encoded>&lt;p&gt;끄악 너무 많이 밀려버렸다 🍗 밀렸던 &lt;a href=&quot;https://leetcode.com/problems/bitwise-and-of-numbers-range/&quot;&gt;문제&lt;/a&gt;부터 하나씩 이번달 끝나기전에 다풀기 도전한다. 오 이 문제도 풀었는데 난이도 medium 이었음!&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3KFB/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFhABAQEAAAAAAAAAAAAAAAAAARBR/9oACAEBAAE/IQMv/9oADAMBAAIAAwAAABDwD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAQACAwAAAAAAAAAAAAAAAAEAUREhMf/aAAgBAQABPxBAqO1ME1U//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;bitwise-and-of-numbers-range&quot;
+        title=&quot;bitwise-and-of-numbers-range&quot;
+        src=&quot;/static/b03020dd56d3fda4c9902f8bb3517c1b/e5166/bitwise-and-of-numbers-range.jpg&quot;
+        srcset=&quot;/static/b03020dd56d3fda4c9902f8bb3517c1b/f93b5/bitwise-and-of-numbers-range.jpg 300w,
+/static/b03020dd56d3fda4c9902f8bb3517c1b/b4294/bitwise-and-of-numbers-range.jpg 600w,
+/static/b03020dd56d3fda4c9902f8bb3517c1b/e5166/bitwise-and-of-numbers-range.jpg 1200w,
+/static/b03020dd56d3fda4c9902f8bb3517c1b/c58a3/bitwise-and-of-numbers-range.jpg 1500w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;문제-요약&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%9A%94%EC%95%BD&quot; aria-label=&quot;문제 요약 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 요약&lt;/h1&gt;
+&lt;p&gt;m부터 n까지 비트연산한 결과 출력&lt;/p&gt;
+&lt;h1 id=&quot;문제-해결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0&quot; aria-label=&quot;문제 해결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 해결&lt;/h1&gt;
+&lt;p&gt;또, Brute Force로 문제를 해결ㅋㅋㅋㅋㅋ 이정도면 미디움이 난이도가 맞나 싶네;;;
+정말로 m부터 n가지 다해봤다. 근데 다만 0일 경우 비트연산을 계속 할 필요가 없기때문에 그만 하도록했다.&lt;/p&gt;
+&lt;h2 id=&quot;code&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code&quot; aria-label=&quot;code permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;시간 복잡도: O(N)&lt;/li&gt;
+&lt;li&gt;공간 복잡도: O(1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/**
+ * @param {number} m
+ * @param {number} n
+ * @return {number}
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;rangeBitwiseAnd&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;m&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; m&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;m&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        result &lt;span class=&quot;token operator&quot;&gt;&amp;amp;=&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[hot-update.json 404 에러 (gatsby)]]></title><description><![CDATA[하이 나 참~ 🍝
+gatsby develop 을 실행시키면 크롬 브라우저에서(safari에서는 이상 없음) 계속 무한루프를 돌며 라우팅 처리를 하는 현상이 있었다. 그래서 에러를 캡쳐하기도 어려웠지만 열심히 캡쳐했을때 hot-update.json…]]></description><link>https://soobing.github.io/react/gatsby-hot-update.json-404/</link><guid isPermaLink="false">https://soobing.github.io/react/gatsby-hot-update.json-404/</guid><pubDate>Thu, 23 Apr 2020 12:04:38 GMT</pubDate><content:encoded>&lt;p&gt;하이 나 참~ 🍝
+gatsby develop 을 실행시키면 크롬 브라우저에서(safari에서는 이상 없음) 계속 무한루프를 돌며 라우팅 처리를 하는 현상이 있었다.&lt;/p&gt;
+&lt;p&gt;그래서 에러를 캡쳐하기도 어려웠지만 열심히 캡쳐했을때 hot-update.json 404 에러가 발생하고 있었다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 821px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 129.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAaABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHmrURCgN4llWQtf//EABgQAAMBAQAAAAAAAAAAAAAAAAAQQQER/9oACAEBAAEFAl0ihpF//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAFxAAAwEAAAAAAAAAAAAAAAAAARAwMf/aAAgBAQAGPwJjI//EAB0QAAMBAAEFAAAAAAAAAAAAAAABETEQQVFh0fD/2gAIAQEAAT8h1Eg2TPFjox2YO0jaez7TQhX34//aAAwDAQACAAMAAAAQXPyC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPxCMmM//xAAYEQADAQEAAAAAAAAAAAAAAAAAAREQMf/aAAgBAgEBPxCouLh//8QAHBABAAICAwEAAAAAAAAAAAAAAQARITFhgZFR/9oACAEBAAE/EA36QvEDSh8YoKOyI0POQe+ZjhU5buCywhQRMGqRU++pa+GNpl0TJt7BW7bzP//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;error&quot;
+        title=&quot;error&quot;
+        src=&quot;/static/5f6bb1060e356f7969539c62def6be7d/dfe5d/hot-update-error.jpg&quot;
+        srcset=&quot;/static/5f6bb1060e356f7969539c62def6be7d/f93b5/hot-update-error.jpg 300w,
+/static/5f6bb1060e356f7969539c62def6be7d/b4294/hot-update-error.jpg 600w,
+/static/5f6bb1060e356f7969539c62def6be7d/dfe5d/hot-update-error.jpg 821w&quot;
+        sizes=&quot;(max-width: 821px) 100vw, 821px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;여러 구글링 결과 이 &lt;a href=&quot;https://github.com/gatsbyjs/gatsby/issues/864#issuecomment-297744295&quot;&gt;해결방법&lt;/a&gt;을 참고했다.&lt;/p&gt;
+&lt;p&gt;그래서 포트번호를 바꿔주니까 8000 포트에서만 에러가 나고 다른 포트에서는 에러가 나지 않았다;;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// package.json&lt;/span&gt;
+&lt;span class=&quot;token property&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    ...
+    &lt;span class=&quot;token property&quot;&gt;&quot;develop&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;gatsby develop --host localhost --port 8002&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    ...
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;정확히 왜 해결이 됬는지는 파악하지못했지만 나와 비슷한 분들이 있으실 수 있으니까 ㅎㅎ 포스팅 남겨본다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🥂Subarray Sum Equals K]]></title><description><![CDATA[오늘의 문제 또한 너무 하기 싫었지만 스스로 해결했다. 난의도는 medium 이었다 :) 실력이 늘긴 늘었나봄  문제 요약 더해서 k가 되는 모든 부분집합 구하기 문제 문제 해결 Brute Force…]]></description><link>https://soobing.github.io/algorithm/19-subarray-sum-equals-k/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/19-subarray-sum-equals-k/</guid><pubDate>Wed, 22 Apr 2020 23:04:18 GMT</pubDate><content:encoded>&lt;p&gt;오늘의 &lt;a href=&quot;https://leetcode.com/problems/subarray-sum-equals-k/&quot;&gt;문제&lt;/a&gt; 또한 너무 하기 싫었지만 스스로 해결했다. 난의도는 medium 이었다 :) 실력이 늘긴 늘었나봄&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;&quot;
