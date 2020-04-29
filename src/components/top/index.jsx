@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { GitHubIcon } from '../social-share/github-icon'
-import P5Wrapper from 'react-p5-wrapper';
-import Wave from "../wave"
 import './index.scss'
 import styled from "@emotion/styled"
 const Wrapper = styled.div`
@@ -31,7 +29,6 @@ export const Top = ({ title, location, rootPath }) => {
         </Home>
 
       )}
-      {/* {typeof window !== 'undefined' && <P5Wrapper sketch={Wave} />} */}
     </Wrapper>
   )
 }
