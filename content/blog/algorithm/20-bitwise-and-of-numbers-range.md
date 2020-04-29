@@ -1,9 +1,9 @@
 ---
-title: Bitwise AND of Numbers Range
+title: 🍑 Bitwise AND of Numbers Range
 date: 2020-04-25 23:04:74
 category: algorithm
 thumbnail: './images/bitwise-and-of-numbers-range.jpg'
-draft: true
+draft: false
 ---
 
 끄악 너무 많이 밀려버렸다 🍗 밀렸던 [문제](https://leetcode.com/problems/bitwise-and-of-numbers-range/)부터 하나씩 이번달 끝나기전에 다풀기 도전한다. 오 이 문제도 풀었는데 난이도 medium 이었음!
