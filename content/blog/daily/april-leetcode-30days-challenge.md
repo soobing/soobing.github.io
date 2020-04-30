@@ -6,4 +6,7 @@ thumbnail: './images/leetcode-last-problem.png'
 draft: true
 ---
 
+못 푼 문제들
 ![못 푼 문제들](./images/leetcode-last-problem.png)
+
+# 다짐
