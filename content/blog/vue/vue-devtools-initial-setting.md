@@ -6,10 +6,10 @@ thumbnail: './images/vue-devtools-setting-1.png'
 draft: false
 ---
 
-# 문제 발생
 이 [동영상](https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance)을 참고해서 공부중인데
 아래처럼 devtool을 설치했는데도 불구하고 `개발자도구`에서도 안뜨고, `panel`에서도 안뜬다!!! 
 
+# 문제 발생
 ![문제](./images/vue-devtools-setting-1.png)
 
 # 해결
