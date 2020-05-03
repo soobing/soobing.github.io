@@ -1,4 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 29 Apr 2020 09:34:13 GMT</lastBuildDate><item><title><![CDATA[🍳 LRU Cache]]></title><description><![CDATA[밀렸던거 다풀라니까 마음이 안따라줘서 쉽지가 않네 😋. 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 10:49:05 GMT</lastBuildDate><item><title><![CDATA[😈vue devtools pannel이 보이지 않는 이슈]]></title><description><![CDATA[이 동영상을 참고해서 공부중인데
+아래처럼 devtool을 설치했는데도 불구하고 에서도 안뜨고, 에서도 안뜬다!!!  문제 발생  해결 이 링크를 통해서 문제를 해결했는데,
+production 모드가 아닌 경우나 CDN을 통해서 vue…]]></description><link>https://soobing.github.io/vue/vue-devtools-initial-setting/</link><guid isPermaLink="false">https://soobing.github.io/vue/vue-devtools-initial-setting/</guid><pubDate>Sun, 03 May 2020 19:06:32 GMT</pubDate><content:encoded>&lt;p&gt;이 &lt;a href=&quot;https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance&quot;&gt;동영상&lt;/a&gt;을 참고해서 공부중인데
+아래처럼 devtool을 설치했는데도 불구하고 &lt;code class=&quot;language-text&quot;&gt;개발자도구&lt;/code&gt;에서도 안뜨고, &lt;code class=&quot;language-text&quot;&gt;panel&lt;/code&gt;에서도 안뜬다!!! &lt;/p&gt;
+&lt;h1 id=&quot;문제-발생&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EB%B0%9C%EC%83%9D&quot; aria-label=&quot;문제 발생 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 발생&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 826px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 69.33333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACqUlEQVQ4y3VT2XLaQBDUT8QVl6sMSBzWfaH7lgABTsCY2OA4wWVwUvmg/G9ntDguu+I8dM3sarant3fE+UGMalTDcUN4/jF3gwSOn8KNLuH6CXw/orxGlFSoqglU14NmOVQfIYxSrCYL2LYH03bBTeo5vt5/x3y+wHT6CdfrG+SjGeJyis3+N9ZfnpAXBa63P/F5eYPb2y3sPIMbpyiopq4vcT0eI6DGAZFzQRDC9Tw08ePpKTodHheDC5ycfKAinw7MkCSkeGijLEukaYaIapMkRxwoCD0VsmbCcRzGwVmWhTgKkWUpJFGELEvodrs4OzuDSGtd16BpKhRFoVynXGN50aheLbG6WhBRwOpM0wTXvxBhxAVs8jLIJ4hJjTV00BEEUttBq91G+xVarRbbr6oK+/0B9/ffyIZbTOqaNeKGwyGcfAy3XpIvObxiAjsp2UdNVZm6ozL9RaEsy+z6j4+P2Gw2jDwIQxiNQs91ERZjRPMVwqzEaDTGtCDPggheWrJoGgYsKmawTKjUqCE8HA7Y7XbY3t3Ba65NdZxAV+O7fUhOAIlGxXQD+hghSnOkJXWOaWzCiCFMUhovDwYpLUnV7uGBkeVFCZPeQjMt8rDfR08i4+MKshtBUg2ImgWbrIioq23bUEwbkjmEQk0Hsop+r4s8z5m65fKKrDAYoUp2cAN6FNnPoGcT9EUZAt9Bo/oNeP4FnQZCFxm98v7pB67Wa+ikTDVMyIpKCgcDdPuEXo8daEbmf+AJptBG0OMxTSL82t7gZjJCoivIDRW2Ih+vzLqTkubQ3/gWtNcopVwUOtBpPStz3C0XiCwDvq5iliXw7GcPX5O8Ryiw/WeVFNu8AI1e1KU/qZnjLnHoNAGiJP1L+D4EhmPdUW2nGfLzc/DP3jZD3+R/AGBawZ17RlYAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;문제&quot;
+        title=&quot;문제&quot;
+        src=&quot;/static/4867b2eac9e5365012ba310b307b9b13/6a6e9/vue-devtools-setting-1.png&quot;
+        srcset=&quot;/static/4867b2eac9e5365012ba310b307b9b13/5a46d/vue-devtools-setting-1.png 300w,
+/static/4867b2eac9e5365012ba310b307b9b13/0a47e/vue-devtools-setting-1.png 600w,
+/static/4867b2eac9e5365012ba310b307b9b13/6a6e9/vue-devtools-setting-1.png 826w&quot;
+        sizes=&quot;(max-width: 826px) 100vw, 826px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;해결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0&quot; aria-label=&quot;해결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;해결&lt;/h1&gt;
+&lt;p&gt;이 &lt;a href=&quot;https://github.com/vuejs/vue-devtools/issues/190&quot;&gt;링크&lt;/a&gt;를 통해서 문제를 해결했는데,
+production 모드가 아닌 경우나 CDN을 통해서 vue를 가지고오는 경우 발생하는 모양이다.
+그래서 요렇게 devtools의 값을 true로 셋팅해줘야한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;Vue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;config&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;devtools &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;나는 main.js에다가 js를 몰아서 작업중이라 위의 코드를 main.js에 넣어줬다!&lt;/p&gt;
+&lt;h2 id=&quot;파일-url에-대한-엑세스-허용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8C%8C%EC%9D%BC-url%EC%97%90-%EB%8C%80%ED%95%9C-%EC%97%91%EC%84%B8%EC%8A%A4-%ED%97%88%EC%9A%A9&quot; aria-label=&quot;파일 url에 대한 엑세스 허용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;파일 URL에 대한 엑세스 허용&lt;/h2&gt;
+&lt;p&gt;위에처럼 했는데도 안될때는 &lt;code class=&quot;language-text&quot;&gt;확장 프로그램 관리&lt;/code&gt;에 들어가서
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 642px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACWElEQVQ4y41U63KaYBDlRdqZVgVEBLwBilFEELkpBmySpiZpnZp20vYF2ufo657ukmSSyTSZ/Dizl9k9c87nohDFGRZpgVmwhLf6gWl4gSzN4M0XiIuvmIUlzncXuMw3yPIUZRpiaDpINlu4Mx+/Dz/hTQI4Ry4sewxhTosTP0HXtBGVf/Dl+i88z4dtOyg/HhAmJYrtB5wmGdIkwInvwjZ6yKMYs5GD1ciGZfRhDY/Q7VkQanUJut7BcDiGZZqYTj2Y1gjOeApFaaFWF1GrSXjXkDGRJGRSDZ4soqy/wUKqI6+/xViWUJNVNJsqBEluode3yCLJHruYuh4mRDojldwXpRZkGmQ0CHX5tpZaGiRFQ5OirLQrsiZFQaJEbRvQOz20tQ6MTh+d7gA62dL0blUPzGFFblCPI8/zskJkCpNSzj2uhYbYRJ+GstUG4TKhmGNzvEVZniBN1wgWEU7PzrHOC1I/x3Z7iv7AJuVKRcRglyyiIhSpUFW9UsdWeJAh31ngYa45SvKD/Xuyx3Oc3xKSXCZktU9xv/gU/yOt3pCXBmRh7ocVYjqPKErJ6hI+3eZjta8i5IVuz4RNZ8PnwvfH4Heyh071HC3Cc0qfQnjfIIVEENAPwpiTqnR9jCTLEYQxlskKrhfQaWgQ6dbE5ssQBi0VNkNtY2wYGGlaldvtNuU69ToPvVdA2Mx97K72uLn5havPe+z3B1x/u8Hh8B273RVi+tb5fF5CRojJ0VkcQ8gc+maXES6PC5zRn8L5ao3LosCndY6TmO7SdQmzu/g8UpopJ0f4B1is0a2smX69AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;확장 프로그램 관리&quot;
+        title=&quot;확장 프로그램 관리&quot;
+        src=&quot;/static/655066bdcf9fb1b688fa918e14b8272b/1bba8/vue-devtools-setting-5.png&quot;
+        srcset=&quot;/static/655066bdcf9fb1b688fa918e14b8272b/5a46d/vue-devtools-setting-5.png 300w,
+/static/655066bdcf9fb1b688fa918e14b8272b/0a47e/vue-devtools-setting-5.png 600w,
+/static/655066bdcf9fb1b688fa918e14b8272b/1bba8/vue-devtools-setting-5.png 642w&quot;
+        sizes=&quot;(max-width: 642px) 100vw, 642px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;파일 URL에 대한 엑세스 허용&lt;/code&gt;을 해준다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1086px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20.666666666666668%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAArElEQVQY04WOSRLCMAwE8xqWxLJj2c6OXSEE8v8PDSK4oDhx6OoZSQcVzAGXOO8MY4RSBpWgqP5A2oLIfnvOlHeK5F47kPEorG+R5hXpet/djQlTWsQR1jVg2XPoxJ30Fsb6nJvdL4x1cP0NYdpQeG3QuYBW6H2Dlj2crlErAp1K0Ll8O2d9rn7n2Va+Zs0oZmasl4iHcBsnLP0AV1ZgOXz5Pwr2eEAaFsxxwxNOUX70vrU35QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;확장 프로그램 관리&quot;
+        title=&quot;확장 프로그램 관리&quot;
+        src=&quot;/static/62f56a11a59a06c55a80c03d4286d6e3/f3a19/vue-devtools-setting-2.png&quot;
+        srcset=&quot;/static/62f56a11a59a06c55a80c03d4286d6e3/5a46d/vue-devtools-setting-2.png 300w,
+/static/62f56a11a59a06c55a80c03d4286d6e3/0a47e/vue-devtools-setting-2.png 600w,
+/static/62f56a11a59a06c55a80c03d4286d6e3/f3a19/vue-devtools-setting-2.png 1086w&quot;
+        sizes=&quot;(max-width: 1086px) 100vw, 1086px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;인증&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%EC%A6%9D&quot; aria-label=&quot;인증 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인증&lt;/h1&gt;
+&lt;p&gt;vue 아이콘을 클릭하면 제대로 로드되었고, 패널도 확인해보라는 것을 알 수 있다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 824px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAABSUlEQVQY002Qu04CQRhG9yFQGyIJBIKrawywzC7shRWQS5ZoCF5QGwoLe55DShNRjJV2Vj6JJIAu8VLwBPTHgUTjJCfzNfOd/x+lWvM5aZ9TqfrU6g2OT87Yq+9jF31y5Ussu4QwLITbxPUq1Os+mdIuIu9QLNdoyDcXrVMM05HYKG5hVxb52I5HVph4XhFtJ03FP+D5Zcxg8MRVr8f9wyM3/Tv6/VuuB3c0W0dSlMe2ZVFGX2Zh5FCEyGIIgWkarIRCrEcirK2ucnjY4vsr4P39jdFoxHD4ShAETKdTFqfb7RKPx0ml0mR0HV1iGgbKlraN5XpyQhdhSqNlEYvF5De0+fj4lEVDJpMJ4/FkmWezGfP5nE6nQzgcJplMkkgk/lASGypbwkJLSUu+QDaro2kaqrqJ6zhyJXuJJUW/9wJVVYlGo0v5f34AdHzLO816wQ8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vue&quot;
+        title=&quot;vue&quot;
+        src=&quot;/static/169d44ecedf7e55714cccb03d96c7e52/c1c45/vue-devtools-setting-4.png&quot;
+        srcset=&quot;/static/169d44ecedf7e55714cccb03d96c7e52/5a46d/vue-devtools-setting-4.png 300w,
+/static/169d44ecedf7e55714cccb03d96c7e52/0a47e/vue-devtools-setting-4.png 600w,
+/static/169d44ecedf7e55714cccb03d96c7e52/c1c45/vue-devtools-setting-4.png 824w&quot;
+        sizes=&quot;(max-width: 824px) 100vw, 824px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이렇게 누르면 쫘라란 ~ 패널이 생긴다!
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 426px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100.33333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAADnklEQVQ4y2VUyW4bRxCdSxzYCHyML4kNiaS4zwxn53CRTVKkFmsBRZG0uEqiaEkOpEiKA58MCIavdpKT4S/IF+QSJJENJD4E+aaXqqKHkK3DYze7u16/elXTiu0V0Tt7i9LqLvK5Al69eo3RaAzNsOAPW3CWqsi6eVh2Fnujx9juDuG6Wfz2+hf89P1zqBkb8/crKJVrMEwXip9/gJ/f/IrO8BCel8PFxQt0e0Noqons5kPY8/O0XhDC9Y0G6o02fL+I5bwLTzdgOzkUiiU8KFWJ0IOi6yYFa8hkTAryaNGGZbk0d2FoJkzDhmk5Ak0zBIbpIJbSkVQzMGnOMRqR81wpl0solyukwoNj21hdXUW1WoVNc9M0P4FlTUbDMGSe8304jiNrEmNZUBYWFrC8vIxCoSAbi4uLmKc00+k0ksmkjKlUagpN0+RcJpOh1H3y05X/lUpFRCi8EYAXeGTCTqeD7e1t9Pt9NJtNDAYDbG1toVaryTmL1LDSQD3H8ai0Wi05uLm5SamXZYPH4+NjnJ6eotfrYX9/HwcHB1T9EdbW1oSQlQUkATGPCnuXzWblAN+q67rIZ0K+pN1uCxEr4/Q5iH1jMlVVp6RTheFwGIzZ2VnE43HZKBaL6Ha7YPWskEnX19clgMmCgvHFbA9fks/nJ4SRSARzc3NCyoRsOhdqPB7j6OgIJycnWFlZQSKRmHrH4IxYNdvDRKVSSQqrRKNRxGIxIeUgTpmrV6/XRRV7xoGsnIkm7WPJ2VAoJHEczzzcBQovMmZmZmSRfSlTKoeHhzg7O8fu3p54GBTB4KoSIZ9lmzizgIP/XyPklNnDR4/aGPR72NjYQJnSETLyKqgon+WYID7AZynHoaaSqJAvT398htH4AN89OcLDlSWkkwn6DIk0Q41t6HI2iL0KIYzG4oiF7uKe28AXww+4M/4TxtNLqOfv8WXnd9zo/oFbw3e4Obgk/IWbO38jVR2h6NvIF4pSGEYul5tUOTIXRWTmG3zr1HFj5wO+fvwO9y/+RfXlf7i9+17Ibg0vBV/t0Hz3H9z1moiF703EfFTHWSr8M2mbEOJUOTfrw6BXJ65aiKWp7+jtczx/Cn5VeEwkkuKZCLqCa32YIq+WFmv44fwU4/09ekFM6JpK3uky7gwH9GV55N8kJhAU4IrCMMmmotDbyE3a7w/QaGxJiwQV5h5tNlvyqQYx1whZVQAuEI+8wT3FKX1exaC9eH41NsD/sLallCCr3eMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vue&quot;
+        title=&quot;vue&quot;
+        src=&quot;/static/eeaf426f48a386e9e651304ef01723bb/531e1/vue-devtools-setting-3.png&quot;
+        srcset=&quot;/static/eeaf426f48a386e9e651304ef01723bb/5a46d/vue-devtools-setting-3.png 300w,
+/static/eeaf426f48a386e9e651304ef01723bb/531e1/vue-devtools-setting-3.png 426w&quot;
+        sizes=&quot;(max-width: 426px) 100vw, 426px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이렇게 나의 첫 vue 포스팅을 마칩니다. ^ㅡ^&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🤓2020년 4월 leet code 30일 챌린지를 마치며]]></title><description><![CDATA[못 푼 문제들
+ 다짐]]></description><link>https://soobing.github.io/daily/april-leetcode-30days-challenge/</link><guid isPermaLink="false">https://soobing.github.io/daily/april-leetcode-30days-challenge/</guid><pubDate>Thu, 30 Apr 2020 23:05:02 GMT</pubDate><content:encoded>&lt;p&gt;못 푼 문제들
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 480px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 282.6666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;못 푼 문제들&quot;
+        title=&quot;못 푼 문제들&quot;
+        src=&quot;/static/f5fd854089eb88c9ab4121d8fd85bc54/e85cb/leetcode-last-problem.png&quot;
+        srcset=&quot;/static/f5fd854089eb88c9ab4121d8fd85bc54/5a46d/leetcode-last-problem.png 300w,
+/static/f5fd854089eb88c9ab4121d8fd85bc54/e85cb/leetcode-last-problem.png 480w&quot;
+        sizes=&quot;(max-width: 480px) 100vw, 480px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;다짐&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8B%A4%EC%A7%90&quot; aria-label=&quot;다짐 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;다짐&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[🍳 LRU Cache]]></title><description><![CDATA[밀렸던거 다풀라니까 마음이 안따라줘서 쉽지가 않네 😋. 
 어제의 두번째 문제는 Least Recently Used (LRU) cache…]]></description><link>https://soobing.github.io/algorithm/21-lru-cache/</link><guid isPermaLink="false">https://soobing.github.io/algorithm/21-lru-cache/</guid><pubDate>Tue, 28 Apr 2020 19:05:10 GMT</pubDate><content:encoded>&lt;p&gt;밀렸던거 다풀라니까 마음이 안따라줘서 쉽지가 않네 😋.
 어제의 두번째 &lt;a href=&quot;https://leetcode.com/problems/lru-cache/&quot;&gt;문제&lt;/a&gt;는 &lt;a href=&quot;https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU&quot;&gt;Least Recently Used (LRU) cache&lt;/a&gt; 문제였다. 어디서 많이 봤다~ 싶었는데 운영체제에서 배웠었다 ㅋㅋㅋ 운체 ㅜㅜ 짱싫어했었다… 지금처럼 공부했으면 참 좋았을텐데!란 갑분 아쉬움이 남는 문제.&lt;/p&gt;
 &lt;p&gt;&lt;span
