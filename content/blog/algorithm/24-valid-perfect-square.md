@@ -1,5 +1,5 @@
 ---
-title: Valid Perfect Square
+title: 🌂Valid Perfect Square
 date: 2020-05-09 16:05:77
 category: algorithm
 thumbnail: './images/valid-perfect-squre.jpg'
