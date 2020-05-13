@@ -6,7 +6,6 @@ thumbnail: './images/ts.jpg'
 draft: false
 ---
 
-
 > [공식문서](https://www.typescriptlang.org/docs/handbook/basic-types.html) 기준으로 특이사항 위주로 정리를 해봅니다.
 
 쫘잔✨1탄, 변수부터 알아봅시다.
