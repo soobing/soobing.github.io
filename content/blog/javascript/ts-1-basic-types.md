@@ -17,12 +17,12 @@ draft: false
 
 ## Array
   Array 안에 담길 element 타입을 지정해 줄 수 있다.
-  ```
+  ```ts
   // 방법 1.
   let list: number[] = [1, 2, 3];
   ```
 
-   ```
+   ```ts
   // 방법 2. generic array type
   let list: Array<number> = [1, 2, 3];
   ```
@@ -31,7 +31,7 @@ draft: false
 
   ## Tuple
   Array에 서로 다른 타입들을 담고 싶을때 (총 길이 length는 알아야 함.)
-  ```
+  ```ts
   // 선언
   let x: [string, number];
   // 초기화 (정상)
@@ -41,13 +41,13 @@ draft: false
   ```
 
   ## Enum
-  ```
+  ```ts
   enum Color {Red, Green, Blue}; // 0, 1, 2
   enum Color {Red = 1, Green, Blue}; // 1, 2, 3
   enum Color {Red = 1, Green = 2, Blue = 4} // 1, 2, 4
   ```
 
-  ```
+  ```ts
   // 사용은 이렇게
   let c: Color = Color.Green;
   ```
@@ -58,7 +58,7 @@ draft: false
   * any의 반대
   * `null`(strict 아닐때 만)이나 `undefined`만 assign 가능.
 
-  ```
+  ```ts
   let unusable: void = undefined;
   unusable = null; // `--strictNullChecks`가 아닐때만!
   ```
@@ -72,13 +72,13 @@ draft: false
   > * `요것의 타입이 뭔지 알고있다~` 라고 적어주는 느낌
   > * 사용 방법은 두 가지
   #### 1) “angle-bracket” syntax
-  ```
+  ```ts
   let someValue: any = "this is a string";
 
   let strLength: number = (<string>someValue).length;
   ```
   #### 2) "as" syntax
-  ```
+  ```ts
   let someValue: any = "this is a string";
 
   let strLength: number = (someValue as string).length;
