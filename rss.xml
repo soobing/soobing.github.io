@@ -1,4 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 13 May 2020 17:23:39 GMT</lastBuildDate><item><title><![CDATA[🧞‍♂️TS 2 - Interface]]></title><description><![CDATA[공식문서 기준으로 특이사항 위주로 정리를 해봅니다. 쫘잔✨2탄, interface를 알아봅시다. Interface basic types…]]></description><link>https://soobing.github.io/javascript/ts-2-interface/</link><guid isPermaLink="false">https://soobing.github.io/javascript/ts-2-interface/</guid><pubDate>Wed, 13 May 2020 21:06:23 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 May 2020 12:47:44 GMT</lastBuildDate><item><title><![CDATA[git 사용법 1탄]]></title><description><![CDATA[cherry-pick]]></description><link>https://soobing.github.io/dev/how-to-use-git/</link><guid isPermaLink="false">https://soobing.github.io/dev/how-to-use-git/</guid><pubDate>Tue, 19 May 2020 23:06:21 GMT</pubDate><content:encoded>&lt;p&gt;cherry-pick&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🎨 test 코드 입문기]]></title><description><![CDATA[글 작성 계기 테스트 코드 그게 머야??? 😫
+왜하는 고야??? 이렇게 생각하는 개발자 있을꺼다 👉🏻댓츠미 테스트 코드 작성에 대해서…]]></description><link>https://soobing.github.io/dev/test-basic/</link><guid isPermaLink="false">https://soobing.github.io/dev/test-basic/</guid><pubDate>Tue, 19 May 2020 23:06:17 GMT</pubDate><content:encoded>&lt;h1 id=&quot;글-작성-계기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%80-%EC%9E%91%EC%84%B1-%EA%B3%84%EA%B8%B0&quot; aria-label=&quot;글 작성 계기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;글 작성 계기&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;테스트 코드 그게 머야??? 😫
+왜하는 고야???&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;이렇게 생각하는 개발자 있을꺼다 👉🏻&lt;del&gt;댓츠미&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;테스트 코드 작성에 대해서 1도 모르는 사람이 작성하는 &lt;code class=&quot;language-text&quot;&gt;테스트 코드 입문기&lt;/code&gt;라고 생각하고 읽어주시면 감사하겠습니다. 👩🏻‍💻(꾸벅)&lt;/p&gt;
+&lt;h1 id=&quot;테스트-코드-왜-작성해야하는가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%99%9C-%EC%9E%91%EC%84%B1%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94%EA%B0%80&quot; aria-label=&quot;테스트 코드 왜 작성해야하는가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트 코드 왜 작성해야하는가?&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Testing is about making sure that the code in your application does what you expect it to do, and keeps doing what you expect it to do when you make changes so you have a working product when you’re done.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;테스트 코드를 작성하는 이유는 &lt;b&gt;개발자가 의도한 대로 코드가 작동하도록 보장하기 위해서&lt;/b&gt; 이다. 처음 코드를 작성했을때 뿐만 아니라 &lt;b&gt;예전에 작성한 코드와 관련된 무언가를 변경했을때도 계속해서 개발자가 의도한대로 작동하는지 보증하기 위해서 작성&lt;/b&gt;한다고 생각하면 된다.
+즉, 장기적으로 유지 및 관리를 위해서이다.&lt;/p&gt;
+&lt;p&gt;잠깐😼
+나는 왜 그동안 테스트 코드를 작성할 일이 없었을까? ㅋㅋㅋㅋㅋ 쩝..
+뭐 일단 왜해야되는지 몰랐고 진짜로 테스트 코드를 통해 지속적으로 유지 및 관리가 잘되는건지(?) 잘 몰랐었기 때문에 팀원들에게 장점을 어필할 수가 없었다.
+근데 지금 생각해보면 진즉에 했었어야 했다.
+왜냐면 어떤 루틴을 반복했었냐면&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A부분 기능 추가 → QA → 확인 완료!&lt;/li&gt;
+&lt;li&gt;B부분 기능 추가 (A 부분도 관련있어서 A도 조금 수정) → QA (해당 기능 위주로 테스트하니까 B만 집중적으로 테스트) → 확인 완료!&lt;/li&gt;
+&lt;li&gt;잉 갑자기?? A 왜안되져?? → 버그발견 → 수정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이런 상황이 한두개가 아니라 나중에 갈수록 어마어마하게 많아졌었다… 이런 상황을 위해서 테스트 코드를 짜는 것이었다 ㅋㅋㅋ&lt;/p&gt;
+&lt;h1 id=&quot;용어-정리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9A%A9%EC%96%B4-%EC%A0%95%EB%A6%AC&quot; aria-label=&quot;용어 정리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;용어 정리&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;unit, e2e… TDD, BDD… &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;테스트-종류&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A2%85%EB%A5%98&quot; aria-label=&quot;테스트 종류 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트 종류&lt;/h2&gt;
+&lt;p&gt;unit, integration, e2e 모두 역할이 다르기 때문에 다음과 같이 &lt;a href=&quot;https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html&quot;&gt;testing-pyramid를 잘 형성&lt;/a&gt;하는 것이 중요하다고 한다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 381px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 86.33333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsSAAALEgHS3X78AAADLklEQVQ4y41TW0jTYRT/T3sMfOpBqsfegh56KMSXIugpCHzoQZKILhREhRaWFJFiIeQV0lSWWuqaytqamGs6nS4vc3Obm7M53dy8Tde85CX3377TOZ9zGkn1weF8l9/5fb/vnPMJwj6jrLaFe1mbIZF8jUKbVvuxI53mLR1GvnfjXrbwf0MiEYY8S0JOfkl8S2+fdvU4Zrw4PUDrR3mFwiqAkJZ+9d98zwsruDd5lnmw2jCS6QoBuFcA1L0jXJZ1ep2rfPCs4O9kt7OecF8pa5WQzy2qTNaaJ0IG5xx02XzQPeJbxr0jdFbd9JljTqWe2Z8s+fBRoVgq5/MAAFfQOzpbpbNOQaVMLRZWNYrGySUk9UvpbDGGkbf37U+YcfMu9+9UugTyJVJ5CuYNvo4FmM7qZaiQoVJGe6Vvm1II09Daw0mznr78k5AKcfFShgCYbBpfTG69bXYT+lwL4oA7CAPjQT4fwT2tyd1DGMJeu/NQmAnD72SP84u511m8/MYP7X2Xv30HcC5ERPvcT4YkzD6/xRzzYUAT6Uyu6b9C2E6Lh8e8KJPuEtJNBeV1PMmpZ88fxKd5hjzLoNCZopqhccCLWKvBztQGO2iMrqjJuwKI8eOLkigGcy+Jk5XXK7nHm/lNKr01bxKbDHMmvmlUQ3m9ipXWNENFwyfANZM2awArLxIG24j3DbZUYiynQqwQXbwQRdWyY/2uxU3Kk8W/zuxzWwx7DkiRbWYTbYOR4R55ymv49fuPxym2sc2QEFe5AcAXCp1ZNuz7AfgzRDTyjDxVNraO7xHGjFhlt0UVS5vkxMnTgqDUW7jcOmXnOSIzT61SjljMuDr8Ndu2vd45Y4iNkHJ86gXiaOt3JsZVYgMPUvUIRMRojLzFv8afu52GNdh7RtixIINum8+GFLtkzdrB62PBKAFFBBGQq8M8UoUBmx2Lo8T+m6A8cqWEISzFkBBM131OdiszJwlbYHp0IUKHUVTByIZRDRWEmhpbBW0csGBgRcJh3xrEcDzGEQjTjwpm5746hIUwFTsXI2CcCOFfDZFnaLBj+IN2ngnUm4N7zjh2O0Z0BERQdJkbfgF30d0dPVV5ugAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;testing-pyramid&quot;
+        title=&quot;testing-pyramid&quot;
+        src=&quot;/static/b6d7a83ed09e1a8046529bebfe02836e/2add2/testing-pyramid.png&quot;
+        srcset=&quot;/static/b6d7a83ed09e1a8046529bebfe02836e/5a46d/testing-pyramid.png 300w,
+/static/b6d7a83ed09e1a8046529bebfe02836e/2add2/testing-pyramid.png 381w&quot;
+        sizes=&quot;(max-width: 381px) 100vw, 381px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Google은 70% 단위 테스트, 20% 통합 테스트, 10% e2e 테스트를 제안&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;테스트 종류에 대한 내용은 &lt;a href=&quot;https://medium.com/@lawrey/unit-tests-ui-tests-integration-tests-end-to-end-tests-c0d98e0218a6&quot;&gt;해당 글&lt;/a&gt;에서 굉장히 잘 설명해 주고 있는데, 개인적인 견해로는 E2E 테스트에 Integration, UI 테스트를 포함 시키는 경우가 많은 것 같다.&lt;/p&gt;
+&lt;h3 id=&quot;단위-테스트unit-tests&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8B%A8%EC%9C%84-%ED%85%8C%EC%8A%A4%ED%8A%B8unit-tests&quot; aria-label=&quot;단위 테스트unit tests permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;단위 테스트(Unit tests)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;분리 된 코드의 기능을 검증 (주로 클래스나 함수 단위로 실행 됨)&lt;/li&gt;
+&lt;li&gt;네트워크 액세스, 데이터베이스 액세스와 같은 종속성과 분리되어야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;통합-테스트integration-tests&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%86%B5%ED%95%A9-%ED%85%8C%EC%8A%A4%ED%8A%B8integration-tests&quot; aria-label=&quot;통합 테스트integration tests permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;통합 테스트(Integration tests)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;네트워크 액세스, 데이터베이스 액세스를 통해 특정 기능의 작동에 대한 흐름이나 구성 요소의 상호작용을 확인하는 테스트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;ui-테스트integration-tests&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ui-%ED%85%8C%EC%8A%A4%ED%8A%B8integration-tests&quot; aria-label=&quot;ui 테스트integration tests permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;UI 테스트(Integration tests)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;통합 테스트를 UI 상에서 진행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;e2e-테스트end-to-end-tests&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#e2e-%ED%85%8C%EC%8A%A4%ED%8A%B8end-to-end-tests&quot; aria-label=&quot;e2e 테스트end to end tests permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;E2E 테스트(End-to-End tests)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;UI 테스트를 하는데 &lt;b&gt;실서버&lt;/b&gt;에서 테스트 하는 것&lt;/li&gt;
+&lt;li&gt;그래서 end중 하나는 사용자를 뜻하고 다른 end는 서버를 의미하는 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;테스트-개발-방법론&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%B0%9C-%EB%B0%A9%EB%B2%95%EB%A1%A0&quot; aria-label=&quot;테스트 개발 방법론 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트 개발 방법론&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TDD, BDD…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;하… 이것은 좀 이해가 안된다… 어렵다 ㅋㅋㅋ 차이를 이해하는게 &lt;a href=&quot;https://softwareengineering.stackexchange.com/questions/135218/what-is-the-difference-between-writing-test-cases-for-bdd-and-tdd#135246&quot;&gt;여기서&lt;/a&gt; 이 차이에 대해서 이야기하고있는데 BDD는 제대로된 TDD다 어쩌고저쩌고… 더어렵게 만든다 ㅋㅋㅋ&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;그냥 내가 이곳 저곳에서 찾아봤을때 가장 &lt;a href=&quot;https://m.blog.naver.com/PostView.nhn?blogId=genycho&amp;#x26;logNo=221546874461&amp;#x26;proxyReferer=https:%2F%2Fwww.google.com%2F&quot;&gt;명쾌하게 정리되어 있는 포스팅&lt;/a&gt;을 인용하자면 아래와 같다.&lt;/p&gt;
+&lt;h3 id=&quot;tdd&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tdd&quot; aria-label=&quot;tdd permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TDD&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Test-Driven Development&lt;/li&gt;
+&lt;li&gt;코드 구조나 리펙토링(low-level) 관점에서 접근&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;bdd&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#bdd&quot; aria-label=&quot;bdd permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BDD&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Behaviour-Driven Development&lt;/li&gt;
+&lt;li&gt;시나리오, 비즈니스 레벨과 같은 통합적인 관점(high-level)에서 접근&lt;/li&gt;
+&lt;li&gt;BDD가 TDD에 기반을 두고 있다고 함..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;차이를 아시는분은 알려주시면 감사하겠습니다.🦁&lt;/p&gt;
+&lt;h1 id=&quot;테스트-관련-라이브러리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B4%80%EB%A0%A8-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC&quot; aria-label=&quot;테스트 관련 라이브러리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트 관련 라이브러리&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;jest, mocha&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;mocha에 기여까지 했것만 차이점을 잘 설명하지 못하겠다. 내가 열심히 안써봐서 그런거같다. 이것도 내가 좀 더 써보고 추가하도록 하겠다 ㅋㅋ&lt;/p&gt;
+&lt;h3 id=&quot;mocha&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mocha&quot; aria-label=&quot;mocha permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;mocha&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;가벼움 → 내가 좋아하는 기능을 제공하는 라이브러리들을 요렇게 저렇게 레고처럼 조립해서 쓸 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;jest&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jest&quot; aria-label=&quot;jest permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jest&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;무거움 → 엥간한건 다있고 다 해준다는 의미가 될 수도 있음.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;테스트-관련-툴&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B4%80%EB%A0%A8-%ED%88%B4&quot; aria-label=&quot;테스트 관련 툴 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트 관련 툴&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;cypress.. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;cypress&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#cypress&quot; aria-label=&quot;cypress permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cypress&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript e2e 테스트를 위한 Framework&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;테스트-코드-작성-방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;테스트 코드 작성 방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트 코드 작성 방법&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;describe, it…
+여기서 TDD, BDD 방식에 따라서 용어가 좀 다르게 사용하는거 같다.
+이것은 내가 좀 더 써보고 추가하도록 하겠다.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[🧞‍♂️TS 2 - Interface]]></title><description><![CDATA[공식문서 기준으로 특이사항 위주로 정리를 해봅니다. 쫘잔✨2탄, interface를 알아봅시다. Interface basic types…]]></description><link>https://soobing.github.io/javascript/ts-2-interface/</link><guid isPermaLink="false">https://soobing.github.io/javascript/ts-2-interface/</guid><pubDate>Wed, 13 May 2020 21:06:23 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.typescriptlang.org/docs/handbook/interfaces.html&quot;&gt;공식문서&lt;/a&gt; 기준으로 특이사항 위주로 정리를 해봅니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;쫘잔✨2탄, interface를 알아봅시다.&lt;/p&gt;
