@@ -1,5 +1,5 @@
 body.light {
-  background-color: $light-background-color;
+  background-image: $light-background-image;
   text-shadow: $light-text-shadow;
 
   // home
@@ -48,7 +48,7 @@ body.light {
       color: $dark-gray;
     }
     p {
-      color: $middle-gray;
+      color: $dark-gray;
     }
     &:hover {
       // text-shadow: $light-hover-text-shadow;
