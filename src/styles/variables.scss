@@ -33,8 +33,8 @@ $navigator-background-color: #ecececf7;
 $blockquote-text-color: #999;
 
 // code
-$inline-dimmed-color: #ece5f1;
-$inline-text-color: #4b2043;
+$inline-dimmed-color: #ffffff2e;
+$inline-text-color: #ff8300;
 
 // category
 $light-category-border-color: #9e9e9e00;
@@ -48,6 +48,7 @@ $light-category-item-color: #fff;
  * @dark theme
  */
 $dark-background-color: #161616;
+$dark-background-image: linear-gradient(20deg, #021c23 0%, #000000 19%, #394f52 42%, #000000 79%, #29271a 100%);
 $dark-link-color: #bb72ec;
 
 $dark-lightest-font-color: #fff;
