@@ -3,7 +3,7 @@ title: 🌩Last Stone Weight
 date: 2020-04-13 23:04:86
 category: algorithm
 thumbnail: './images/last-stone-weight.jpg'
-draft: false
+draft: true
 ---
 
 

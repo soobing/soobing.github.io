@@ -3,7 +3,7 @@ title: 🌳Construct Binary Search Tree from Preorder Traversal
 date: 2020-04-22 02:04:73
 category: algorithm
 thumbnail: './images/construct-bst-from-preorder-traversal.jpg'
-draft: false
+draft: true
 ---
 
 

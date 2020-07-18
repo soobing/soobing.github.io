@@ -3,7 +3,7 @@ title: 💊Middle of the Linked List
 date: 2020-04-08 19:04:10
 category: algorithm
 thumbnail: './images/middle-of-the-linked-list.jpg'
-draft: false
+draft: true
 ---
 
 

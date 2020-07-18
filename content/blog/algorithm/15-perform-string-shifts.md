@@ -3,7 +3,7 @@ title: 👣 Perform String Shifts
 date: 2020-04-14 23:04:73
 category: algorithm
 thumbnail: './images/perform-string-shifts.jpg'
-draft: false
+draft: true
 ---
 
 벌써 Day14!! 뜨악 =_= 오늘 [문제](https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3299/)는 easy 문제일것 같은데, 검색해도 나오지않고 day30에만 존재하는 문제이다.

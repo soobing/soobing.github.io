@@ -3,7 +3,7 @@ title: 👛majority element
 date: 2020-05-07 14:05:56
 category: algorithm
 thumbnail: './images/majority-element.jpg'
-draft: false
+draft: true
 ---
 5월은 날씨따라 한없이 풀어지는구나~~
 

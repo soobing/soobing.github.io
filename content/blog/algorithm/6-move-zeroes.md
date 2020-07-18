@@ -3,7 +3,7 @@ title: 🙆‍♀️Move Zeroes
 date: 2020-04-05 22:04:68
 category: algorithm
 thumbnail: './images/move-zero.jpg'
-draft: false
+draft: true
 ---
 
 

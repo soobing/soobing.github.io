@@ -3,7 +3,7 @@ title: 🥂Subarray Sum Equals K
 date: 2020-04-22 23:04:18
 category: algorithm
 thumbnail: './images/subarray-sum-equals-k.jpg'
-draft: false
+draft: true
 ---
 
 오늘의 [문제](https://leetcode.com/problems/subarray-sum-equals-k/) 또한 너무 하기 싫었지만 스스로 해결했다. 난의도는 medium 이었다 :) 실력이 늘긴 늘었나봄

@@ -3,7 +3,7 @@ title: 🏁Reverse String
 date: 2020-04-02 23:04:39
 category: algorithm
 thumbnail: './images/reverse-string.jpg'
-draft: false
+draft: true
 ---
 
 의지 활활🔥 Day1의 두번째 문제를 폴어보자! [Reverse String](https://leetcode.com/explore/learn/card/recursion-i/250/principle-of-recursion/1440/) 이다.

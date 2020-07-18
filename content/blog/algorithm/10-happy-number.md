@@ -3,7 +3,7 @@ title: 👅 Happy Number
 date: 2020-04-08 00:04:49
 category: algorithm
 thumbnail: './images/happy-number.jpg'
-draft: false
+draft: true
 ---
 
 

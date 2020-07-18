@@ -3,7 +3,7 @@ title: 🌂Valid Perfect Square
 date: 2020-05-09 16:05:77
 category: algorithm
 thumbnail: './images/valid-perfect-squre.jpg'
-draft: false
+draft: true
 ---
 
 내가 가끔가다가 푸는 문제들이 너무 쉬워서 포스팅하기가 민망하다;; ㅋㅋ

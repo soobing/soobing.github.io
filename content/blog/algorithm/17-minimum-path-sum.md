@@ -3,7 +3,7 @@ title: 😻 Minimum Path Sum
 date: 2020-04-21 02:04:69
 category: algorithm
 thumbnail: './images/minimum-path-sum.jpg'
-draft: false
+draft: true
 ---
 
 요즘 좀 풀려서 알고리즘을 열심히 안했다 👿 한 3일치는 밀린듯! 근데 밀린걸 다풀려고하니까 마음이 무거워서 계속 안하게 되는것 같다.
