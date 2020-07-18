@@ -1,41 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://soobing.github.io/dev/git-advanced/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/javascript/babel-polyfills/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/dev/test-basic/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/javascript/ts-2-interface/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/javascript/ts-1-basic-types/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/daily/2020-half-review/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/24-valid-perfect-square/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/23-majority-element/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/22-number-complement/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/vue/vue-devtools-initial-setting/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/21-lru-cache/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/20-bitwise-and-of-numbers-range/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/react/gatsby-hot-update.json-404/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/19-subarray-sum-equals-k/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/18-construct-binary-search-tree-from-preorder-traversal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/17-minimum-path-sum/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/16-product-of-array-except-self/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/15-perform-string-shifts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/14-last-stone-weight/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/javascript/xss-and-content-security-policy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/javascript/failed-to-load-resource-404/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/13-diameter-of-binary-tree/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/12-backspace-string-compare/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/11-middle-of-the-linked-list/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/10-happy-number/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/react/gatsby-seo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/9-counting-elements/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/8-group-anagrams/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/7-best-time-to-buy-and-sell-stock-2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/6-move-zeroes/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/5-maximum-subarray/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/4-binarytree-inorder-traversal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/3-symmetric-tree/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/2-reverse-string/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/1-single-number/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soobing.github.io/algorithm/leetcode/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soobing.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
