@@ -1,4 +1,293 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 18 Jul 2020 06:23:50 GMT</lastBuildDate><item><title><![CDATA[🥊조큼 어려운 git 기능들]]></title><description><![CDATA[부끄럽지만 여태껏 브랜치를 따고, git add, push, pull, merge, commit 하는 정도로만 git을 사용했었다. 현재 회사에서는 형상관리 룰을 따로 정해서 git을 사용하지 않기 때문에 몰랐던 git…]]></description><link>https://soobing.github.io/dev/git-advanced/</link><guid isPermaLink="false">https://soobing.github.io/dev/git-advanced/</guid><pubDate>Sun, 21 Jun 2020 23:06:40 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Jul 2020 14:29:29 GMT</lastBuildDate><item><title><![CDATA[🛠cypress로 e2e 테스트 작성해보기]]></title><description><![CDATA[cypress를 이용해서 e2e 테스트를 작성하는 법을 정리해보려고 한다.
+디테일한 설정보다는 테스트를 작성하기 위한 큰틀과 작성 방법 위주로 설명하려고 한다. cypress가 뭔가요? cypress란 오픈소스 프로젝트로 e2e…]]></description><link>https://soobing.github.io/dev/cypress-with-react/</link><guid isPermaLink="false">https://soobing.github.io/dev/cypress-with-react/</guid><pubDate>Sat, 18 Jul 2020 15:07:42 GMT</pubDate><content:encoded>&lt;p&gt;cypress를 이용해서 e2e 테스트를 작성하는 법을 정리해보려고 한다.
+디테일한 설정보다는 테스트를 작성하기 위한 큰틀과 작성 방법 위주로 설명하려고 한다.&lt;/p&gt;
+&lt;h2 id=&quot;cypress가-뭔가요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#cypress%EA%B0%80-%EB%AD%94%EA%B0%80%EC%9A%94&quot; aria-label=&quot;cypress가 뭔가요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cypress가 뭔가요?&lt;/h2&gt;
+&lt;p&gt;cypress란 오픈소스 프로젝트로 e2e 테스트를 위한 도구이다.
+통합 테스트를 하면 사용자의 입장에서 테스트를 진행할 수 있어서 뭔가를 수정했는데 다른곳에서 사이드이펙트가 생긴다거나 할 경우 문제가 없는지 확인하는데 매우 효과적인것 같다.&lt;/p&gt;
+&lt;h2 id=&quot;e2e-테스트-코드를-어떤식으로-짜야할까&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#e2e-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%96%B4%EB%96%A4%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A7%9C%EC%95%BC%ED%95%A0%EA%B9%8C&quot; aria-label=&quot;e2e 테스트 코드를 어떤식으로 짜야할까 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;e2e 테스트 코드를 어떤식으로 짜야할까?&lt;/h2&gt;
+&lt;p&gt;테스트 코드는 화면에 특정 DOM이나 텍스트가 잘 표시되는지를 결과적으로 검사한다.&lt;/p&gt;
+&lt;p&gt;api 요청 후 결과가 온다고 가정을 하고 그 데이터를 잘 뿌려주는지,
+input에 특정 값을 입력하고 그 값으로 뭔가 버튼을 클릭했을때 일어나는 동작에 대해서도 테스트 할 수 있다. &lt;/p&gt;
+&lt;p&gt;정리하면 이정도 테스트 코드를 짜는것 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;화면 표시 테스트&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;UI 조작 테스트&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;input 입력&lt;/li&gt;
+&lt;li&gt;click&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;api stubbing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fixture로 response 값 세팅&lt;/li&gt;
+&lt;li&gt;대기시켜놓기(cy.wait)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;준비&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A4%80%EB%B9%84&quot; aria-label=&quot;준비 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;준비&lt;/h2&gt;
+&lt;p&gt;예시로 Todo List를 구현한 페이지와 오늘의 우주 동영상을 보여주는 페이지의 e2e 테스트 코드를 짜면서 설명을 해보려고 한다. &lt;/p&gt;
+&lt;h3 id=&quot;test-코드를-추가할-어플리케이션&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#test-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%B6%94%EA%B0%80%ED%95%A0-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98&quot; aria-label=&quot;test 코드를 추가할 어플리케이션 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;test 코드를 추가할 어플리케이션&lt;/h3&gt;
+&lt;p&gt;테스트 코드를 넣기 위한 ReactApp을 미리 준비했다.&lt;/p&gt;
+&lt;h2 id=&quot;cypress-환경-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#cypress-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;cypress 환경 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cypress 환경 설정&lt;/h2&gt;
+&lt;p&gt;그리고 cypress 설치한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm i -D cypress&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이건 해도되고 안해도 되는데, &lt;code class=&quot;language-text&quot;&gt;node_modules/.bin/cypress open&lt;/code&gt; 커멘드를 실행하면 예제와 테스트코드를 작성하기 위한 폴더가 쫘악 만들어진다.
+난 빠른 환경설정을 위해 실행 시켜주었다.&lt;/p&gt;
+&lt;p&gt;package.json의 script에 cypress 실행 관련 커멘드를 추가해준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;cypress&amp;quot;: &amp;quot;cypress open&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;npm run cypress 하면 아래와 같이 켜진다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/6e51ee2da3da2b90e247ee96db9a1bdc/npm-run-cypress.gif&quot; alt=&quot;react-app&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;시나리오-작성하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-label=&quot;시나리오 작성하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;시나리오 작성하기&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/bf5af5dbf25cc41df264b78f43a7b80d/react.gif&quot; alt=&quot;react-app&quot;&gt;&lt;/p&gt;
+&lt;p&gt;테스트를 짜기 전 어떤식으로 테스트를 작성할지 시나리오를 작성해야 한다.
+일단 화면테스트, ui 조작테스트, api 모킹 이렇게 나눈건 그냥 항목별로 나눠본거고 페이지 별로 아래의 각각의 시나리오를 넣어서 작성한다고 생각하면 된다.&lt;/p&gt;
+&lt;h3 id=&quot;1-화면-테스트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%ED%99%94%EB%A9%B4-%ED%85%8C%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;1 화면 테스트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 화면 테스트&lt;/h3&gt;
+&lt;p&gt;테스트를 짜기위해 동작들을 좀 정의해보자. 이대로 짜면되니까!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Add Todo 영역이 잘 보이는지&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;todo 페이지에 들어가면 &lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Add Todo 텍스트&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;input&lt;/code&gt;, 그리고 &lt;code class=&quot;language-text&quot;&gt;add 버튼&lt;/code&gt;이 보여야한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Todo List 영역이 잘 보이는지&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;todo 페이지에 들어가면 &lt;/li&gt;
+&lt;li&gt;기본적으로 &lt;code class=&quot;language-text&quot;&gt;일기 쓰기&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;낮잠 자기&lt;/code&gt;항목이 보여야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-ui-조작-테스트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-ui-%EC%A1%B0%EC%9E%91-%ED%85%8C%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;2 ui 조작 테스트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. ui 조작 테스트&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Todo 추가 기능 테스트&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;input에 &lt;code class=&quot;language-text&quot;&gt;빨래하기&lt;/code&gt;를 넣고 &lt;code class=&quot;language-text&quot;&gt;add 버튼&lt;/code&gt;을 클릭하면&lt;/li&gt;
+&lt;li&gt;Todo List에 &lt;code class=&quot;language-text&quot;&gt;빨래하기&lt;/code&gt; 항목이 추가되서 보여야한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Todo 완료 기능 테스트&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;낮잠 자기&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;완료 버튼&lt;/code&gt; 클릭시 낮잠 자기에 줄이 그어지는지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Todo 삭제 기능 테스트&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;일기 쓰기&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;삭제 버튼&lt;/code&gt; 클릭시 TodoList에서 더이상 안보이는지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-api-stubbing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-api-stubbing&quot; aria-label=&quot;3 api stubbing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. api stubbing&lt;/h3&gt;
+&lt;p&gt;nasa 페이지에 들어가면 api를 호출하고 그 결과로 온 동영상 링크를 보여주도록 구현이 되어있다.
+이거는 어떻게 보면 1번 화면테스트에 포함되는 영역이긴 한데, api를 모킹하는 부분에 대해 좀 설명하기위해 따로 뺐다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;화면에 오늘의 우주 영상이 보여지는지 테스트&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nasa 페이지 접속&lt;/li&gt;
+&lt;li&gt;한 1초 후, api 요청이 완료되었다고 가정하고&lt;/li&gt;
+&lt;li&gt;오늘의 우주 비디오가 화면에 보여야 함.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;테스트-코드-짜보기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%A7%9C%EB%B3%B4%EA%B8%B0&quot; aria-label=&quot;테스트 코드 짜보기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트 코드 짜보기&lt;/h2&gt;
+&lt;p&gt;일단 cypress/integration 아레에 todo폴더를 만들고 그아레에 todo.spec.js 파일을 만들어 주었다.
+이제 todo.spec.js 파일에 테스트를 추가하면 된다.&lt;/p&gt;
+&lt;h3 id=&quot;1-화면-테스트-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%ED%99%94%EB%A9%B4-%ED%85%8C%EC%8A%A4%ED%8A%B8-1&quot; aria-label=&quot;1 화면 테스트 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 화면 테스트&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;화면 테스트&lt;/code&gt; 라는 제목은 &lt;code class=&quot;language-text&quot;&gt;context&lt;/code&gt;를 이용하면 된다.
+그리고 테스트에 대한 제목은 &lt;code class=&quot;language-text&quot;&gt;it&lt;/code&gt;을 이용해서 정의해주면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;context(&amp;#39;화면 테스트&amp;#39;, () =&amp;gt; {
+  it(&amp;#39;Add Todo 영역이 잘 보이는지&amp;#39;, () =&amp;gt; {
+    // todo 페이지에 들어가면 
+    // Add Todo 텍스트와 input, 그리고 add 버튼이 보여야한다.
+  })
+  it(&amp;#39;Todo List 영역이 잘 보이는지&amp;#39;, () =&amp;gt; {
+    // todo 페이지에 들어가면 
+    // 기본적으로 `일기 쓰기`, `낮잠 자기 `항목이 보여야 한다.
+  })
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;테스트를 정의했으니 하나하나 테스트를 하기위한 코드를 작성해보자
+어떤 페이지에 들어가려면 방문(visit)을 해야한다. 이 방문하는 코드는 context의 모든 테스트(it)에서 중복적으로 사용하고 있다. &lt;code class=&quot;language-text&quot;&gt;beforeEach&lt;/code&gt;를 이용하여 it 내부의 테스트를 실행하기 전에 항상 실행하는 부분을 공통으로 작성할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;context(&amp;#39;화면 테스트&amp;#39;, () =&amp;gt; {
+  beforeEach(() =&amp;gt; {
+    cy.visit(&amp;#39;http://localhost:8080/&amp;#39;)
+  })
+
+  it(&amp;#39;Add Todo 영역이 잘 보이는지&amp;#39;, () =&amp;gt; {
+    // Add Todo 텍스트와 input, 그리고 add 버튼이 보여야한다.
+  })
+  it(&amp;#39;Todo List 영역이 잘 보이는지&amp;#39;, () =&amp;gt; {
+    // 기본적으로 `일기 쓰기`, `낮잠 자기 `항목이 보여야 한다.
+  })
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제는 DOM을 쿼리해서 실제 존재하는지 확인해보도록 하자. 쿼리하기 위해서는 classname이나 id를 활용 하면 된다.&lt;/p&gt;
+&lt;p&gt;이렇게 Todo 페이지의 코드가 작성되어 있다면 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;Wrapper&amp;gt;
+    &amp;lt;h1 className=&amp;quot;add-todo-title&amp;quot;&amp;gt;Add Todo&amp;lt;/h1&amp;gt;
+    &amp;lt;MakeTodoCard id=&amp;quot;make-todo-card&amp;quot;&amp;gt;
+      &amp;lt;input ref={inputRef}
+        autoFocus
+        onKeyDown={(e) =&amp;gt; {
+          if (e.key === &amp;#39;Enter&amp;#39;) {
+            console.log(&amp;#39;enter&amp;#39;, e.target.value)
+            addItem();
+          }
+        }} /&amp;gt;
+      &amp;lt;button onClick={addItem}&amp;gt;add&amp;lt;/button&amp;gt;
+    &amp;lt;/MakeTodoCard&amp;gt;
+    &amp;lt;List id=&amp;quot;todo-list&amp;quot;&amp;gt;
+      &amp;lt;h1 className=&amp;quot;todo-list-title&amp;quot;&amp;gt;Todo List&amp;lt;/h1&amp;gt;
+      {
+        list.map((todo, index) =&amp;gt; (
+          &amp;lt;TodoItem className=&amp;quot;todo-list-item&amp;quot; key={index} did={todo.did}&amp;gt;
+            &amp;lt;p&amp;gt;{index + 1}. {todo.value}&amp;lt;/p&amp;gt;
+            &amp;lt;span onClick={() =&amp;gt; deleteItem(index)}&amp;gt;❌&amp;lt;/span&amp;gt;
+            &amp;lt;span onClick={() =&amp;gt; checkItem(index)}&amp;gt;✅&amp;lt;/span&amp;gt;
+          &amp;lt;/TodoItem&amp;gt;
+        ))
+      }
+    &amp;lt;/List&amp;gt;
+  &amp;lt;/Wrapper&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;테스트 코드에서 다음과 같이 id, classname을 가지고 쿼리해 올 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;context(&amp;#39;화면 테스트&amp;#39;, () =&amp;gt; {
+  beforeEach(() =&amp;gt; {
+    cy.visit(&amp;#39;http://localhost:8080/&amp;#39;)
+  })
+
+  it(&amp;#39;Add Todo 영역이 잘 보이는지&amp;#39;, () =&amp;gt; {
+    // Add Todo 텍스트와 input, 그리고 add 버튼이 보여야한다.
+    cy.get(&amp;#39;.add-todo-title&amp;#39;).should(&amp;#39;be.visible&amp;#39;);
+    cy.get(&amp;#39;.add-todo-title&amp;#39;).should(&amp;#39;contain.text&amp;#39;, &amp;#39;Add Todo&amp;#39;);
+    cy.get(&amp;#39;#make-todo-card &amp;gt; input&amp;#39;).should(&amp;#39;be.visible&amp;#39;);
+    cy.get(&amp;#39;#make-todo-card &amp;gt; button&amp;#39;).should(&amp;#39;be.visible&amp;#39;);
+  })
+  it(&amp;#39;Todo List 영역이 잘 보이는지&amp;#39;, () =&amp;gt; {
+    // 기본적으로 `일기 쓰기`, `낮잠 자기 `항목이 보여야 한다.
+    cy.get(&amp;#39;.todo-list-item&amp;#39;).should(&amp;#39;contain.text&amp;#39;, &amp;#39;일기 쓰기&amp;#39;);
+    cy.get(&amp;#39;.todo-list-item&amp;#39;).should(&amp;#39;contain.text&amp;#39;, &amp;#39;낮잠 자기&amp;#39;);
+  })
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/c8dbda97c0bb70b03ff0ada3563b5156/test1.gif&quot; alt=&quot;test&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-ui-조작-테스트-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-ui-%EC%A1%B0%EC%9E%91-%ED%85%8C%EC%8A%A4%ED%8A%B8-1&quot; aria-label=&quot;2 ui 조작 테스트 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. ui 조작 테스트&lt;/h3&gt;
+&lt;p&gt; ui 조작 테스트를 추가해보자. context를 추가하고 테스트를 주석으로 표시하면 다음과 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;context(&amp;#39;ui 조작 테스트&amp;#39;, () =&amp;gt; {
+  beforeEach(() =&amp;gt; {
+    cy.visit(&amp;#39;http://localhost:8080/&amp;#39;)
+  })
+
+  it(&amp;#39;Todo 추가 기능 테스트&amp;#39;, () =&amp;gt; {
+    // input에 빨래하기를 넣고 add 버튼을 클릭하면
+    // Todo List에 빨래하기 항목이 추가되서 보여야한다.
+  })
+  it(&amp;#39;Todo 완료 기능 테스트&amp;#39;, () =&amp;gt; {
+    // 낮잠 자기의 완료 버튼 클릭시 낮잠 자기에 줄이 그어지는지
+  })
+  it(&amp;#39;Todo 삭제 기능 테스트&amp;#39;, () =&amp;gt; {
+    // 일기 쓰기의 삭제 버튼 클릭시 TodoList에서 더이상 안보이는지
+  })
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;여기서 selector를 이용하여 DOM을 쿼리하고 class name을 통해 돔쿼리를 했을 경우 돔이 여러개일 수 있는데 &lt;code class=&quot;language-text&quot;&gt;eq()&lt;/code&gt;를 사용해서 몇번째 element 인지 가져올 수 있다. 또한 가지고오 온 돔내부에서 또 selector로 검색이 필요하면 &lt;code class=&quot;language-text&quot;&gt;find&lt;/code&gt;를 사용하면 된다. 어무튼 세부적인 테스트를 모두 작성하면 아래와 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;context(&amp;#39;ui 조작 테스트&amp;#39;, () =&amp;gt; {
+  beforeEach(() =&amp;gt; {
+    cy.visit(&amp;#39;http://localhost:8080/&amp;#39;)
+  })
+
+  it(&amp;#39;Todo 추가 기능 테스트&amp;#39;, () =&amp;gt; {
+    // input에 빨래하기를 넣고 add 버튼을 클릭하면
+    cy.get(&amp;#39;#make-todo-card &amp;gt; input&amp;#39;).type(&amp;#39;빨래 하기&amp;#39;);
+    cy.get(&amp;#39;#make-todo-card &amp;gt; button&amp;#39;).click().then(() =&amp;gt; {
+      // Todo List에 빨래하기 항목이 추가되서 보여야한다.
+      cy.get(&amp;#39;.todo-list-item&amp;#39;).should(&amp;#39;contain.text&amp;#39;, &amp;#39;빨래 하기&amp;#39;);
+    })
+  })
+  it(&amp;#39;Todo 완료 기능 테스트&amp;#39;, () =&amp;gt; {
+    // 낮잠 자기의 완료 버튼 클릭시 
+    cy.get(&amp;#39;.todo-list-item&amp;#39;).eq(1).find(&amp;#39;&amp;gt;span:last-of-type&amp;#39;).click().then(() =&amp;gt; {
+      // 낮잠 자기에 줄이 그어지는지
+      cy.get(&amp;#39;.todo-list-item&amp;#39;).eq(1).find(&amp;#39;&amp;gt;p&amp;#39;).should(&amp;#39;have.css&amp;#39;, &amp;#39;text-decoration&amp;#39;, &amp;#39;line-through solid rgb(0, 0, 0)&amp;#39;);
+    })
+  })
+  it(&amp;#39;Todo 삭제 기능 테스트&amp;#39;, () =&amp;gt; {
+    // 일기 쓰기의 삭제 버튼 클릭시 TodoList에서 더이상 안보이는지
+    cy.get(&amp;#39;.todo-list-item&amp;#39;).eq(0).find(&amp;#39;&amp;gt;span:first-of-type&amp;#39;).click().then(() =&amp;gt; {
+      // 낮잠 자기에 줄이 그어지는지
+      cy.get(&amp;#39;.todo-list-item&amp;#39;).should(&amp;#39;not.contain.text&amp;#39;, &amp;#39;일기 쓰기&amp;#39;);
+    })
+  })
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/9b9040aee307ef9aae6143eca5a66732/test2.gif&quot; alt=&quot;test&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3-api-stubbing-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-api-stubbing-1&quot; aria-label=&quot;3 api stubbing 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. api stubbing&lt;/h3&gt;
+&lt;p&gt;사실 api stubbing 하는 부분을 보여주기 위해서 어거지로 nasa 페이지를 만들었다. ㅋㅋ api를 억지로 요청하는 페이지를 만들었달까..?
+페이지가 다르니 cypress/integration 아레에 nasa폴더를 만들고 그아레에 nasa.spec.js 파일을 만들어 주었다.
+그리고 context를 추가하고 테스트를 주석으로 표시하면 다음과 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;context(&amp;#39;api stubbing&amp;#39;, () =&amp;gt; {
+  beforeEach(() =&amp;gt; {
+    // nasa 페이지 접속
+    cy.visit(&amp;#39;http://localhost:8080/nasa&amp;#39;)
+  })
+
+  it(&amp;#39;화면에 오늘의 우주 영상이 보여지는지 테스트&amp;#39;, () =&amp;gt; {
+    // 한 1초 후, api 요청이 완료되었다고 가정하고
+    // 오늘의 우주 비디오가 화면에 보여야 함.
+  })
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;response로 올 데이터를 fixture에 json 파일로 만들어준다.
+cypress/fixture/space.json 경로에 실제 response를 넣어놨다. 이게 온다고 가정하고 코딩을 할 것이기 떄문이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+  &amp;quot;date&amp;quot;: &amp;quot;2020-07-19&amp;quot;,
+  &amp;quot;explanation&amp;quot;: &amp;quot;No one, presently, sees the Moon rotate like this. That&amp;#39;s because the Earth&amp;#39;s moon is tidally locked to the Earth, showing us only one side.&amp;quot;,
+  &amp;quot;media_type&amp;quot;: &amp;quot;video&amp;quot;,
+  &amp;quot;service_version&amp;quot;: &amp;quot;v1&amp;quot;,
+  &amp;quot;title&amp;quot;: &amp;quot;Rotating Moon from LRO&amp;quot;,
+  &amp;quot;url&amp;quot;: &amp;quot;https://www.youtube.com/embed/sNUNB6CMnE8?rel=0&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 우리가 사용할 api에 대한 내용을 정의한다.
+fixture든, route든 alias를 지정할 수 있는데, &lt;code class=&quot;language-text&quot;&gt;as&lt;/code&gt;를 이용하면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function setTodaySpaceApi() {
+    cy.server()
+    cy.fixture(&amp;#39;space.json&amp;#39;).as(&amp;#39;spaceData&amp;#39;)
+    cy.route({
+      method: &amp;#39;GET&amp;#39;,
+      url: `https://api.nasa.gov/planetary/apod?api_key=API_KEY`,
+      response: &amp;#39;@spaceData&amp;#39;
+    }).as(&amp;#39;getTodaySpace&amp;#39;)
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그래서 마지막으로 완성된 테스트 코드는 아래와 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;context(&amp;#39;api mocking&amp;#39;, () =&amp;gt; {
+  beforeEach(() =&amp;gt; {
+    // nasa 페이지 접속
+    cy.visit(&amp;#39;http://localhost:8080/nasa&amp;#39;)
+  })
+
+  function setTodaySpaceApi() {
+    cy.server()
+    cy.fixture(&amp;#39;space.json&amp;#39;).as(&amp;#39;spaceData&amp;#39;)
+    cy.route({
+      method: &amp;#39;GET&amp;#39;,
+      url: `https://api.nasa.gov/planetary/apod?api_key=fpM0K7ecLamWrtaEoif2ipn4HJXv57CsGMdTCEta`,
+      response: &amp;#39;@spaceData&amp;#39;
+    }).as(&amp;#39;getTodaySpace&amp;#39;)
+  }
+
+  it(&amp;#39;화면에 오늘의 우주 영상이 보여지는지 테스트&amp;#39;, () =&amp;gt; {
+    setTodaySpaceApi()
+    // api 요청이 완료되었다고 가정하고
+    cy.wait(&amp;#39;@getTodaySpace&amp;#39;);
+
+    // 오늘의 우주 비디오가 화면에 보여야 함.
+    cy.get(&amp;#39;#nasa &amp;gt; iframe&amp;#39;).should(&amp;#39;be.visible&amp;#39;);
+  })
+})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;참고한-문서&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0%ED%95%9C-%EB%AC%B8%EC%84%9C&quot; aria-label=&quot;참고한 문서 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고한 문서&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://css-tricks.com/using-cypress-to-write-tests-for-a-react-application/&quot;&gt;https://css-tricks.com/using-cypress-to-write-tests-for-a-react-application/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[🥊조큼 어려운 git 기능들]]></title><description><![CDATA[부끄럽지만 여태껏 브랜치를 따고, git add, push, pull, merge, commit 하는 정도로만 git을 사용했었다. 현재 회사에서는 형상관리 룰을 따로 정해서 git을 사용하지 않기 때문에 몰랐던 git…]]></description><link>https://soobing.github.io/dev/git-advanced/</link><guid isPermaLink="false">https://soobing.github.io/dev/git-advanced/</guid><pubDate>Sun, 21 Jun 2020 23:06:40 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 910px;&quot;
     &gt;
