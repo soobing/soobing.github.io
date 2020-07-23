@@ -66,3 +66,7 @@ DMS(Digital Media System) 연구실   2015.01~2016.02
 - 2015 여대학(원)생 공학연구 사업 WISET
 - 멋쟁이사자처럼 4기   2016.03~2016.12
 - Sejong Vivid Festival 2016 축제 소개 사이트 개발
+
+<style>
+ 
+</style>
