@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import { Detail } from '../components/detail'
 import { rhythm } from '../utils/typography'
 import * as Lang from '../constants'
 
@@ -83,6 +84,7 @@ export default ({ data }) => {
         <li>ENERGY HACKATHON(대상) / ENCORED __ 2016.03</li>
       </ul>
 
+      <Detail show={true} />
       <h1>Education</h1>
       <p><b>세종대학교</b>   환경에너지공간융합학과 / 컴퓨터공학과(복수전공) __ 2013.03 ~ 2017.02</p>
       <ul>

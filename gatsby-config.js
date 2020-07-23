@@ -115,5 +115,11 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-lodash`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
+      },
+    },
   ],
 }
