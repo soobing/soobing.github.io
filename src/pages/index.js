@@ -115,6 +115,13 @@ export const pageQuery = graphql`
             title
             category
             draft
+            thumbnail {
+              childImageSharp {
+                fixed(height: 200) {
+                  src
+                }
+              }
+            }
           }
         }
       }

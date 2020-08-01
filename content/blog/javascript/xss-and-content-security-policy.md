@@ -2,7 +2,7 @@
 title: XSS and Content Security Policy
 date: 2020-04-12 21:04:80
 category: javascript
-thumbnail: './images/error2.jpg'
+thumbnail: './images/error2.png'
 draft: false
 ---
 
