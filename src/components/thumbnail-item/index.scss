@@ -3,23 +3,26 @@
 .thumbnail {
   display: block;
   margin-bottom: 12px;
-  padding: 4px 20px;
+  padding: 0px;
   border-radius: 8px;
   padding-bottom: 12px;
   transition: text-shadow 0.3s, opacity 0.4s;
   opacity: 0;
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.01), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
   & > div {
-    display: flex;
-    flex-direction: column;
-
+    & > h3 {
+      margin: 10px 20px;
+    }
     & > p {
       font-size: 90%;
       line-height: 1.4;
+      margin: 10px 20px;
     }
 
     & > img {
-      margin: 10px auto;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      margin-bottom: 10px;
     }
   }
 }
