@@ -6,13 +6,21 @@
   padding: 4px 20px;
   border-radius: 8px;
   padding-bottom: 12px;
-  box-shadow: none;
   transition: text-shadow 0.3s, opacity 0.4s;
   opacity: 0;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.01), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  & > div {
+    display: flex;
+    flex-direction: column;
 
-  p {
-    font-size: 90%;
-    line-height: 1.4;
+    & > p {
+      font-size: 90%;
+      line-height: 1.4;
+    }
+
+    & > img {
+      margin: 10px auto;
+    }
   }
 }
 
