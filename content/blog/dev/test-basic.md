@@ -2,7 +2,7 @@
 title: 🎨 test 코드 입문기
 date: 2020-05-19 23:05:77
 category: dev
-thumbnail: './images/tdd.png'
+thumbnail: './images/test.png'
 draft: false
 ---
 

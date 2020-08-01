@@ -3,7 +3,7 @@ title: 🧞‍♂️TS 2 - Interface
 date: 2020-05-13 21:05:83
 category: javascript
 thumbnail: './images/ts.jpg'
-draft: false
+draft: true
 ---
 
 

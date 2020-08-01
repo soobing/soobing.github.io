@@ -117,7 +117,7 @@ export const pageQuery = graphql`
             draft
             thumbnail {
               childImageSharp {
-                fixed(height: 200) {
+                fixed(width: 600) {
                   src
                 }
               }

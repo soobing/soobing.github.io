@@ -2,7 +2,7 @@
 title: 🔮Gatsby SEO
 date: 2020-04-08 00:04:31
 category: react
-thumbnail: './images/woorank-final.png'
+thumbnail: './images/gatsby-seo.png'
 draft: false
 ---
 

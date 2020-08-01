@@ -3,7 +3,7 @@ title: 🧞‍♂️TS 1 - Basic Types
 date: 2020-05-13 20:05:96
 category: javascript
 thumbnail: './images/ts.jpg'
-draft: false
+draft: true
 ---
 
 > [공식문서](https://www.typescriptlang.org/docs/handbook/basic-types.html) 기준으로 특이사항 위주로 정리를 해봅니다.

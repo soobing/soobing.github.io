@@ -3,7 +3,7 @@ title: XSS and Content Security Policy
 date: 2020-04-12 21:04:80
 category: javascript
 thumbnail: './images/error2.png'
-draft: false
+draft: true
 ---
 
 # 이 이슈를 알아보게 된 계기

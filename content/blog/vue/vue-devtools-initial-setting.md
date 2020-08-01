@@ -3,7 +3,7 @@ title: 😈vue devtools pannel이 보이지 않는 이슈
 date: 2020-05-03 19:05:92
 category: vue
 thumbnail: './images/vue-devtools-setting-1.png'
-draft: false
+draft: true
 ---
 
 이 [동영상](https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance)을 참고해서 공부중인데

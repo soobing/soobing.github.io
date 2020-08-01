@@ -3,7 +3,7 @@ title: Failed to load resource 404 (Webpack)
 date: 2020-04-12 20:04:68
 category: javascript
 thumbnail: './images/error3.png'
-draft: false
+draft: true
 ---
 
 # 에러

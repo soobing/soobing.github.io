@@ -3,7 +3,7 @@ title: hot-update.json 404 에러 (gatsby)
 date: 2020-04-23 12:04:38
 category: react
 thumbnail: 'images/hot-update-error.jpg'
-draft: false
+draft: true
 ---
 
 하이 나 참~ 🍝
