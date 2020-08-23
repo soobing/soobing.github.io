@@ -3,7 +3,7 @@ title: ⚡️ babel-polyfills의 등장
 date: 2020-06-07 23:06:59
 category: javascript
 thumbnail: './images/babel.png'
-draft: false
+draft: true
 ---
 
 ![babel](./images/babel.png)
