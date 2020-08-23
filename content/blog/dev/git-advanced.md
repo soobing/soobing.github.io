@@ -3,7 +3,7 @@ title: ✨슬기로운 git 생활
 date: 2020-06-21 23:06:40
 category: dev
 thumbnail: './images/git.png'
-draft: false
+draft: true
 ---
 
 ![git](./images/git.png)
