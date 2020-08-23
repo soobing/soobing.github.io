@@ -1,5 +1,5 @@
 ---
-title: 🥊조큼 어려운 git 기능들
+title: ✨슬기로운 git 생활
 date: 2020-06-21 23:06:40
 category: dev
 thumbnail: './images/git.png'
@@ -8,11 +8,9 @@ draft: false
 
 ![git](./images/git.png)
 
-부끄럽지만 여태껏 브랜치를 따고, git add, push, pull, merge, commit 하는 정도로만 git을 사용했었다. 현재 회사에서는 형상관리 룰을 따로 정해서 git을 사용하지 않기 때문에 몰랐던 git의 기능들을 알게 되었다. (진정한 형상 관리 느낌...)
+git에 대해 정리 합니다.
 
 ## 목차
-
-새로 알게된 내용 & 알았더라도 복습 할 만한 내용 리스트이다.
 
 1. Head
 2. checkout
