@@ -3,7 +3,7 @@ title: 🦁2020 상반기 회고
 date: 2020-05-10 22:05:54
 category: daily
 thumbnail: './images/2020-half-1.png'
-draft: false
+draft: true
 ---
 
 
