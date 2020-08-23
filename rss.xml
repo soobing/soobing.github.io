@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Jul 2020 14:38:14 GMT</lastBuildDate><item><title><![CDATA[🛠cypress로 e2e 테스트 작성해보기]]></title><description><![CDATA[cypress를 이용해서 e2e 테스트를 작성하는 법을 정리해보려고 한다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Soobing]]></title><description><![CDATA[천천히 꾸준히 개발하자 | programmer]]></description><link>https://soobing.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Aug 2020 04:46:55 GMT</lastBuildDate><item><title><![CDATA[🛠cypress로 e2e 테스트 작성해보기]]></title><description><![CDATA[cypress를 이용해서 e2e 테스트를 작성하는 법을 정리해보려고 한다.
 디테일한 설정보다는 테스트를 작성하기 위한 큰틀과 작성 방법 위주로 설명하려고 한다. cypress가 뭔가요? cypress란 오픈소스 프로젝트로 e2e…]]></description><link>https://soobing.github.io/dev/cypress-with-react/</link><guid isPermaLink="false">https://soobing.github.io/dev/cypress-with-react/</guid><pubDate>Sat, 18 Jul 2020 15:07:42 GMT</pubDate><content:encoded>&lt;p&gt;cypress를 이용해서 e2e 테스트를 작성하는 법을 정리해보려고 한다.
 디테일한 설정보다는 테스트를 작성하기 위한 큰틀과 작성 방법 위주로 설명하려고 한다.&lt;/p&gt;
 &lt;h2 id=&quot;cypress가-뭔가요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#cypress%EA%B0%80-%EB%AD%94%EA%B0%80%EC%9A%94&quot; aria-label=&quot;cypress가 뭔가요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cypress가 뭔가요?&lt;/h2&gt;
@@ -290,21 +290,20 @@ fixture든, route든 alias를 지정할 수 있는데, &lt;code class=&quot;lang
 &lt;li&gt;&lt;a href=&quot;https://css-tricks.com/using-cypress-to-write-tests-for-a-react-application/&quot;&gt;https://css-tricks.com/using-cypress-to-write-tests-for-a-react-application/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[🥊조큼 어려운 git 기능들]]></title><description><![CDATA[부끄럽지만 여태껏 브랜치를 따고, git add, push, pull, merge, commit 하는 정도로만 git을 사용했었다. 현재 회사에서는 형상관리 룰을 따로 정해서 git을 사용하지 않기 때문에 몰랐던 git…]]></description><link>https://soobing.github.io/dev/git-advanced/</link><guid isPermaLink="false">https://soobing.github.io/dev/git-advanced/</guid><pubDate>Sun, 21 Jun 2020 23:06:40 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 910px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 600px;&quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 41.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABiElEQVQoz22STStEURjHD0MRk8lC8gWUjMy9w6DxkpWkmTumvO2kLEYWJh+AkmIxxUJkj4V3yhcgiymJ5L2slNDc0ORlcfzOdaZm4alfz/88c59//3PvCNsyc8AlqFTYTKDv7bDh/jsbzvwxVCuavSJXZBXnUkgHvaJDnyuFXnK6bRmDMAM/cIJxsZq/alO9VATu5mrh0oZjUA5x2MbckzGbkAONEpMpqJC9AaWvUzqpqmC1GGbpmKVD+g4MMUvSY8zu4RlWMTMTX1G/THf7lcltyjKjEEPfYXj+ZpllOt07Bn30URbP9MxGh5nPobd0OvPqO1onPyKmMryEfTtsxlOWMSn7GuRTyNeknmv1iiWWjuAARnTqB3QbLMJGxtADSdnfoAxXSdUlewJOYnQk68p7LL3AOtSTzNdSIyR6GsbhC1Yy77AEsxtSndJnP53rG1H1m5RSmRXCBQvzsKaNOqCVeSPmBeh2aFF/FVdW0tMfrk93kp11VuXpdOrr7sICLMMms3zxT/0Ca9y1brfl+k0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 71.33333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAPYAAAD2AFuR2M1AAACkElEQVQ4y62SO2/TUBTHXerYSZqH40f8SOzYsZ3EdZy0ebVJ+gBaoQqQKiQeAwImJGBgKTCCkBBSl0oIMfEBQB0YWRn5EnyXP8e3HWihG8NP5557fP7nf+81J0gm/ifcRYVM2WBRrJzkWYriudo/BdPi35wULxUNcFkdCwWKOZ3laV38Q/R874UOF6lZq1lYGzqwnBr2tl0Ydo2JpQMuckoO9TMTBMlgTiqGhe9HXXx82cHBwxCHz9v48i7GV6KgmuDL5lmHJZ3B8ZScYCFTqUEguJIN23fx63gVB49a+HaY4MenHn5+7uP4fZeObyEr07eSxa4nFeJLVfBFjQRlGxnZQUZpIKO6EFSPIWoe3j6L8eFVgjdPY7x+sow7N9s4ehGj6rhYlByIik0G6syEULFOX7nqQ9CaBEU9hKi32HpR9cFJAcUmFuSAaJJzj/Zc8DINV1w2VCAjotpA9hRONNvIWR1kTcKKwFdD1OMpNm/cQ2t8BaOr+9i99QCzvdvoza9h6/pd7N9/jGCwBV7xkDdC5M0WlizCDOmvIKElJ0HB6SFf7yJHqK0x3JVtaBQ9ip21Xbj9LdTiGQ3ZQTLfg94ek5EIRTsmuig5BK251FUqVm4OIfkjSMGE8hXkal0s2T0Wc1aMPMsTOkUM0YhQavQhB0MohBqMiCHk5io9GDkqNFZQISG1PYMSrtGHExYlb8CQaZASjAnaT5vDCfTOFMbyDGY8hxFN2WkUnwTzTh8Fb4hKuA6tM4PWnkKP5tRAa2pUyLmSCvpjJpru6e111JNNupbLaPS32dqIqJ9cckV3gLI/gRRO6e5oajRnWBFNT8XJaZXEVD8VG9OgdbrLDXiDHfijXfjDHSZcTzZgkuhvxKB+2NC4KaQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;git&quot;
         title=&quot;git&quot;
-        src=&quot;/static/042664999475fd8cc3672db6567e2e53/c6bbc/git.png&quot;
-        srcset=&quot;/static/042664999475fd8cc3672db6567e2e53/5a46d/git.png 300w,
-/static/042664999475fd8cc3672db6567e2e53/0a47e/git.png 600w,
-/static/042664999475fd8cc3672db6567e2e53/c6bbc/git.png 910w&quot;
-        sizes=&quot;(max-width: 910px) 100vw, 910px&quot;
+        src=&quot;/static/f8e816d4b547d15fe32e1984214c282e/0a47e/git.png&quot;
+        srcset=&quot;/static/f8e816d4b547d15fe32e1984214c282e/5a46d/git.png 300w,
+/static/f8e816d4b547d15fe32e1984214c282e/0a47e/git.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
@@ -3031,19 +3030,60 @@ to-heading: 6
 &lt;h1 id=&quot;계획&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%84%ED%9A%8D&quot; aria-label=&quot;계획 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;계획&lt;/h1&gt;
 &lt;p&gt;내 계획은 단기 계획이 아니다 🤔
 &lt;del&gt;박새로이처럼 10년짜리 계획이 될 것이다&lt;/del&gt; 는 너무 오래 걸리고 1년 목표로한닷! 가즈아!
-leetcode에 잔디심기를 시작하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[박수빈의 포트폴리오 제 포트폴리오의 목차는 다음과 같습니다.]]></description><link>https://soobing.github.io/resume-en/</link><guid isPermaLink="false">https://soobing.github.io/resume-en/</guid><pubDate>Sun, 27 Jan 2019 16:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;박수빈의-포트폴리오&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%95%EC%88%98%EB%B9%88%EC%9D%98-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4&quot; aria-label=&quot;박수빈의 포트폴리오 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;박수빈의 포트폴리오&lt;/h1&gt;
-&lt;div align=&quot;center&quot;&gt;
-&lt;/div&gt;
-&lt;p&gt;제 포트폴리오의 목차는 다음과 같습니다.&lt;/p&gt;
-&lt;div&gt;1. &lt;a href=&apos;#wiset&apos;&gt;2015 여대학(원)생 공학연구 사업 WISET [2015 / project]&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;2. &lt;a href=&apos;#tag&apos;&gt;Sejong Vivid Festival [2016 / toy]&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;3. &lt;a href=&apos;#tag&apos;&gt;세종대학교 전정대 아이디어톤 [2016 / hackathon]&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;4. &lt;a href=&apos;#tag&apos;&gt;에너지 해커톤 [2016 / hackathon]&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;5. &lt;a href=&apos;#tag&apos;&gt;3D CT Viewer [2017~2018 / work]&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;6. &lt;a href=&apos;#tag&apos;&gt;Hog Detection + Png [2018 / toy]&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;7. &lt;a href=&apos;#tag&apos;&gt;Car Plate Detection [2018 / toy]&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;8. &lt;a href=&apos;#tag&apos;&gt;Music Streaming [2019 / toy]&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;9. &lt;a href=&apos;#tag&apos;&gt;Sweet Spot [2019-2020 / work]&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;10. &lt;a href=&apos;#tag&apos;&gt;Contributon [2020 / hackathon]&lt;/a&gt;&lt;/div&gt;
-&lt;br/&gt;
-&lt;div id=&apos;wiset&apos;&gt;오 여기서도 이게 써지나&lt;/div&gt;</content:encoded></item></channel></rss>
+leetcode에 잔디심기를 시작하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[안녕하세요 박수빈 입니다. 노동 없는 삶은 부패한다.
+그러나 영혼 없는 노동은 삶을 질식시킨다.
+_…]]></description><link>https://soobing.github.io/resume-en/</link><guid isPermaLink="false">https://soobing.github.io/resume-en/</guid><pubDate>Sun, 27 Jan 2019 16:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;안녕하세요-박수빈-입니다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94-%EB%B0%95%EC%88%98%EB%B9%88-%EC%9E%85%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;안녕하세요 박수빈 입니다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;안녕하세요 박수빈 입니다.&lt;/h1&gt;
+&lt;p&gt;노동 없는 삶은 부패한다.
+그러나 영혼 없는 노동은 삶을 질식시킨다.
+__알베르 카뮈&lt;/p&gt;
+&lt;p&gt;안녕하세요 박수빈 입니다. &lt;code class=&quot;language-text&quot;&gt;제가 만든 것이 누군가에게 편리함을 준다&lt;/code&gt;는 것에 큰 동기부여를 얻습니다. &lt;/p&gt;
+&lt;p&gt;함께 일하는 동료들과 자연스럽게 토론하고 모르는 것을 물어 볼 수 있는 분위기를 선호하며, 그런 환경이 제 뇌를 부드럽게 만들어 준다고 생각합니다. &lt;/p&gt;
+&lt;p&gt;트렌디하고 항상 성장하는 사람이 되고 싶습니다.&lt;/p&gt;
+&lt;h1 id=&quot;experience&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#experience&quot; aria-label=&quot;experience permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Experience&lt;/h1&gt;
+&lt;p&gt;에이블리 (2019.05 ~)&lt;/p&gt;
+&lt;p&gt;스위트스팟 (2019.02 ~ 2020.05)&lt;/p&gt;
+&lt;p&gt;오스템임플란트 (2016.11 ~ 2019.01)&lt;/p&gt;
+&lt;h1 id=&quot;project&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#project&quot; aria-label=&quot;project permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project&lt;/h1&gt;
+&lt;p&gt;&lt;b&gt;Sweetspot 공간 중개 플랫폼 개발&lt;/b&gt; __ 2019.02 ~ 2020.05&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;공간 등록, 행사대행(BTL), 편집샵, 플리마켓 신청, 마이페이지 개발&lt;/li&gt;
+&lt;li&gt;사업자 전환 신청, 플리마켓 신청&lt;/li&gt;
+&lt;li&gt;반응형 웹 및 애니메이션을 사용하여 개발&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Sweetspot 공간 중개 플랫폼 백오피스 개발&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Sweetspot 프로젝트 기여&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSR 도입(Next.js)&lt;/li&gt;
+&lt;li&gt;Storybook &amp;#x26; TS 프로젝트에 도입 &lt;/li&gt;
+&lt;li&gt;next-bundle-analyzer를 이용하여 Bundle size 최적화&lt;/li&gt;
+&lt;li&gt;Github Action을 이용하여 PR을 올리면 build 하도록 환경을 구축&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;b&gt;오스템임플란트 3D CT Viewer 개발&lt;/b&gt; __ 2016.11 ~ 2019.01
+&lt;ul&gt;
+&lt;li&gt;Cross-Section 페이지 개발, Management 페이지, Report 페이지, Setting 창 개발&lt;/li&gt;
+&lt;li&gt;2D 소프트웨어 연동 개발&lt;/li&gt;
+&lt;li&gt;Jenkins를 이용하여 빌드 및 패키징(NSIS) 자동화&lt;/li&gt;
+&lt;li&gt;Intel IPP/MKL 2013에서 2017로 변경하여 Google Test 진행&lt;/li&gt;
+&lt;li&gt;directX dpi 사용시 해상도의 크기에 맞게 사이즈 고정하도록 플랫폼 개선&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;opensource&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#opensource&quot; aria-label=&quot;opensource permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OpenSource&lt;/h1&gt;
+&lt;p&gt;Mocha, Gatsby&lt;/p&gt;
+&lt;h1 id=&quot;awards&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#awards&quot; aria-label=&quot;awards permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Awards&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;2019 공개SW 컨트리뷰톤(장려상) / 정보통신산업진흥원 __ 2019.12&lt;/li&gt;
+&lt;li&gt;세종대학교 전자정보공과대학 아이디어톤(총장상) / 세종대학교 __ 2016.05&lt;/li&gt;
+&lt;li&gt;ENERGY HACKATHON(대상) / ENCORED __ 2016.03&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;education&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#education&quot; aria-label=&quot;education permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Education&lt;/h1&gt;
+&lt;p&gt;세종대학교 - 환경에너지공간융합학과 / 컴퓨터공학과(복수전공)   2013.03 ~ 2017.02
+DMS(Digital Media System) 연구실   2015.01~2016.02&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HEVC, H.264 연구&lt;/li&gt;
+&lt;li&gt;2015 여대학(원)생 공학연구 사업 WISET&lt;/li&gt;
+&lt;li&gt;멋쟁이사자처럼 4기   2016.03~2016.12&lt;/li&gt;
+&lt;li&gt;Sejong Vivid Festival 2016 축제 소개 사이트 개발&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+ 
+&lt;/style&gt;</content:encoded></item></channel></rss>
