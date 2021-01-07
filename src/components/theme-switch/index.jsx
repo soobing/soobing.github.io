@@ -26,7 +26,8 @@ function toggleTheme(theme) {
 }
 
 export const ThemeSwitch = () => {
-  const [checked, setChecked] = useState(false)
+  const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [checked, setChecked] = useState(isDarkMode)
 
   const handleChange = checked => {
     const theme = getTheme(checked)
@@ -36,7 +37,7 @@ export const ThemeSwitch = () => {
   }
 
   useEffect(() => {
-    const checked = Dom.hasClassOfBody(THEME.DARK)
+    const checked = isDarkMode;
 
     handleChange(checked)
   }, [])
