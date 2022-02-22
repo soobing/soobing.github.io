@@ -1,6 +1,6 @@
 ---
 emoji: 💌
-title: promise로 confirm ui 구현하기
+title: Promise를 사용하여 confirm창 구현하기
 date: '2022-02-21 00:00:00'
 author: soobing
 tags: promise async await generator
