@@ -24,3 +24,6 @@ IE 11을 대응하면서 겪었던 이슈들
 `element.scrollTop = 0` 으로 조정해야 함
 
 4. IE에서 window.open 시 반환하는 윈도우창에 global 변수 바인딩 안됨
+5. IE에서 a tag target="_blank"로 새창 열 경우 window.opener가 chorme은 null이고, IE는 null이 아님
+
+관련해서 알아볼 것 `rel="noopener noreferrer"`
