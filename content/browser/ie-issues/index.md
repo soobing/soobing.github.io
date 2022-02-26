@@ -27,3 +27,6 @@ IE 11을 대응하면서 겪었던 이슈들
 5. IE에서 a tag target="_blank"로 새창 열 경우 window.opener가 chorme은 null이고, IE는 null이 아님
 
 관련해서 알아볼 것 `rel="noopener noreferrer"`
+
+6. IE10에서 3자리 숫자에 `,` 찍기 위해 사용한 `toLocaleString`이 .00 이런식으로 소숫점이 붙음
+7. IE10에서 `hidden` attribute 지원 안됨. input 같은 경우 숨기고 싶으면 `display: none;` 해야함.
