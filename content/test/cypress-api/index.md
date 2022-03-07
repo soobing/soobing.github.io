@@ -7,7 +7,7 @@ tags: cypress test e2e
 categories: test
 ---
 
-테스트코드를 잘짜는 것도 중요한데, 빠르게 많은 케이스를 다루는게 더 중요한것 같다.
+테스트코드를 잘짜는 것도 중요한데, 빠르게 많은 케이스를 다루는게 더 중요한것 같다. (2022.3.7 장애내고 느낀점;ㅋ)
 # get vs find
 cy.get은 되지만, cy.find는 불가능.
 cy.get.find 이런식으로 체이닝 가능
