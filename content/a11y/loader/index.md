@@ -8,4 +8,4 @@ categories: 접근성
 ---
 
 * 로딩 시작과 끝을 보여주어야 함.
-* aria-live
+* `role="alert" aria-live="polite"`
