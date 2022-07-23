@@ -10,7 +10,7 @@ function HomePage({ data }) {
   const { author, language } = data.site.siteMetadata;
 
   return (
-    <Layout>
+    <Layout showHeader={false}>
       <Seo title="Home" />
       <Bio author={author} language={language} />
     </Layout>
