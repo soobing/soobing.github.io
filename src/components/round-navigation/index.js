@@ -6,15 +6,24 @@ function RoundNavigation() {
   return (
     <nav className="round-navigation__wrapper">
       <ul>
-        <Link className="link link--12" to="/">
-          <span className="link__label">home</span>
-        </Link>
-        <Link className="link link--3" to="/about">
-          <span className="link__label">about</span>
-        </Link>
-        <Link className="link link--6" to="/posts">
-          <span className="link__label">posts</span>
-        </Link>
+        <li className="link link--12">
+          <Link to="/">
+            <hr className="line" />
+            <span className="label">HOME</span>
+          </Link>
+        </li>
+        <li className="link link--3">
+          <Link to="/about">
+            <hr className="line" />
+            <span className="label">ABOUT</span>
+          </Link>
+        </li>
+        <li className="link link--6">
+          <Link to="/posts">
+            <hr className="line" />
+            <span className="label">POSTS</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
