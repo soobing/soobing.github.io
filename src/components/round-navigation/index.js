@@ -5,6 +5,7 @@ import './style.scss';
 function RoundNavigation() {
   return (
     <nav className="round-navigation__wrapper">
+      <span className="current-line" />
       <ul>
         <li className="link link--12">
           <Link to="/">
