@@ -3,6 +3,8 @@ import { graphql } from 'gatsby';
 import Layout from '../layout';
 import Seo from '../components/seo';
 import Bio from '../components/bio';
+import RoundNavigation from '../components/round-navigation';
+
 import Post from '../models/post';
 
 function HomePage({ data }) {
@@ -13,6 +15,7 @@ function HomePage({ data }) {
     <Layout showHeader={false}>
       <Seo title="Home" />
       <Bio author={author} language={language} />
+      <RoundNavigation />
     </Layout>
   );
 }
