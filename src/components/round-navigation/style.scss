@@ -15,7 +15,7 @@
     display: block;
     top: 0;
     left: 50%;
-    transform: translate(-50%, 0%) rotate(270deg);
+    transform: translate(-50%, 0%) rotate(0deg);
   }
   .current-line:after {
     content: "";
@@ -34,12 +34,12 @@
     // border: 1px solid black;
     width: 20px;
     height: 20px;
-    // :hover {
-    //   color: #FF5C00;
-    //   .line {
-    //     border: 1px solid #FF5C00;
-    //   }
-    // }
+    :hover {
+      color: #FF5C00;
+      // .line {
+      //   border: 1px solid #FF5C00;
+      // }
+    }
   }
 
   .line {
