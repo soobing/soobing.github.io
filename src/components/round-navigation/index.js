@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
+import { throttle } from '../../utils/helpers';
 import './style.scss';
 
 function RoundNavigation() {
@@ -15,9 +16,9 @@ function RoundNavigation() {
   useEffect(() => {
     const rect = navRef.current.getBoundingClientRect();
     const centerPos = { x: rect.x + rect.width / 2, y: rect.y + rect.height / 2 };
-    const onMouseMove = (e) => {
+    const onMouseMove = throttle((e) => {
       setAngle(getAngle({ x: e.clientX, y: e.clientY }, centerPos) - 90);
-    };
+    }, 50);
     document.addEventListener('mousemove', onMouseMove);
     return () => {
       document.removeEventListener('mousemove', onMouseMove);

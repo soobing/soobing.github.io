@@ -7,3 +7,15 @@ export const getUniqueCategories = (posts) => {
     return 0;
   });
 };
+
+export const throttle = (callback, delay = 100) => {
+  let timerId = null;
+  return (event) => {
+    if (timerId) return;
+    timerId = setTimeout(() => {
+      callback(event);
+      clearTimeout(timerId);
+      timerId = null;
+    }, delay);
+  };
+};
