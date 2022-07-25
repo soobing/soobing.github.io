@@ -17,7 +17,9 @@ function RoundNavigation() {
     const rect = navRef.current.getBoundingClientRect();
     const centerPos = { x: rect.x + rect.width / 2, y: rect.y + rect.height / 2 };
     const onMouseMove = throttle((e) => {
-      setAngle(getAngle({ x: e.clientX, y: e.clientY }, centerPos) - 90);
+      const calculated = getAngle({ x: e.clientX, y: e.clientY }, centerPos);
+      const angle = calculated > 0 ? calculated - 90 : calculated + 270;
+      setAngle(angle);
     }, 50);
     document.addEventListener('mousemove', onMouseMove);
     return () => {
