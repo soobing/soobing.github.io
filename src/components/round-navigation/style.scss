@@ -17,8 +17,7 @@
     left: 50%;
     transform: translate(-50%, 0%) rotate(0deg);
   }
-  .current-line:after {
-    content: "";
+  .current-line--orange {
     position: absolute;
     left: -1px;
     height: 82.5px;

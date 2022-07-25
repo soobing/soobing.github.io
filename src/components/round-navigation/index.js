@@ -5,6 +5,7 @@ import './style.scss';
 
 function RoundNavigation() {
   const [angle, setAngle] = useState(0);
+
   const navRef = useRef(null);
 
   const getAngle = ({ x: x1, y: y1 }, { x: x2, y: y2 }) => {
@@ -18,7 +19,7 @@ function RoundNavigation() {
     const centerPos = { x: rect.x + rect.width / 2, y: rect.y + rect.height / 2 };
     const onMouseMove = throttle((e) => {
       const calculated = getAngle({ x: e.clientX, y: e.clientY }, centerPos);
-      const angle = calculated > 0 ? calculated - 90 : calculated + 270;
+      const angle = calculated >= 90 && calculated <= 180 ? calculated - 90 : calculated + 270;
       setAngle(angle);
     }, 50);
     document.addEventListener('mousemove', onMouseMove);
@@ -26,12 +27,25 @@ function RoundNavigation() {
       document.removeEventListener('mousemove', onMouseMove);
     };
   }, []);
+
+  const orangeSection = {
+    home: angle >= 345 || angle <= 15,
+    about: angle >= 75 && angle <= 105,
+    posts: angle >= 165 && angle <= 195,
+  };
+  const showOrange = orangeSection.home || orangeSection.about || orangeSection.posts;
+
   return (
     <nav ref={navRef} className="round-navigation__wrapper">
       <span
         className="current-line"
         style={{ transform: `translate(-50%, 0%) rotate(${angle}deg)` }}
-      />
+      >
+        <span
+          className="current-line--orange"
+          style={{ border: `1px solid ${showOrange ? '#FF5C00' : '#585858'}` }}
+        ></span>
+      </span>
       <ul>
         <li className="link link--12">
           <Link to="/">
