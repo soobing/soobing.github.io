@@ -2,19 +2,16 @@ import React, { useCallback, useState } from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
 import Seo from '../components/seo';
-import Bio from '../components/bio';
+import MainTitle from '../components/main-title';
 import RoundNavigation from '../components/round-navigation';
 
 import Post from '../models/post';
 
 function HomePage({ data }) {
-  const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node));
-  const { author, language } = data.site.siteMetadata;
-
   return (
     <Layout showHeader={false}>
       <Seo title="Home" />
-      <Bio author={author} language={language} />
+      <MainTitle />
       <RoundNavigation />
     </Layout>
   );
