@@ -15,9 +15,9 @@ function RoundNavigation() {
   };
 
   useEffect(() => {
-    const rect = navRef.current.getBoundingClientRect();
-    const centerPos = { x: rect.x + rect.width / 2, y: rect.y + rect.height / 2 };
     const onMouseMove = throttle((e) => {
+      const rect = navRef.current.getBoundingClientRect(); // TODO: 성능 최적화 필요
+      const centerPos = { x: rect.x + rect.width / 2, y: rect.y + rect.height / 2 };
       const calculated = getAngle({ x: e.clientX, y: e.clientY }, centerPos);
       const angle = calculated >= 90 && calculated <= 180 ? calculated - 90 : calculated + 270;
       setAngle(angle);
