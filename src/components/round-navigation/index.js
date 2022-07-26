@@ -43,7 +43,10 @@ function RoundNavigation() {
       >
         <span
           className="current-line--orange"
-          style={{ border: `1px solid ${showOrange ? '#FF5C00' : '#585858'}` }}
+          style={{
+            border: `1px solid ${showOrange ? '#FF5C00' : '#585858'}`,
+            backgroundColor: `${showOrange ? '#FF5C00' : '#585858'}`,
+          }}
         ></span>
       </span>
       <ul>
