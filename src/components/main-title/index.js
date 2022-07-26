@@ -3,7 +3,7 @@ import './style.scss';
 
 function MainTitle() {
   return (
-    <section>
+    <hgroup>
       <h1 className="main-title--header">
         LESS,
         <br />
@@ -12,7 +12,7 @@ function MainTitle() {
         BETTER
       </h1>
       <h2 className="main-title--who">by SOOBING</h2>
-    </section>
+    </hgroup>
   );
 }
 

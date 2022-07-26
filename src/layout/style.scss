@@ -40,9 +40,18 @@ a {
 
     .page-content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
         @include content-max-width;
     }
+    
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    @include content-max-width;
 }
