@@ -22,9 +22,9 @@ function RoundNavigation() {
       const angle = calculated >= 90 && calculated <= 180 ? calculated - 90 : calculated + 270;
       setAngle(angle);
     }, 50);
-    document.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mousemove', onMouseMove);
     return () => {
-      document.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('mousemove', onMouseMove);
     };
   }, []);
 
