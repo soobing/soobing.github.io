@@ -1,0 +1,37 @@
+.vertical-navigation__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: auto 0 30px 20px;
+}
+
+.vertical-navigation__wrapper .label {
+  color: black;
+}
+
+.vertical-navigation__line {
+  position: absolute;
+  left: -11px;
+  height: 86px;
+  border: 0.5px solid black;
+}
+
+.vertical-navigation__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+.vertical-navigation__list li {
+  position: relative;
+}
+.vertical-navigation__list li:after {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 7px;
+  height: 0px;
+  border-top: 1.2px solid black;
+}
