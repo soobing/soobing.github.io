@@ -1,18 +1,28 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { graphql } from 'gatsby';
+import { throttle } from '../utils/helpers';
 import Layout from '../layout';
 import Seo from '../components/seo';
 import MainTitle from '../components/main-title';
 import RoundNavigation from '../components/round-navigation';
-
-import Post from '../models/post';
+import VerticalNavigation from '../components/vertical-navigation';
 
 function HomePage({ data }) {
+  const [isSmallView, setIsSmallView] = useState(true);
+  useEffect(() => {
+    const onResize = throttle(() => {
+      setIsSmallView(window.innerWidth < 500);
+    }, 100);
+    window.addEventListener('resize', onResize);
+    return () => {
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
   return (
     <Layout showHeader={false}>
       <Seo title="Home" />
       <MainTitle />
-      <RoundNavigation />
+      {isSmallView ? <VerticalNavigation /> : <RoundNavigation />}
     </Layout>
   );
 }
