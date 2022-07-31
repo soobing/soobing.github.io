@@ -23,20 +23,5 @@
         font-size: 20px;
       }
     }
-
-    .trailing-section {
-      display: flex;
-      align-items: center;
-
-      .link {
-        margin-right: 10px;
-
-        @include md {
-          margin-right: 20px;
-        }
-      }
-
-
-    }
   }
 }
