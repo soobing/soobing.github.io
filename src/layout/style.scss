@@ -27,7 +27,6 @@ a {
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100vh;
@@ -48,10 +47,19 @@ a {
     
 }
 
-.row-content {
+
+
+.main-page {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    @include content-max-width;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        @include content-max-width;
+    }
 }

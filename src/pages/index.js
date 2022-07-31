@@ -21,10 +21,12 @@ function HomePage({ data }) {
   return (
     <Layout showHeader={false}>
       <Seo title="Home" />
-      <section className="row-content">
-        <MainTitle />
-        {isSmallView ? <Navigation type="vertical" /> : <RoundNavigation />}
-      </section>
+      <div className="main-page">
+        <section className="content">
+          <MainTitle />
+          {isSmallView ? <Navigation type="vertical" /> : <RoundNavigation />}
+        </section>
+      </div>
     </Layout>
   );
 }
