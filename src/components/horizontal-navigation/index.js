@@ -3,25 +3,22 @@ import { Link } from 'gatsby';
 import './style.scss';
 
 function HorizontalNavigation() {
+  const routes = [
+    { path: '/', name: 'HOME' },
+    { path: '/about', name: 'ABOUT' },
+    { path: '/posts', name: 'POSTS' },
+  ];
   return (
     <nav className="horizontal-navigation">
       <hr className="line" />
       <ul className="list">
-        <li>
-          <Link to="/" className="active">
-            <span className="label">HOME</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/about">
-            <span className="label">ABOUT</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/posts">
-            <span className="label">POSTS</span>
-          </Link>
-        </li>
+        {routes.map(({ path, name }) => (
+          <li>
+            <Link to={path} className="active">
+              <span className="label">{name}</span>
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
