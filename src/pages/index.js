@@ -5,7 +5,7 @@ import Layout from '../layout';
 import Seo from '../components/seo';
 import MainTitle from '../components/main-title';
 import RoundNavigation from '../components/round-navigation';
-import VerticalNavigation from '../components/vertical-navigation';
+import Navigation from '../components/horizontal-navigation';
 
 function HomePage({ data }) {
   const [isSmallView, setIsSmallView] = useState(true);
@@ -23,7 +23,7 @@ function HomePage({ data }) {
       <Seo title="Home" />
       <section className="row-content">
         <MainTitle />
-        {isSmallView ? <VerticalNavigation /> : <RoundNavigation />}
+        {isSmallView ? <Navigation type="vertical" /> : <RoundNavigation />}
       </section>
     </Layout>
   );

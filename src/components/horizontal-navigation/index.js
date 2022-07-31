@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import './style.scss';
+import './horizontal.scss';
+import './vertical.scss';
 
-function HorizontalNavigation() {
+function Navigation({ type = 'horizontal' }) {
   const routes = [
     { path: '/', name: 'HOME' },
     { path: '/about', name: 'ABOUT' },
@@ -13,7 +14,7 @@ function HorizontalNavigation() {
     return isCurrent ? { className: 'active' } : {};
   };
   return (
-    <nav className="horizontal-navigation">
+    <nav className={`${type}-navigation`}>
       <hr className="line" />
       <ul className="list">
         {routes.map(({ path, name }) => (
@@ -28,4 +29,4 @@ function HorizontalNavigation() {
   );
 }
 
-export default HorizontalNavigation;
+export default Navigation;
