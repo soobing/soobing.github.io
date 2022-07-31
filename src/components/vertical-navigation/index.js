@@ -4,11 +4,11 @@ import './style.scss';
 
 function VerticalNavigation() {
   return (
-    <nav className="vertical-navigation__wrapper">
-      <hr className="vertical-navigation__line"/>
-      <ul className="vertical-navigation__list">
+    <nav className="vertical-navigation">
+      <hr className="line" />
+      <ul className="list">
         <li>
-          <Link to="/">
+          <Link to="/" className="active">
             <span className="label">HOME</span>
           </Link>
         </li>

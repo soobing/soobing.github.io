@@ -16,6 +16,7 @@ function RoundNavigation() {
 
   useEffect(() => {
     const onMouseMove = throttle((e) => {
+      if (!navRef?.current) return;
       const rect = navRef.current.getBoundingClientRect(); // TODO: 성능 최적화 필요
       const centerPos = { x: rect.x + rect.width / 2, y: rect.y + rect.height / 2 };
       const calculated = getAngle({ x: e.clientX, y: e.clientY }, centerPos);
