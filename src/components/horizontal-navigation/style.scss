@@ -1,3 +1,12 @@
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
 .horizontal-navigation {
   position: relative;
   display: flex;
@@ -10,6 +19,10 @@
   .label {
     display: none;
     color: black;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 0.5;
+    animation-fill-mode: forwards;
   }
 
   .label:hover {
@@ -60,6 +73,7 @@
       z-index: 2;
     }
   }
+  
 }
 
 .horizontal-navigation:hover {
