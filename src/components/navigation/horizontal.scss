@@ -18,7 +18,7 @@
 
   .label {
     display: none;
-    color: black;
+    color: var(--content-text-color);
 
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 0.5;
@@ -26,13 +26,13 @@
   }
 
   .label:hover {
-    color: #FF5C00;
+    color: var(--highlight);
   }
 
   .line {
     height: 1px;
     width: 150px;
-    border: 0.5px solid black;
+    border: 0.5px solid var(--content-text-color);
   }
 
   .list {
@@ -58,7 +58,7 @@
       transform: translate(-50%, 0%);
       width: 1px;
       height: 7px;
-      border-left: 1.2px solid black;
+      border-left: 1.2px solid var(--content-text-color);
     }
     
     .active:after {
@@ -66,7 +66,7 @@
       position: absolute;
       width: 8px;
       height: 8px;
-      background-color: #FF5C00;
+      background-color: var(--highlight);
       top: -11px;
       transform: translate(-50%, 0%);
       left: 50%;

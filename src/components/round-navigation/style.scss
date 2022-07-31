@@ -22,8 +22,8 @@
     left: -1px;
     height: 82.5px;
     width: 0.5px;
-    border: 1px solid #FF5C00;
-    background-color: #FF5C00;
+    border: 1px solid var(--highlight);
+    background-color: var(--highlight);
     z-index: 2;
   }
 
@@ -35,10 +35,13 @@
     width: 20px;
     height: 20px;
     :hover {
-      color: #FF5C00;
+      color: var(--highlight);
       // .line {
-      //   border: 1px solid #FF5C00;
+      //   border: 1px solid var(--highlight);
       // }
+    }
+    a {
+      color: var(--content-text-color);
     }
   }
 
