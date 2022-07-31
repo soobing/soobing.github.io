@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  margin: auto 0 30px 20px;
+  width: 70px;
+  margin: 75px 0px 0px 20px;
 }
 
 .vertical-navigation .label {
@@ -10,13 +11,14 @@
 }
 
 .vertical-navigation .line {
-  position: absolute;
-  left: -11px;
   height: 86px;
   border: 0.5px solid black;
+  margin-left: 0;
 }
 
 .vertical-navigation .list {
+  position: absolute;
+  left: 11px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,7 +33,7 @@
   left: -14px;
   top: 50%;
   transform: translate(0%, -50%);
-  width: 7px;
+  width: 8px;
   height: 0px;
   border-top: 1.2px solid black;
 }
