@@ -6,51 +6,66 @@
   align-items: center;
   width: 200px;
   height: 40px;
-  background-color: pink;
+
+  .label {
+    display: none;
+    color: black;
+  }
+
+  .label:hover {
+    color: #FF5C00;
+  }
+
+  .line {
+    height: 1px;
+    width: 150px;
+    border: 0.5px solid black;
+  }
+
+  .list {
+    position: absolute;
+    top: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    li {
+      position: relative;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    li:after {
+      position: absolute;
+      content: '';
+      top: -10px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 1px;
+      height: 7px;
+      border-left: 1.2px solid black;
+    }
+    
+    .active:after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #FF5C00;
+      top: -11px;
+      transform: translate(-50%, 0%);
+      left: 50%;
+      z-index: 2;
+    }
+  }
 }
 
-.horizontal-navigation .label {
-  color: black;
+.horizontal-navigation:hover {
+  .label {
+    display: flex;
+  }
 }
 
-.horizontal-navigation .line {
-  height: 1px;
-  width: 150px;
-  border: 0.5px solid black;
-}
 
-.horizontal-navigation .list {
-  position: absolute;
-  top: 27px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-.horizontal-navigation .list li {
-  position: relative;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-}
-.horizontal-navigation .list li:after {
-  position: absolute;
-  content: '';
-  top: -10px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  width: 1px;
-  height: 7px;
-  border-left: 1.2px solid black;
-}
-.horizontal-navigation .list .active:after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #FF5C00;
-  top: -11px;
-  transform: translate(-50%, 0%);
-  left: 50%;
-  z-index: 2;
-}
