@@ -5,7 +5,7 @@ import Layout from '../layout';
 import Seo from '../components/seo';
 import MainTitle from '../components/main-title';
 import RoundNavigation from '../components/round-navigation';
-import Navigation from '../components/horizontal-navigation';
+import Navigation from '../components/navigation';
 
 function HomePage({ data }) {
   const [isSmallView, setIsSmallView] = useState(true);

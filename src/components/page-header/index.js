@@ -1,8 +1,8 @@
 import { Link, StaticQuery, graphql } from 'gatsby';
 import React from 'react';
-import Post from '../../models/post';
-import PostSearch from '../post-search';
-import Navigation from '../horizontal-navigation';
+// import Post from '../../models/post';
+// import PostSearch from '../post-search';
+import Navigation from '../navigation';
 import './style.scss';
 
 function PageHeader({ siteTitle }) {
