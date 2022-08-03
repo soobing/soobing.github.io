@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['견고한 소프트웨어를 만드는', '적극적인', '재미있게 일하는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      thumbnail: 'cubedust.png', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/soobing`,
