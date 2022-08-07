@@ -11,7 +11,7 @@ module.exports = {
   },
   ga: '0', // Google Analytics Tracking ID
   author: {
-    name: `박수빈`,
+    name: `슈빈`,
     bio: {
       role: `개발자`,
       description: ['견고한 소프트웨어를 만드는', '적극적인', '재미있게 일하는'],

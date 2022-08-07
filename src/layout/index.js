@@ -27,10 +27,10 @@ const Layout = ({ showHeader = true, children }) => {
     <div className="page-wrapper">
       {showHeader && <PageHeader siteTitle={title || `Title`} />}
       <main className="page-content">{children}</main>
-      {/* <PageFooter
+      <PageFooter
         author={author.name || `Author`}
         githubUrl={author.social?.github || `https://www.github.com`}
-      /> */}
+      />
       <ThemeSwitch />
     </div>
   );
