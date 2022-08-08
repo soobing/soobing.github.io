@@ -5,7 +5,9 @@ import './style.scss';
 function PostHeader({ post, viewCount }) {
   return (
     <header className="post-header">
+      <h1 className="title">{post.title}</h1>
       <div className="info">
+        {post.date} |
         <div className="categories">
           {post.categories.map((category) => (
             <Link className="category" key={category} to={`/posts/${category}`}>
@@ -13,15 +15,7 @@ function PostHeader({ post, viewCount }) {
             </Link>
           ))}
         </div>
-      </div>
-
-      <h1 className="title">{post.title}</h1>
-      <div className="info">
-        <div className="author">
-          posted by <strong>{post.author}</strong>,
-        </div>{' '}
-        {post.date}
-        {viewCount && ` · ${viewCount} views`}
+        {/* {viewCount && ` · ${viewCount} views`} */}
       </div>
     </header>
   );

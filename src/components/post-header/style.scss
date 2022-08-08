@@ -9,16 +9,14 @@
   padding-bottom: 10px;
   border-bottom: 1px solid var(--post-card-border-color);
 
-  margin-top: 20px;
+  margin-top: 80px;
   margin-bottom: 40px;
   word-break: keep-all;
 
   .categories {
-    margin-bottom: 5px;
-
+    margin-left: 10px;
     .category {
       margin-right: 4px;
-      font-weight: 600;
       color: var(--primary-text-color);
 
       &:hover {
