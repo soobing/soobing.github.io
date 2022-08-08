@@ -1,5 +1,4 @@
 ---
-emoji: 🔫
 title: cypress 주요 api 모음
 date: '2022-03-03 00:00:00'
 author: soobing

@@ -205,7 +205,6 @@ At the top of the index.md file, you need to provide emoji, title, date, author,
 
 ```
 ---
-emoji: 🧢
 title: Getting Started
 date: '2021-03-22 23:00:00'
 author: 줌코딩

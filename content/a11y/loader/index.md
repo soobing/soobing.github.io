@@ -1,5 +1,4 @@
 ---
-emoji: 🧨
 title: 로딩 indicator 구현시 고려해야할 접근성
 date: '2022-03-31 00:00:00'
 author: soobing

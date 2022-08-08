@@ -5,7 +5,6 @@ import './style.scss';
 function PostHeader({ post, viewCount }) {
   return (
     <header className="post-header">
-      {post.emoji && <div className="emoji">{post.emoji}</div>}
       <div className="info">
         <div className="categories">
           {post.categories.map((category) => (

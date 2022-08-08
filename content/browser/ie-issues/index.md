@@ -1,5 +1,4 @@
 ---
-emoji: 🌋
 title: Internet Explorer 이슈 모음
 date: '2022-02-23 00:00:00'
 author: soobing
