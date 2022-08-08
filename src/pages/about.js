@@ -34,7 +34,6 @@ export const pageQuery = graphql`
           bio {
             role
             description
-            thumbnail
           }
           social {
             github
