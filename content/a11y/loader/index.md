@@ -5,6 +5,7 @@ date: '2022-03-31 00:00:00'
 author: soobing
 tags: a11y loader aria-hidden
 categories: 접근성
+draft: true
 ---
 
 * 로딩 시작과 끝을 보여주어야 함.

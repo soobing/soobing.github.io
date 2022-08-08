@@ -5,6 +5,7 @@ date: '2022-02-23 00:00:00'
 author: soobing
 tags: IE 브라우저
 categories: browser
+draft: true
 ---
 
 IE 11을 대응하면서 겪었던 이슈들

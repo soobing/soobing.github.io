@@ -5,6 +5,7 @@ date: '2022-02-28 00:00:00'
 author: soobing
 tags: IE Safari Chrome 브라우저
 categories: browser
+draft: true
 ---
 
 IE에서 새창으로 열어 window 객체에 바인딩된 메서드 호출시, 호출후에 해당 메서드에서 사용했던 object 접근시,

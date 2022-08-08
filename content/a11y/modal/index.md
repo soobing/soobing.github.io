@@ -5,6 +5,7 @@ date: '2022-03-30 00:00:00'
 author: soobing
 tags: a11y modal aria-hidden
 categories: 접근성
+draft: true
 ---
 
 * 모달 레이어에 `role="dialog"` 속성 선언
