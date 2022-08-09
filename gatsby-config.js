@@ -84,35 +84,40 @@ module.exports = {
               className: 'table-of-contents',
             },
           },
+          // TODO: prismjs 삭제
+          // {
+          //   resolve: `gatsby-remark-prismjs`,
+          //   options: {
+          //     classPrefix: 'language-',
+          //     inlineCodeMarker: null,
+          //     aliases: {},
+          //     showLineNumbers: false,
+          //     noInlineHighlight: false,
+          //     languageExtensions: [
+          //       {
+          //         language: 'superscript',
+          //         extend: 'javascript',
+          //         definition: {
+          //           superscript_types: /(SuperType)/,
+          //         },
+          //         insertBefore: {
+          //           function: {
+          //             superscript_keywords: /(superif|superelse)/,
+          //           },
+          //         },
+          //       },
+          //     ],
+          //     prompt: {
+          //       user: 'root',
+          //       host: 'localhost',
+          //       global: false,
+          //     },
+          //     escapeEntities: {},
+          //   },
+          // },
           {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: 'language-',
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-              languageExtensions: [
-                {
-                  language: 'superscript',
-                  extend: 'javascript',
-                  definition: {
-                    superscript_types: /(SuperType)/,
-                  },
-                  insertBefore: {
-                    function: {
-                      superscript_keywords: /(superif|superelse)/,
-                    },
-                  },
-                },
-              ],
-              prompt: {
-                user: 'root',
-                host: 'localhost',
-                global: false,
-              },
-              escapeEntities: {},
-            },
+            resolve: `gatsby-remark-vscode`,
+            // All options are optional. Defaults shown here.
           },
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-copy-linked-files`,
