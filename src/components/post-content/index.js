@@ -5,6 +5,7 @@ function PostContent({ html }) {
   return (
     <div className="post-content">
       <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="divider" />
     </div>
   );
 }
