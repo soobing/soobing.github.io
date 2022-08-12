@@ -1,6 +1,6 @@
 ---
 title: Promise를 사용하여 window.confirm 구현하기
-date: '2022-02-21 00:00:00'
+date: '2022-08-19 00:00:00'
 author: soobing
 tags: promise
 categories: feature
