@@ -17,6 +17,68 @@ draft: false
 
 보통 웹 어플리케이션에서는 공통된 디자인의 confirm을 사용하므로 화면에 보여지는 역할을 하는 Modal Component가 필요하다. 이 컴포넌트는 Modal의 global state가 변경될 경우 화면에 표시되거나 숨겨져야한다. 모달을 화면에 그리기위한 모든 정보를 들고있는 global state는 show/hide 이외에도 표시할 텍스트, 어떤 타입의 버튼을 표시할 것인지, 버튼의 text는 어떻게 할것인지 등등 모달을 그리기위한 모든 정보를 들고 있다. 모달이 겹쳐져서 뜨는 경우도 있으므로 배열로 그 데이터를 가지고 있는게 좋다.
 
+
+## 코드
+```jsx
+/**
+ * hooks/useConfirm.js
+ */
+import { useContext } from "react";
+import { ConfirmContext } from "../context/ConfirmContextProvider";
+
+const useConfirm = () => {
+  const [confirmList, setConfirmList] = useContext(ConfirmContext);
+  const hideConfirm = (id) => {
+    const index = confirmList.findIndex(({ id: _id }) => id === _id);
+    setConfirmList([
+      ...confirmList.slice(0, index),
+      ...confirmList.slice(index + 1)
+    ]);
+  };
+  const confirm = ({ message, buttons }) => {
+    const promise = new Promise((resolve, reject) => {
+      const id = Symbol();
+      setConfirmList([
+        ...confirmList,
+        {
+          id,
+          show: true,
+          message,
+          buttons: {
+            ok: {
+              text: buttons.ok,
+              click: () => resolve(id)
+            },
+            close: {
+              click: () => hideConfirm(id)
+            },
+            ...(buttons?.cancel && {
+              cancel: {
+                text: buttons.cancel,
+                click: () => reject(id)
+              }
+            })
+          }
+        }
+      ]);
+    });
+    return promise.then(
+      (id) => {
+        hideConfirm(id);
+        return true;
+      },
+      (id) => {
+        hideConfirm(id);
+        return false;
+      }
+    );
+  };
+
+  return { confirm, confirmList };
+};
+
+export default useConfirm;
+```
 ## 참고
 
 - [https://ichi.pro/ko/promisewa-react-hooksleul-sayonghan-window-confirm-daeche-228423841049210](https://ichi.pro/ko/promisewa-react-hooksleul-sayonghan-window-confirm-daeche-228423841049210)
