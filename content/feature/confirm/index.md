@@ -19,6 +19,29 @@ draft: false
 
 
 ## 코드
+### Global State
+Context API를 사용해서 global state 역할을 하도록 Provider를 만들어 보자.
+Redux나 다른 global 상태관리 라이브러리를 사용하고 있다면, 그 라이브러리에 맞게 아래 코드를 응용해주면 된다.
+```jsx
+/**
+ * context/ConfirmContextProvider.js
+ */
+import React, { createContext, useState } from "react";
+
+export const ConfirmContext = createContext();
+const ConfirmContextProvider = ({ children }) => {
+  const [confirmList, setConfirmList] = useState([]);
+
+  return (
+    <ConfirmContext.Provider value={[confirmList, setConfirmList]}>
+      {children}
+    </ConfirmContext.Provider>
+  );
+};
+export default ConfirmContextProvider;
+
+```
+
 ```jsx
 /**
  * hooks/useConfirm.js
