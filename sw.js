@@ -27,29 +27,29 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-263c5d9a8fbfafc74e50.js"
+    "url": "webpack-runtime-1589e737916cd518c57c.js"
   },
   {
-    "url": "styles.df38b158323be6c050c3.css"
+    "url": "styles.8e26053f6ac9a824efb9.css"
   },
   {
     "url": "framework-0e1bf37de02f7cef2174.js"
   },
   {
-    "url": "app-21eb20e5b28b59208b76.js"
+    "url": "app-db6fcd21e1b7f1680df2.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "91354a16e77ee32a90f88174d4a91cac"
+    "revision": "48c962dd6834c2ae86370a5567f6782c"
   },
   {
-    "url": "static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"
+    "url": "static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"
   },
   {
-    "url": "static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"
+    "url": "static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"
   },
   {
-    "url": "static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"
+    "url": "static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"
@@ -151,7 +151,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-21eb20e5b28b59208b76.js`))) {
+  if (!resources || !(await caches.match(`/app-db6fcd21e1b7f1680df2.js`))) {
     return await fetch(event.request)
   }
 
