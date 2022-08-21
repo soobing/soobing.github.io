@@ -12,7 +12,7 @@
     "gatsby": "^3.12.1",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-feed": "^3.13.0",
-    "gatsby-plugin-google-analytics": "^3.13.0",
+    "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-image": "^1.14.0",
     "gatsby-plugin-manifest": "^3.13.0",
     "gatsby-plugin-offline": "^4.13.0",
