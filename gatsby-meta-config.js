@@ -9,7 +9,7 @@ module.exports = {
       repo: `soobing/soobing.github.io`,
     },
   },
-  ga: '0', // Google Analytics Tracking ID
+  ga: 'G-G4M2VQ5W05', // Google Analytics Tracking ID
   author: {
     name: `슈빈`,
     bio: {
