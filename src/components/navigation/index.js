@@ -10,8 +10,8 @@ function Navigation({ type = 'horizontal' }) {
     { path: '/posts', name: 'POSTS' },
   ];
 
-  const isActive = ({ isCurrent }) => {
-    return isCurrent ? { className: 'active' } : {};
+  const isActive = (path) => ({ location: { pathname } }) => {
+    return path === pathname ? { className: 'active' } : {};
   };
   return (
     <nav className={`${type}-navigation`}>
@@ -19,7 +19,7 @@ function Navigation({ type = 'horizontal' }) {
       <ul className="list">
         {routes.map(({ path, name }) => (
           <li key={`nav-${path}`}>
-            <Link to={path} getProps={isActive}>
+            <Link to={path} getProps={isActive(path)}>
               <span className="label">{name}</span>
             </Link>
           </li>
