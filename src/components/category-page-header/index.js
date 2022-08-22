@@ -1,12 +1,39 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+
 import './style.scss';
 
-function CategoryPageHeader({ title, subtitle }) {
+import Post from '../../models/post';
+import PostSearch from '../post-search';
+
+function CategoryPageHeader() {
   return (
-    <div className="category-page-header-wrapper">
-      <div className="category-page-title">{title}</div>
-      <div className="category-page-subtitle">{subtitle}</div>
-    </div>
+    <StaticQuery
+      query={graphql`
+        query SearchIndexQuery {
+          allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+            edges {
+              node {
+                frontmatter {
+                  title
+                  categories
+                }
+                fields {
+                  slug
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={(data) => (
+        <div className="category-page-header-wrapper">
+          <PostSearch
+            posts={data.allMarkdownRemark.edges.map(({ node }) => new Post(node, true))}
+          />
+        </div>
+      )}
+    />
   );
 }
 
