@@ -3,14 +3,9 @@
 
 
 .search-input-wrapper {
-    display: none;
     align-items: center;
     width: 180px;
     margin-top: 3px;
-
-    @include md {
-        display: flex;
-    }
 }
 
 .search-icon {
