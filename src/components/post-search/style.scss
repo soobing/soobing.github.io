@@ -4,8 +4,11 @@
 
 .search-input-wrapper {
     align-items: center;
-    width: 180px;
+    width: 230px;
+    padding: 2px 5px;
     margin-top: 3px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+    background: #bdbcbc0d;
 }
 
 .search-icon {
