@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { navigate } from 'gatsby';
 import { Autocomplete, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/SearchOutlined';
 import './style.scss';
 
 function PostSearch({ posts }) {
+  const [wide, setWide] = useState(false);
+
   return (
     <Autocomplete
       disableClearable
