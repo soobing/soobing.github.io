@@ -31,13 +31,16 @@
         padding-bottom: 2px !important;
         color: var(--primary-text-color) !important;
     }
+    
+    .MuiInput-underline {
+        border: none;
+    }
 
     .MuiInput-underline:before {
-        border-bottom-color: var(--primary-text-color);
-        border-bottom-width: 1px;
+        border: none;
     }
 
     .MuiInput-underline:after {
-        border-bottom-color: var(--primary-text-color);
+        border: none;
     }
 }
