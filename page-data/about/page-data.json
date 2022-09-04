@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-about-js",
     "path": "/about/",
     "result": {"data":{"site":{"siteMetadata":{"title":"soobing","description":"슈빈의 개발블로그","language":"ko","author":{"name":"슈빈","bio":{"role":"개발자","description":["지속가능한 소프트웨어를 만드는","열정이 가득한","즐겁게 일하는"]},"social":{"github":"https://github.com/soobing","linkedIn":"https://www.linkedin.com/in/soobin-bak-8a1994117/","email":"qls0147@naver.com"}}}}},"pageContext":{}},
-    "staticQueryHashes": ["1073350324","1956554647","2938748437","3350743975"]}
+    "staticQueryHashes": ["1073350324","2938748437","3350743975"]}
