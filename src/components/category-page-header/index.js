@@ -28,9 +28,9 @@ function CategoryPageHeader() {
       `}
       render={(data) => (
         <div className="category-page-header-wrapper">
-          <PostSearch
+          {/* <PostSearch
             posts={data.allMarkdownRemark.edges.map(({ node }) => new Post(node, true))}
-          />
+          /> */}
         </div>
       )}
     />
