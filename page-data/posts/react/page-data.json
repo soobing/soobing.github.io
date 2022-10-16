@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-js",
+    "path": "/posts/react",
+    "result": {"pageContext":{"currentCategory":"react","categories":["All","react","feature","browser","infra"],"edges":[{"node":{"id":"3e7ce068-7c03-5b8f-93f0-6665c0b57f08","excerpt":"고민 에러를 발생 vs 사전 확인을 통해 예외 처리 어느 부분까지 사전 확인이 필요한 걸까? 고민하게 된 배경 함수의 매개변수가 의도한 것과 다른 값이 들어왔을 때 에러가 발생할 수 있다. 그런데 문득 에러를 발생하게 하는 게 올바른 것인가? 아니면 애초에 에러가 발생할 상황을 하나도 빠짐없이 막는 것이 올바른 것인가? 고민이 들었다. 위의 코드를 보면 event 객체가 무조건 존재할 상황을 가졍하고 있으므로 만약 비정상적인 event 객체가 첫 번째 인자로 전달된다면 에러가 발생할 것이다. 그렇다면 이렇게 코드를 짜는 것이 좋을까? 애초에 event 객체가 존재하지 않을 수 있는 케이스를 고려해서 절대로 에러를 발생하지 않게 하는 것이 좋을까? 결론 App을 Crashed 시키지 않는 한해서 에러가 발생해야 하는 경우는 발생하게 내버려 두고, 예상할 수 있는 예외는 try…catch를 이용하여 에러가 전파되지 않도록 한다. React는 Error Boundaries를 제공하니, …","fields":{"slug":"/react/error-handle/"},"frontmatter":{"categories":"react","title":"에러 핸들링에 대한 고민 (feat. React)","date":"October 16, 2022","draft":false}},"next":{"fields":{"slug":"/browser/touch-mouse-event/"}},"previous":null}]}},
+    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
