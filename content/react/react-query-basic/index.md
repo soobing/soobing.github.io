@@ -6,7 +6,6 @@ tags: react state management react-query
 categories: react
 draft: false
 ---
-
 ## Introduction
 
 이 글을 읽기전 [**React의 상태관리 종류 4가지**](https://soobing.github.io/react/react-state-management/)를 먼저 읽으면 이해가 쉬울 수 있다.
@@ -41,8 +40,81 @@ react-query는 이러한 데이터 관리 작업을 간단하고 효율적으로
 
 [공식문서 Quick Start 섹션](https://tanstack.com/query/latest/docs/react/quick-start)에서도 3가지 core concept를 간략하게 설명하고 있다. 이 3가지 개념만 이해하면 처음 도입하는데 문제가 없고 왠만한 CRUD 케이스는 거의 커버가 가능하다.
 
+공식문서에 있는 예제를 가져왔다. 먼저  `QueryClientProvider` 를 통해서 `QueryClient` App 전체에 주입한다. todos와 관련된 get 요청은 useQuery를 통해서 fetching 하고, todos를 create하는 요청은 useMutation을 통해서 하며, 성공시 이전에 get요청을 통해 가져왔던 todos를 다시 reffetching 해야하므로 invalidateQueries를 통해서 어떤 query가 stale 되었는지 체크를 해준다. 상태값이 변경되면 리렌더 되듯이, queryKey를 통해서 stale 상태를 만들면 다시 refetching 하고 관련 data를 rerendering 하는 것이 큰 컨셉이다.  
+
+```tsx
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+import { getTodos, postTodo } from '../my-api'
+
+// Create a client
+const queryClient = new QueryClient()
+
+function App() {
+  return (
+    // Provide the client to your App
+    <QueryClientProvider client={queryClient}>
+      <Todos />
+    </QueryClientProvider>
+  )
+}
+
+function Todos() {
+  // Access the client
+  const queryClient = useQueryClient()
+
+  // Queries
+  const query = useQuery({ queryKey: ['todos'], queryFn: getTodos })
+
+  // Mutations
+  const mutation = useMutation({
+    mutationFn: postTodo,
+    onSuccess: () => {
+      // Invalidate and refetch
+      queryClient.invalidateQueries({ queryKey: ['todos'] })
+    },
+  })
+
+  return (
+    <div>
+      <ul>
+        {query.data?.map((todo) => (
+          <li key={todo.id}>{todo.title}</li>
+        ))}
+      </ul>
+
+      <button
+        onClick={() => {
+          mutation.mutate({
+            id: Date.now(),
+            title: 'Do Laundry',
+          })
+        }}
+      >
+        Add Todo
+      </button>
+    </div>
+  )
+}
+
+render(<App />, document.getElementById('root'))
+```
+
+이번에는 조금 더 자세히 3가지 개념에 대해서 알아보자.
+
 ### 1) Queries
+
+Queries는 React Query에서 데이터를 **가져오는데** 사용된다. 일반적으로 REST API 호출, GraphQL 쿼리, Websocket 등을 통해 데이터를 가져올 수 있다. Query는 `useQuery` 훅을 사용한다. useQuery는 비동기적으로 데이터를 가져오고, 데이터를 캐싱하여 이후의 요청에서 동일한 데이터를 다시 가져오지 않도록 한다. 또한, Query 컴포넌트는 로딩 중, 에러 발생 시에도 적절한 UI를 렌더링할 수 있도록 지원한다.
 
 ### 2) Mutations
 
+Mutations는 React Query에서 데이터를 **수정**하거나 **삭제**하는데 사용된다. REST API 호출, GraphQL Mutation 등을 통해 데이터를 수정하고, `useMutation` 훅을 사용한다. useMutation은 비동기적으로 데이터를 수정하고, 데이터를 업데이트하여 UI를 다시 렌더링한다.
+
 ### 3) Query Invalidation
+
+Query Invalidation은 React Query에서 **캐시된 데이터를 무효화하는데 사용**된다. 일반적으로 데이터가 수정되거나 삭제되었을 때, 해당 데이터를 다시 가져와서 캐시를 업데이트한다. React Query는 Query Invalidation을 자동으로 처리하며, useMutation 훅을 사용하여 데이터를 수정하면, 해당 데이터를 가져오는 모든 Query를 자동으로 무효화한다. 또한, useQuery 훅에서 제공하는 여러 가지 옵션을 사용하여 수동으로 Query Invalidation을 제어할 수 있다.
