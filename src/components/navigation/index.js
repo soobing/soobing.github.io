@@ -11,7 +11,12 @@ function Navigation({ type = 'horizontal' }) {
   ];
 
   const isActive = (path) => ({ location: { pathname } }) => {
-    return path === pathname ? { className: 'active' } : {};
+    const everyPaths = routes.map(({ path }) => path);
+    const isMatched = path === pathname;
+    const isBlogPost = path === '/posts' && !everyPaths.includes(pathname);
+
+    if (isMatched || isBlogPost) return { className: 'active' };
+    return {};
   };
   return (
     <nav className={`${type}-navigation`}>
