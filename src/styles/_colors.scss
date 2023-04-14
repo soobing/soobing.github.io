@@ -21,10 +21,11 @@ html {
 
   --markdown-table-even-cell-background-color: #f6f8fa;
   --markdown-table-border-color: #dfe2e5;
-  --markdown-blockquote-border-color: #dfe2e5;
+  --markdown-blockquote-border-color: var(--highlight-opacity);
   --markdown-border-color: #e1e4e8;
 
   --highlight: #FF5C00;
+  --highlight-opacity: rgba(255, 92, 0, 0.7)
 }
 
 // dark mode colors
@@ -50,6 +51,6 @@ html[data-theme='dark'] {
 
   --markdown-table-even-cell-background-color: #2d333b;
   --markdown-table-border-color: #444c56;
-  --markdown-blockquote-border-color: #4f5864;
+  --markdown-blockquote-border-color: var(--highlight);;
   --markdown-border-color: #e1e4e8;
 }
