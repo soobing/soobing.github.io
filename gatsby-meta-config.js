@@ -1,5 +1,5 @@
 module.exports = {
-  title: `soobing`,
+  title: `LESS BUT BETTER`,
   description: `슈빈의 개발블로그`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://soobing.github.io/`,
