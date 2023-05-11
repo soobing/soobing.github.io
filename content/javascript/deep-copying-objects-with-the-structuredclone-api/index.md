@@ -12,15 +12,14 @@ draft: false
 
 ![Deep Copying Objects with the StructuredClone API](https://blog.openreplay.com/images/deep-copying-objects-with-the-structuredclone-api/images/hero.png)
 
-> 개요
-> 자바스크립트에서 객체를 복사하는 것은 간단하지 않으며, 이는 잘 알려진 문제입니다. 그러나 이 글에서는 해결책을 제공합니다. StructuredClone API를 사용하면 모든 객체를 간단하고 빠르게 복사할 수 있습니다.
+> 개요: 자바스크립트에서 객체를 복사하는 것은 간단하지 않으며, 이는 잘 알려진 문제입니다. 그러나 이 글에서는 해결책을 제공합니다. StructuredClone API를 사용하면 모든 객체를 간단하고 빠르게 복사할 수 있습니다.
 
 
 자바스크립트에서 객체가 변수에 저장될 때, 해당 변수는 객체의 [참조값](https://blog.openreplay.com/javascript-types-and-values-explained/)을 갖습니다. 이는 변수 자체에 객체를 저장하는 것이 아니라, 객체의 메모리 위치를 나타내는 식별자를 저장한다는 것을 의미합니다. 객체의 복사는 원시 타입과는 다른 방식으로 동작합니다.
 
 ## 얕은 복사(Shallow Copy) vs. 깊은 복사(Deep Copy)
 
-자바스크립트에서 값은 두 가지 방법으로 복사할 수 있습니다: 얕은 복사와 깊은 복사입니다.
+자바스크립트에서 값은 두 가지 방법으로 복사할 수 있습니다. 얕은 복사와 깊은 복사입니다.
 
 ### 얕은 복사(Shallow Copy)
 
@@ -49,16 +48,14 @@ const theShallowCopy = Object.assign({}, theOriginal);
 
 ```jsx
 theShallowCopy.aNewProp = "a new value";
-console.log(theOriginal.aNewProp)
-//  logs `undefined`
+console.log(theOriginal.aNewProp); // undefined
 ```
 
 그러나 깊게 중첩된 프로퍼티를 수정할 때는, 원본과 얕은 복사본 모두 영향을 받게 됩니다.
 
 ```jsx
 theShallowCopy.anotherProp.aNewProp = "a new value";
-console.log(theOriginal.anotherProp.aNewProp) 
-//  logs `a new value`
+console.log(theOriginal.anotherProp.aNewProp); // a new value
 ```
 
 이는 깊게 중첩된 프로퍼티가 복사되는 것이 아니라 참조되기 때문입니다.
@@ -97,7 +94,7 @@ console.log(theDeepCopy.address.state); //결과: "New York"
 
 하지만, 깊은 복사는 [Lodash](https://lodash.com/docs/#cloneDeep)와 같은 서드 파티 라이브러리를 사용하여 생성할 수도 있음을 알아두면 유용합니다.
 
-## ## `StructuredClone()` 네이티브 함수를 이용해 깊은 복사하기
+## `StructuredClone()` 네이티브 함수를 이용해 깊은 복사하기
 
 `structuredClone()`은 자바스크립트 값을 깊은 복사하는 데 사용되는 내장 함수입니다. 이 함수는 [구조화된 복제 알고리즘](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm)을 사용합니다. 이전에는 이 알고리즘이 개발자에게 제공되지 않았기 때문에 다른 방법을 사용해야 했습니다. 그러나 최근 업데이트된 [HTML 명세](https://html.spec.whatwg.org/#safe-passing-of-structured-data)는 구조화된 복제 알고리즘을 실행하는 `structuredClone()`이라는 함수를 제공하여 이 문제를 해결하였습니다. 이제 자바스크립트에서 깊은 복사를 수행하는 것이 더욱 쉬워졌습니다.
 
