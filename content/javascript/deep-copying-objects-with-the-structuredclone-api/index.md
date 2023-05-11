@@ -32,7 +32,7 @@ draft: false
 
 자바스크립트에서는 `Object.assign()` 메소드를 사용하여 얕은 복사를 생성할 수 있습니다.
 
-```jsx
+```js
 const theOriginal = {
   someProp: "with a string value",
   anotherProp: {
@@ -46,14 +46,14 @@ const theShallowCopy = Object.assign({}, theOriginal);
 
 얕은 복사로 생성한 `theShallowCopy`객체의 첫 번째 레벨에 프로퍼티를 추가하거나 변경하더라도, 원본인 `theOriginal`객체에는 영향을 주지 않습니다. 변경이 발생한 얕은 복사본만 영향을 받습니다.
 
-```jsx
+```js
 theShallowCopy.aNewProp = "a new value";
 console.log(theOriginal.aNewProp); // undefined
 ```
 
 그러나 깊게 중첩된 프로퍼티를 수정할 때는, 원본과 얕은 복사본 모두 영향을 받게 됩니다.
 
-```jsx
+```js
 theShallowCopy.anotherProp.aNewProp = "a new value";
 console.log(theOriginal.anotherProp.aNewProp); // a new value
 ```
@@ -71,7 +71,7 @@ console.log(theOriginal.anotherProp.aNewProp); // a new value
 
 객체의 깊은 복사를 만들기 위해서는, `JSON.parse(JSON.stringify(obj))` 메서드를 사용할 수 있습니다.
 
-```jsx
+```js
 let theOriginalObject = {
   name: "Mary",
   age: 20,
@@ -87,7 +87,7 @@ let theDeepCopy = JSON.parse(JSON.stringify(theOriginalObject));
 
 만약 `theOriginalObject`의 `address` 프로퍼티를 변경하더라도, `theDeepCopy`의 `address` 속성은 수정되지 않을 것입니다. 왜냐하면 이들은 두 개의 다른 객체이기 때문입니다.
 
-```jsx
+```js
 theOriginalObject.address.state = "california";
 console.log(theDeepCopy.address.state); //결과: "New York"
 ```
@@ -100,7 +100,7 @@ console.log(theDeepCopy.address.state); //결과: "New York"
 
 이제 `structuredClone()`를 사용하여 객체의 깊은 복사를 해봅시다.
 
-```jsx
+```js
 const original = {
   site: "https://blog.openreplay.com/",
   published: new Date(),
@@ -137,7 +137,7 @@ const copy = structuredClone(original);
 
 예를 들면
 
-```jsx
+```js
 const Person = {
   name: "John",
   date: new Date("2022-03-25"),
@@ -150,7 +150,7 @@ const buggyCopy = JSON.parse(JSON.stringify(Person))
 
 만약 우리가 `buggyCopy`를 로그에 찍는다면 다음과 같은 결과를 얻을 것입니다.
 
-```jsx
+```js
 {
     name: "John",
     date: "2022-03-25T00:00:00.000Z",
@@ -168,7 +168,7 @@ JSON은 객체를 문자열로 인코딩하는 형식입니다. [직렬화(seria
 
 그러나 `structuredClone()`에서는 이와 같은 문제가 발생하지 않습니다.
 
-```jsx
+```js
 const Person = {
   name: "John",
   date: new Date("2022-03-25"),
@@ -180,7 +180,7 @@ const bugfreeCopy = structuredClone(Person)
 
 만약 우리가 `bugfreeCopy`를 로그에 찍는다면 다음과 같은 결과를 얻을 것입니다.
 
-```jsx
+```js
 {
     name: "John",
     date: Object,
@@ -204,7 +204,7 @@ Lodash의 [cloneDeep](https://lodash.com/docs/4.17.15#cloneDeep) 함수는 자�
 
 - 함수는 복사할 수 없습니다. 함수를 포함하는 객체를 복사하면 `DataCloneError`가 throw 됩니다.
 
-```jsx
+```js
 //  에러!
 structuredClone({ fn: () => { } })
 ```
@@ -213,7 +213,7 @@ structuredClone({ fn: () => { } })
 
 - DOM 노드는 복사할 수 없습니다. DOM 노드를 복제하려고하면 `DataCloneError`가 throw 됩니다.
 
-```jsx
+```js
 //  에러!
 structuredClone({ element: document.body })
 ```
@@ -226,7 +226,7 @@ structuredClone({ element: document.body })
 
 - 프로토타입은 복제할 수 없습니다. 구조화된 복제(Structured cloning)는 프로토타입 체인을 복제하지 않습니다. `Class`의 인스턴스를 복사하면 복사된 객체는 더 이상 해당 `Class`의 인스턴스가 아닙니다. 원래 `Class` 대신 일반 객체가 반환됩니다.
 
-```jsx
+```js
 class mainClass { 
   greet = 'hello' 
   Method() { /* ... */ }
