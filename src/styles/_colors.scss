@@ -16,7 +16,7 @@ html {
   --about-link-icon-color: #a8a8a8;
 
   --chip-background-color: #f3f3f4;
-  --link-text-color: rgb(55 53 47 / 70%);
+  --link-text-color: var(--highlight);
   --post-card-border-color: rgba(0, 0, 0, 0.12);
 
   --markdown-table-even-cell-background-color: #f6f8fa;
@@ -46,7 +46,7 @@ html[data-theme='dark'] {
   --bio-link-icon-color: #e6e6e6;
   --about-link-icon-color: #a8a8a8;
 
-  --link-text-color: #90b0ec;
+  --link-text-color: var(--highlight);
   --post-card-border-color: #363f47;
 
   --markdown-table-even-cell-background-color: #2d333b;

@@ -660,7 +660,7 @@
 }
 
 .markdown hr {
-  height: 0.25em;
+  height: 0.1em;
   padding: 0;
   margin: 24px 0;
   background-color: var(--markdown-border-color);
@@ -687,7 +687,7 @@
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  margin-top: 24px;
+  margin-top: 40px;
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
@@ -698,6 +698,7 @@
 }
 
 .markdown h2 {
+  margin-top: 70px;
   font-size: 1.5em;
 }
 

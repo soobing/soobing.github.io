@@ -22,6 +22,8 @@
     &:hover {
       .title {
         text-decoration: underline;
+        background-color: red;
+        color: var(--highlight) !important;
       }
     }
 
