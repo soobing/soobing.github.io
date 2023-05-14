@@ -19,13 +19,6 @@
     cursor: pointer;
     transition: transform 0.2s;
 
-    &:hover {
-      .title {
-        text-decoration: underline;
-        background-color: red;
-        color: var(--highlight) !important;
-      }
-    }
 
     &.prev {
       margin-right: auto;
