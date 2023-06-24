@@ -1,12 +1,11 @@
 ---
-title: React Query를 사용하여 서버 상태를 관리하는 방법
+title: (번역) React Query를 사용하여 서버 상태를 관리하는 방법
 date: '2023-06-21 00:00:00'
 author: soobing
 tags: react state management react-query
 categories: react
 draft: false
 ---
-# React Query를 사용하여 서버 상태를 관리하는 방법
 
 > 원문: https://www.tecforfun.com/frameworks/how-to-manage-server-state-with-react-query/
 > 
@@ -17,9 +16,9 @@ React Query는 React 애플리케이션에서 데이터 페칭과 캐싱 프로�
 
 React 앱 개발에 경험이 있다면, 클라이언트 상태 관리를 위해 Redux와 같은 라이브러리를 사용한 적이 있을 수 있습니다. 반면에, React Query는 서버 상태를 관리하기 위한 라이브러리입니다. 그러므로 React Query에 대해 이야기하기 전에 클라이언트 상태와 서버 상태의 차이에 대해 알아보도록 하겠습니다.
 
-## 클라이언트 상태 **vs** 서버 상태
+## 클라이언트 상태 vs 서버 상태
 
-클라이언트 상태와 서버 상태의 차이에 대해 알아보겠습니다. 이는 React Query가 어떤 역할을 하며 서버 상태 관리를 위해 또 다른 라이브러리가 필요한 이유를 이해하는 데 도움이 됩니다.
+클라이언트 상태와 서버 상태의 차이점을 살펴보겠습니다. 이는 React Query가 어떤 역할을 하는지와 서버 상태 관리를 위해 다른 라이브러리가 왜 필요한지를 이해하는 데 도움이 됩니다.
 
 |  | 클라이언트 상태 | 서버 상태 |
 | --- | --- | --- |
@@ -52,7 +51,7 @@ React Query를 사용하기 위해 반드시 이해해야 할 네 가지 기본 
 3. 쿼리 캐싱(Query Caching): 쿼리 캐싱은 React Query의 내장 기능으로, 쿼리 결과를 메모리에 저장
 4. 쿼리 무효화(Query Invalidation): 쿼리를 무효하거나 오래된 상태로 표시하는 과정
 
-## **useQuery 훅으로 데이터 페칭**
+## useQuery 훅으로 데이터 페칭
 
 공식 문서에서 "쿼리는 고유 키에 연결된 데이터의 비동기 소스에 대한 선언적 종속성(declarative dependency)입니다."라고 나와 있습니다.
 
@@ -116,7 +115,7 @@ const { isLoading, isError, data, error } = useQuery( { queryKey: [‘todos’],
 
 [공식 문서에서 `useQuery`의 모든 레퍼런스](https://tanstack.com/query/v4/docs/react/reference/useQuery)를 확인할 수 있습니다.
 
-## **useQuery와 데이터 리페칭 API**
+## useQuery와 데이터 리페칭 API
 
 기본적으로, `useQuery`는 컴포넌트가 처음으로 마운트될 때 API에서 데이터를 자동으로 페칭합니다. 그러나 데이터의 이후 업데이트는 자동으로 가져오지 않습니다. 다시 말해, API 엔드포인트나 서버에서 업데이트가 발생한 후에도 `useQuery`는 데이터를 다시 가져오지 않습니다.
 
@@ -181,7 +180,7 @@ const AddUser = useMutation({
 
 `[useMutation` 훅에 대한 모든 레퍼런스는 공식문서](https://tanstack.com/query/v4/docs/react/reference/useMutation)에서 확인할 수 있습니다.
 
-## **React Query에서의 쿼리 캐싱**
+## React Query에서의 쿼리 캐싱
 
 useQuery 훅을 사용하여 원격 서버에서 일부 사용자 데이터를 가져오는 경우가 있다고 가정해 봅시다. 데이터를 받는 동안 시간이 걸릴 수 있습니다. React Query는 이 사용자 데이터를 캐시에 저장하여 이후 동일한 요청 시 더 빠르게 찾을 수 있도록 합니다. 이를 통해 데이터 로드하는 데 걸리는 시간을 줄일 수 있습니다.
 
@@ -210,7 +209,7 @@ const query = useQuery({
     })
 ```
 
-## **React Query에서의 쿼리 무효화(Invalidation)**
+## React Query에서의 쿼리 무효화(Invalidation)
 
 이전에 설명한 대로, 캐시에 저장된 데이터는 staleTime 옵션에 따라 오래된 데이터로 처리될 수 있습니다. 그러나 특정 상황에서는 `staleTime`을 무시하고 데이터를 무효화시키거나 오래되었다고 표시해야 하는 상황이 발생할 수 있습니다. 예를 들어, API에 POST 요청을 보낼 때는 API 엔드포인트의 데이터가 최신 데이터이므로 수동으로 캐시에 있는 데이터를 유효하지 않은 것으로 표시해야 합니다. 결과적으로, POST 요청 후에는 즉시 캐시의 데이터가 오래되었다고 간주됩니다.
 
@@ -230,11 +229,11 @@ queryClient.invalidateQueries()
 queryClient.invalidateQueries({ queryKey: ['users'] })
 ```
 
-## **마무리**
+## 마무리
 
 이 글에서는 React Query가 무엇인지와 그 필요성에 대해 다뤘습니다. React Query는 서버 상태를 관리하기 위한 강력한 라이브러리입니다. 이는 `useQuery`와 같은 React 훅을 활용하여 API 엔드포인트나 서버에서 데이터를 가져오고 `useMutation`을 사용하여 원격 데이터를 조작합니다. React Query는 메모리 내 캐시를 관리하는 스마트 캐싱 메커니즘을 갖추고 있습니다. 이를 통해 캐시가 원격 데이터 소스와 동기화되도록 보장합니다. React Query를 사용하면, 코드를 간소화하고 React 애플리케이션의 성능을 최적화할 수 있습니다.
 
-## **Resources**
+## Resources
 
 [전체 코드 다운로드](https://github.com/dineshigdd/react-query-js)
 
