@@ -24,7 +24,8 @@
     transition: transform 0.2s;
 
     &:hover {
-      .title {
+      border: 1px solid var(--highlight);
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;      .title {
         text-decoration: underline;
       }
     }

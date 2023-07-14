@@ -19,11 +19,6 @@
     cursor: pointer;
     transition: transform 0.2s;
 
-    &:hover {
-      .title {
-        text-decoration: underline;
-      }
-    }
 
     &.prev {
       margin-right: auto;

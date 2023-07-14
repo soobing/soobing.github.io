@@ -656,11 +656,12 @@
 .markdown table,
 .markdown ul {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  line-height: 1.6;
 }
 
 .markdown hr {
-  height: 0.25em;
+  height: 0.1em;
   padding: 0;
   margin: 24px 0;
   background-color: var(--markdown-border-color);
@@ -668,8 +669,9 @@
 }
 
 .markdown blockquote {
-  padding: 0 1em;
-  color: #6a737d;
+  padding: 0.5em 1em;
+  color: var(--content-text-color);
+  background-color: #fafbfc2b;
   border-left: 0.25em solid var(--markdown-blockquote-border-color);
 }
 
@@ -687,10 +689,11 @@
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  margin-top: 24px;
+  margin-top: 40px;
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
+  color: var(--primary-text-color);
 }
 
 .markdown h1 {
@@ -698,6 +701,7 @@
 }
 
 .markdown h2 {
+  margin-top: 70px;
   font-size: 1.5em;
 }
 
@@ -816,6 +820,7 @@
   font-size: 85%;
   background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
+  font-weight: bold;
 }
 
 .markdown pre {
@@ -845,9 +850,11 @@
 .markdown pre {
   overflow: auto;
   font-size: 85%;
-  line-height: 1.45;
+  line-height: 1.6;
   background-color: #151515;
   border-radius: 3px;
+  border-radius: 14px;
+  padding: 20px 0;
 }
 
 .markdown pre code {
