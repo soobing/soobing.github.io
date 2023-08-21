@@ -590,3 +590,364 @@ console.log(president1 === president2); // true
 ```
 
 # 구조(Structural) 패턴
+
+일반적인 용어로 설명하면
+
+> 구조 패턴은 주로 객체의 구성에 관련되어 있으며, 즉 엔터티가 어떻게 사용될 수 있는지에 관한 것입니다. 또 다른 설명으로는, "소프트웨어 구성요소를 어떻게 만들 것인가?"에 대한 답을 하는데 도움이 됩니다.
+> 
+
+위키피디아에서는 다음과 같이 설명하고 있습니다.
+
+> 소프트웨어 공학에서, 구조적 디자인 패턴은 엔터티 간의 관계를 구현하기 위한 간단한 방법을 파악해냄으로써 디자인하는 것을 쉽게 만드는 디자인 패턴입니다.
+> 
+- [Adapter](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/readme.md#-adapter)
+- [Bridge](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/readme.md#-bridge)
+- [Composite](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/readme.md#-composite)
+- [Decorator](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/readme.md#-decorator)
+- [Facade](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/readme.md#-facade)
+- [Flyweight](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/readme.md#-flyweight)
+- [Proxy](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/readme.md#-proxy)
+
+## 🔌 Adapter
+
+실생활 예시
+
+> 메모리 카드에 몇 장의 사진이 저장되어 있고 이를 컴퓨터로 전송해야 합니다. 메모리 카드를 컴퓨터에 연결하려면, 컴퓨터 포트와 호환되는 어댑터가 필요합니다. 이 경우 카드 리더기는 어댑터입니다. 또 다른 예로 유명한 전원 어댑터가 있습니다. 3구 플러그는 2구 콘센트에 직접 연결할 수 없으며, 전원 어댑터를 사용하여 2구 콘센트와 호환되도록 만들어야 합니다. 또 다른 예로는 한 사람이 말한 단어를 다른 사람에게 번역해주는 번역가 입니다.
+> 
+
+일반적인 용어로 설명하면
+
+> 어댑터 패턴을 사용하면 호환되지 않는 객체를 어댑터로 래핑하여 다른 클래스와 호환되도록 할 수 있습니다.
+> 
+
+위키피디아에서는 다음과 같이 설명하고 있습니다.
+
+> 소프트웨어 공학에서 어댑터 패턴은 기존 클래스의 인터페이스를 다른 인터페이스로 사용할 수 있도록 하는 소프트웨어 디자인 패턴입니다. 소스 코드를 수정하지 않고 기존 클래스가 다른 클래스와 함께 작동하도록 만들 때 자주 사용됩니다.
+> 
+
+**프로그래밍 예시**
+
+사냥꾼이 사자를 사냥하는 게임을 생각해보겠습니다.
+
+먼저 모든 유형의 사자가 구현해야 하는 `Lion` 인터페이스가 있습니다.
+
+```tsx
+interface Lion {
+  roar(): void;
+}
+
+class AfricanLion implements Lion {
+  roar(): void {
+  }
+}
+
+class AsianLion implements Lion {
+  roar(): void {
+  }
+}
+```
+
+그리고 사냥꾼은 `Lion` 인터페이스의 어떤 구현체든 사냥을 기대합니다.
+
+```tsx
+class Hunter {
+  hunt(lion: Lion): void {
+    lion.roar();
+  }
+}
+```
+
+이제 사냥꾼이 사냥할 수 있도록 게임에 `WildDog`라는 새로운 동물인 개를 추가해야 한다고 가정해 보겠습니다. 그러나 개는 다른 인터페이스를 가지고 있기 때문에 직접 추가할 수는 없습니다. 사냥꾼과 호환되도록 하려면 호환 어댑터를 생성해야 합니다.
+
+```tsx
+// 이것은 게임에 추가해야 합니다.
+class WildDog {
+  bark(): void {
+  }
+}
+
+// 게임과 호환되도록 wild dog 주위에 어댑터를 만듭니다.
+class WildDogAdapter implements Lion {
+  protected dog: WildDog;
+
+  constructor(dog: WildDog) {
+    this.dog = dog;
+  }
+
+  roar(): void {
+    this.dog.bark();
+  }
+}
+```
+
+이제 `WildDogAdapter`를 사용하여 `WildDog`를 게임에서 사용할 수 있습니다.
+
+```tsx
+const wildDog = new WildDog();
+const wildDogAdapter = new WildDogAdapter(wildDog);
+
+const hunter = new Hunter();
+hunter.hunt(wildDogAdapter);
+```
+
+## 🚡 Bridge
+
+실생활 예시
+
+> 웹사이트에 다양한 페이지가 있고 사용자가 테마를 변경할 수 있게 해야한다고 가정해보세요. 어떻게 할 것인가요? 각 테마마다 페이지별로 복사본을 만들 것인가요? 또는 별도의 분리된 테마를 만들고 사용자의 기본 설정에 따라 테마를 따로 로드할 것인가요? 브릿지 패턴은 두 번째 방법을 수행할 수 있게 해줍니다.
+> 
+
+!https://cloud.githubusercontent.com/assets/11269635/23065293/33b7aea0-f515-11e6-983f-98823c9845ee.png
+
+일반적인 용어로 설명하면
+
+> 브릿지 패턴은 상속보다 구성을 선호합니다. 구현 세부 정보는 다른 계층 구조를 가진 별도의 객체로 푸시(push)됩니다.
+* 역자주: 웹 페이지는 페이지의 계층 구조에 따라 달라질 수 있으며, 테마는 사용자의 선택에 따라 달라질 수 있습니다. 브릿지 패턴을 사용하면, 웹 페이지의 렌더링 방식을 담당하는 계층 구조와 테마를 담당하는 별도의 계층 구조를 분리할 수 있습니다.
+> 
+
+위키피디아에서는 다음과 같이 설명하고 있습니다.
+
+> 브릿지 패턴은 소프트웨어 공학에서 사용되는 디자인 패턴으로, "추상화를 구현에서 분리하여 두 개가 독립적으로 변경될 수 있게 하는" 것을 의미합니다.
+> 
+
+**프로그래밍 예시**
+
+위의 WebPage 예제를 번역하면 다음과 같습니다. 여기에서 우리는 `WebPage` 계층구조를 가지고 있습니다.
+
+```tsx
+interface WebPage {
+    theme: Theme;
+    getContent(): string;
+}
+
+class About implements WebPage {
+    protected theme: Theme;
+
+    constructor(theme: Theme) {
+        this.theme = theme;
+    }
+
+    getContent(): string {
+        return `About page in ${this.theme.getColor()}`;
+    }
+}
+
+class Careers implements WebPage {
+    protected theme: Theme;
+
+    constructor(theme: Theme) {
+        this.theme = theme;
+    }
+
+    getContent(): string {
+        return `Careers page in ${this.theme.getColor()}`;
+    }
+}
+```
+
+그리고 별도의 테마 계층구조 입니다.
+
+```tsx
+interface Theme {
+    getColor(): string;
+}
+
+class DarkTheme implements Theme {
+    getColor(): string {
+        return 'Dark Black';
+    }
+}
+
+class LightTheme implements Theme {
+    getColor(): string {
+        return 'Off white';
+    }
+}
+
+class AquaTheme implements Theme {
+    getColor(): string {
+        return 'Light blue';
+    }
+}
+```
+
+그리고 두 계층 전부 입니다.
+
+```tsx
+const darkTheme = new DarkTheme();
+
+const about = new About(darkTheme);
+const careers = new Careers(darkTheme);
+
+console.log(about.getContent());  // "About page in Dark Black"
+console.log(careers.getContent()); // "Careers page in Dark Black"
+```
+
+## 🌿 Composite
+
+실생활 예시
+
+> 모든 조직은 직원으로 구성되어 있습니다. 모든 직원들은 같은 특징을 가지고 있습니다. 즉, 급여를 받고, 일정한 책임을 가지며, 보고를 할 수도 있고 아닐 수도 있으며, 부하 직원이 있을 수도 있고 없을 수도 있습니다.
+> 
+
+일반적인 용어로 설명하면
+
+> 복합체 패턴을 사용하면 클라이언트가 개별 객체를 동일한 방식으로 처리할 수 있습니다.
+> 
+
+위키피디아에서는 다음과 같이 설명하고 있습니다.
+
+> 소프트웨어 공학에서, 복합체 패턴은 분할 디자인 패턴입니다. 복합체 패턴은 객체의 그룹이 단일 객체의 인스턴스와 같은 방식으로 처리되는 것을 설명합니다. 복합체의 목적은 객체를 트리 구조로 "구성"하여 부분-전체 계층을 나타내는 것입니다. 복합체 패턴을 구현하면 클라이언트가 개별 객체와 구성을 동일하게 처리할 수 있습니다.
+> 
+
+**프로그래밍 예시**
+
+위의 직원 예제를 기반으로 합니다. 여기에서는 다양한 유형의 직원들이 있습니다.
+
+```tsx
+interface Employee {
+    name: string;
+    salary: number;
+    roles: string[];
+
+    getName(): string;
+    getSalary(): number;
+    getRoles(): string[];
+}
+
+class Developer implements Employee {
+    protected salary: number;
+    protected name: string;
+    protected roles: string[] = [];
+
+    constructor(name: string, salary: number) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    getName(): string {
+        return this.name;
+    }
+
+    setSalary(salary: number): void {
+        this.salary = salary;
+    }
+
+    getSalary(): number {
+        return this.salary;
+    }
+
+    getRoles(): string[] {
+        return this.roles;
+    }
+}
+
+class Designer implements Employee {
+    protected salary: number;
+    protected name: string;
+    protected roles: string[] = [];
+
+    constructor(name: string, salary: number) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    getName(): string {
+        return this.name;
+    }
+
+    setSalary(salary: number): void {
+        this.salary = salary;
+    }
+
+    getSalary(): number {
+        return this.salary;
+    }
+
+    getRoles(): string[] {
+        return this.roles;
+    }
+}
+
+class Designer implements Employee {
+    protected salary: number;
+    protected name: string;
+    protected roles: string[] = [];
+
+    constructor(name: string, salary: number) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    getName(): string {
+        return this.name;
+    }
+
+    setSalary(salary: number): void {
+        this.salary = salary;
+    }
+
+    getSalary(): number {
+        return this.salary;
+    }
+
+    getRoles(): string[] {
+        return this.roles;
+    }
+}
+
+class Organization {
+    protected employees: Employee[] = [];
+
+    addEmployee(employee: Employee): void {
+        this.employees.push(employee);
+    }
+
+    getNetSalaries(): number {
+        let netSalary = 0;
+
+        for (const employee of this.employees) {
+            netSalary += employee.getSalary();
+        }
+
+        return netSalary;
+    }
+}
+```
+
+그 다음, 여러 유형의 직원으로 구성된 조직이 있습니다.
+
+```tsx
+class Organization {
+    protected employees: Employee[] = [];
+
+    addEmployee(employee: Employee): void {
+        this.employees.push(employee);
+    }
+
+    getNetSalaries(): number {
+        let netSalary = 0;
+
+        for (const employee of this.employees) {
+            netSalary += employee.getSalary();
+        }
+
+        return netSalary;
+    }
+}
+```
+
+그리고 다음과 같이 사용될 수 있습니다.
+
+```tsx
+// Prepare the employees
+let john = new Developer('John Doe', 12000);
+let jane = new Designer('Jane Doe', 15000);
+
+// Add them to organization
+let organization = new Organization();
+organization.addEmployee(john);
+organization.addEmployee(jane);
+
+console.log("Net salaries: " + organization.getNetSalaries());  // Outputs: Net Salaries: 27000
+```
