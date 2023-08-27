@@ -8,7 +8,7 @@ draft: false
 ---
 > 원글: https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/readme.md
 
-- 역자주: 이 글은 [Kamran Ahmed](https://twitter.com/kamrify)의 글이며, 예제 코드는 PHP-7 기준으로 작성된 코드를 타입스크립트로 변경하였습니다.
+- 역자주: 이 글은 [Kamran Ahmed](https://twitter.com/kamrify)의 글이며, PHP-7 기준으로 작성된 예제 코드를 타입스크립트로 변경하였습니다.
 
 ![logo](./design-patterns-for-humans.svg)
 
