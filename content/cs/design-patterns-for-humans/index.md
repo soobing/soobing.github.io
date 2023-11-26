@@ -25,16 +25,16 @@ draft: false
 <!-- 블로그 배포 후 링크 연결 확인 필요 -->
 | 생성 패턴 | 구조 패턴 | 행동 패턴 |
 | --- | --- | --- |
-| [심플 팩토리(Simple Factory)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%8B%AC%ED%94%8C-%ED%8C%A9%ED%86%A0%EB%A6%ACsimple-factory) | [어댑터(Adapter)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%96%B4%EB%8C%91%ED%84%B0adapter) | [책임 연쇄(Chain of Responsibility)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%B1%85%EC%9E%84-%EC%97%B0%EC%87%84chain-of-responsibility) |
-| [팩토리 메서드(Factory Method)](http://localhost:8000/cs/design-patterns-for-humans/#%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9Cfactory-method) | [브릿지(Bridge)](http://localhost:8000/cs/design-patterns-for-humans/#%EB%B8%8C%EB%A6%BF%EC%A7%80bridge) | [명령(Command)](http://localhost:8000/cs/design-patterns-for-humans/#%EB%AA%85%EB%A0%B9command) |
-| [추상 팩토리(Abstract Factory)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%B6%94%EC%83%81-%ED%8C%A9%ED%86%A0%EB%A6%ACabstract-factory) | [컴포지트(Composite)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%BB%B4%ED%8F%AC%EC%A7%80%ED%8A%B8composite) | [반복자(Iterator)](http://localhost:8000/cs/design-patterns-for-humans/#%EB%B0%98%EB%B3%B5%EC%9E%90iterator) |
-| [생성자(Builder)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%83%9D%EC%84%B1%EC%9E%90builder) | [데코레이터(Decorator)](http://localhost:8000/cs/design-patterns-for-humans/#%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0decorator) | [중재자(Mediator)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%A4%91%EC%9E%AC%EC%9E%90mediator) |
-| [프로토타입(Prototype)](http://localhost:8000/cs/design-patterns-for-humans/#%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85prototype) | [퍼사드(Facade)](http://localhost:8000/cs/design-patterns-for-humans/#%ED%8D%BC%EC%82%AC%EB%93%9Cfacade) | [메멘토(Memento)](http://localhost:8000/cs/design-patterns-for-humans/#%EB%A9%94%EB%A9%98%ED%86%A0memento) |
-| [싱글톤(Singleton)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%8B%B1%EA%B8%80%ED%86%A4singleton) | [플라이웨이트(Flyweight)](http://localhost:8000/cs/design-patterns-for-humans/#%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9B%A8%EC%9D%B4%ED%8A%B8flyweight) | [옵저버(Observer)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%98%B5%EC%A0%80%EB%B2%84observer) |
-| | [프록시(Proxy)](http://localhost:8000/cs/design-patterns-for-humans/#%ED%94%84%EB%A1%9D%EC%8B%9Cproxy) | [방문자(Visitor)](http://localhost:8000/cs/design-patterns-for-humans/#%EB%B0%A9%EB%AC%B8%EC%9E%90visitor) |
-| | | [전략(Strategy)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%A0%84%EB%9E%B5strategy) |
-| | | [상태(State)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%83%81%ED%83%9Cstate) |
-| | | [템플릿 메서드(Template Method)](http://localhost:8000/cs/design-patterns-for-humans/#%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A9%94%EC%84%9C%EB%93%9Ctemplate-method) |
+| [심플 팩토리(Simple Factory)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%8B%AC%ED%94%8C-%ED%8C%A9%ED%86%A0%EB%A6%ACsimple-factory) | [어댑터(Adapter)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%96%B4%EB%8C%91%ED%84%B0adapter) | [책임 연쇄(Chain of Responsibility)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%B1%85%EC%9E%84-%EC%97%B0%EC%87%84chain-of-responsibility) |
+| [팩토리 메서드(Factory Method)](https://soobing.github.io/cs/design-patterns-for-humans/#%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9Cfactory-method) | [브릿지(Bridge)](https://soobing.github.io/cs/design-patterns-for-humans/#%EB%B8%8C%EB%A6%BF%EC%A7%80bridge) | [명령(Command)](https://soobing.github.io/cs/design-patterns-for-humans/#%EB%AA%85%EB%A0%B9command) |
+| [추상 팩토리(Abstract Factory)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%B6%94%EC%83%81-%ED%8C%A9%ED%86%A0%EB%A6%ACabstract-factory) | [컴포지트(Composite)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%BB%B4%ED%8F%AC%EC%A7%80%ED%8A%B8composite) | [반복자(Iterator)](https://soobing.github.io/cs/design-patterns-for-humans/#%EB%B0%98%EB%B3%B5%EC%9E%90iterator) |
+| [생성자(Builder)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%83%9D%EC%84%B1%EC%9E%90builder) | [데코레이터(Decorator)](https://soobing.github.io/cs/design-patterns-for-humans/#%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0decorator) | [중재자(Mediator)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%A4%91%EC%9E%AC%EC%9E%90mediator) |
+| [프로토타입(Prototype)](https://soobing.github.io/cs/design-patterns-for-humans/#%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85prototype) | [퍼사드(Facade)](https://soobing.github.io/cs/design-patterns-for-humans/#%ED%8D%BC%EC%82%AC%EB%93%9Cfacade) | [메멘토(Memento)](https://soobing.github.io/cs/design-patterns-for-humans/#%EB%A9%94%EB%A9%98%ED%86%A0memento) |
+| [싱글톤(Singleton)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%8B%B1%EA%B8%80%ED%86%A4singleton) | [플라이웨이트(Flyweight)](https://soobing.github.io/cs/design-patterns-for-humans/#%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9B%A8%EC%9D%B4%ED%8A%B8flyweight) | [옵저버(Observer)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%98%B5%EC%A0%80%EB%B2%84observer) |
+| | [프록시(Proxy)](https://soobing.github.io/cs/design-patterns-for-humans/#%ED%94%84%EB%A1%9D%EC%8B%9Cproxy) | [방문자(Visitor)](https://soobing.github.io/cs/design-patterns-for-humans/#%EB%B0%A9%EB%AC%B8%EC%9E%90visitor) |
+| | | [전략(Strategy)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%A0%84%EB%9E%B5strategy) |
+| | | [상태(State)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%83%81%ED%83%9Cstate) |
+| | | [템플릿 메서드(Template Method)](https://soobing.github.io/cs/design-patterns-for-humans/#%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A9%94%EC%84%9C%EB%93%9Ctemplate-method) |
 
 ## 소개
 
@@ -57,9 +57,9 @@ draft: false
 
 ### 디자인 패턴 종류
 
-- [생성(Creational)](http://localhost:8000/cs/design-patterns-for-humans/#%EC%83%9D%EC%84%B1creational-%ED%8C%A8%ED%84%B4)
-- [구조(Structural)](http://localhost:8000/cs/design-patterns-for-humans/#%EA%B5%AC%EC%A1%B0structural-%ED%8C%A8%ED%84%B4)
-- [행동(Behavioral)](http://localhost:8000/cs/design-patterns-for-humans/#%ED%96%89%EB%8F%99behavioral-%ED%8C%A8%ED%84%B4)
+- [생성(Creational)](https://soobing.github.io/cs/design-patterns-for-humans/#%EC%83%9D%EC%84%B1creational-%ED%8C%A8%ED%84%B4)
+- [구조(Structural)](https://soobing.github.io/cs/design-patterns-for-humans/#%EA%B5%AC%EC%A1%B0structural-%ED%8C%A8%ED%84%B4)
+- [행동(Behavioral)](https://soobing.github.io/cs/design-patterns-for-humans/#%ED%96%89%EB%8F%99behavioral-%ED%8C%A8%ED%84%B4)
 
 ## 생성(Creational) 패턴
 
