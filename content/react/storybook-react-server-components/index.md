@@ -133,7 +133,7 @@ export const Success {
 
 데이터베이스의 모듈 모킹 버전과 MSW2로 모킹된 API 버전을 포함한 위의 전체 예제에 대한 전체 내용은 [우리의 전체 RSC 데모 Storybook](https://6578430567214463f1df4629-htkembgskw.chromatic.com/?path=%2Fdocs%2Foverview--docs&ref=storybookblog.ghost.io) 또는 [GitHub 레포지토리](https://github.com/shilman/storybook-rsc-demo?ref=storybookblog.ghost.io)를 확인하십시오.
 
-!https://storybookblog.ghost.io/content/images/2023/12/CleanShot-2023-12-13-at-10.02.38@2x.png
+![](https://storybookblog.ghost.io/content/images/2023/12/CleanShot-2023-12-13-at-10.02.38@2x.png)
 
 ## 주의사항
 
