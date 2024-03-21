@@ -331,7 +331,7 @@ const childOfBrother = await walker.firstChild(brother)
 
 이 글에서는 초기 렌더링을 넘어 HTML 스트리밍의 이점과 실용적인 응용에 대해 이야기했습니다.
 
-우리는 [RPC](https://aralroca.com/blog/html-node-streaming#rpcs-ex-server-actions), [뷰 트랜지션 API](https://aralroca.com/blog/html-node-streaming#navigation-view-transitions-api), [DOM 비교 알고리즘](https://aralroca.com/blog/html-node-streaming#dom-diffing-algorithm) 같은 더 기술적인 개념들에 대해 언급했지만, 각각의 주제에 대해 자세히 들어가기보다는 각각에서 HTML 스트리밍을 어떻게 사용하는지에 대해 이야기했습니다. 이 글에서 깊이 다루지 않은 주제에 대해 더 알고 싶다면, 댓글로 달아주시면 주제에 초점을 맞춘 다른 글을 작성하는 데 참고하겠습니다.
+우리는 [RPC](https://soobing.github.io/react/html-node-streaming/#rpcs-%EC%98%88-%EC%84%9C%EB%B2%84-%EC%95%A1%EC%85%98), [뷰 트랜지션 API](https://soobing.github.io/react/html-node-streaming/#%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98-%EB%B7%B0-%ED%8A%B8%EB%9E%9C%EC%A7%80%EC%85%98-api), [DOM 비교 알고리즘](https://soobing.github.io/react/html-node-streaming/#dom-%EB%B9%84%EA%B5%90-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) 같은 더 기술적인 개념들에 대해 언급했지만, 각각의 주제에 대해 자세히 들어가기보다는 각각에서 HTML 스트리밍을 어떻게 사용하는지에 대해 이야기했습니다. 이 글에서 깊이 다루지 않은 주제에 대해 더 알고 싶다면, 댓글로 달아주시면 주제에 초점을 맞춘 다른 글을 작성하는 데 참고하겠습니다.
 
 또한, [parse-html-stream](https://github.com/aralroca/parse-html-stream)에 대해서도 이야기했는데, 이는 제가 최근에 오픈소스로 공개한 작은 라이브러리로 누구나 사용할 수 있습니다.
 
