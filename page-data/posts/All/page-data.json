@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-category-template-js",
     "path": "/posts/All",
-    "result": {"pageContext":{"currentCategory":"All","categories":["All","translate","typescript","react","browser","a11y","infra","react-query","javascript","cs","feature","troubleshooting"],"edges":[]}},
+    "result": {"pageContext":{"currentCategory":"All","categories":["All","translate","typescript","react","browser","infra","a11y","react-query","javascript","cs","feature","troubleshooting"],"edges":[]}},
     "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
