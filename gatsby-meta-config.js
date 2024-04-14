@@ -1,6 +1,6 @@
 module.exports = {
   title: `LESS BUT BETTER`,
-  description: `슈빈의 개발블로그`,
+  description: `soobing의 개발블로그`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://soobing.github.io/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
@@ -11,10 +11,10 @@ module.exports = {
   },
   ga: 'G-G4M2VQ5W05', // Google Analytics Tracking ID
   author: {
-    name: `슈빈`,
+    name: `soobing`,
     bio: {
       role: `개발자`,
-      description: ['지속가능한 소프트웨어를 만드는', '열정이 가득한', '즐겁게 일하는'],
+      description: ['지속가능한 소프트웨어를 만드는', '배우는 자세를 가진', '편하게 소통할 수 있는'],
     },
     social: {
       github: `https://github.com/soobing`,
