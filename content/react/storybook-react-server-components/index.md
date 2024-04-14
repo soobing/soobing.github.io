@@ -3,7 +3,7 @@ title: (번역) 리액트 서버 컴포넌트를 위한 스토리북
 date: '2024-02-02 00:00:00'
 author: soobing
 tags: storybook RSC react
-categories: react
+categories: translate react
 draft: false
 ---
 

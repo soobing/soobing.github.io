@@ -3,7 +3,7 @@ title: (번역) StructuredClone API를 사용하여 객체를 깊은 복사하�
 date: '2023-05-07 00:00:00'
 author: soobing
 tags: javascript StructuredClone object deep-copy
-categories: javascript
+categories: translate javascript
 draft: false
 ---
 

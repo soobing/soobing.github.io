@@ -3,7 +3,7 @@ title: (번역) React Query를 사용하여 서버 상태를 관리하는 방법
 date: '2023-06-21 00:00:00'
 author: soobing
 tags: react state management react-query
-categories: react
+categories: translate react react-query
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: (번역) 캐시 시스템 설계할 때 기억해야 할 6가지 캐싱 �
 date: '2023-06-13 00:00:00'
 author: soobing
 tags: cs cache
-categories: cs
+categories: translate cs
 draft: false
 ---
 

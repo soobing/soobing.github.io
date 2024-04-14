@@ -3,7 +3,7 @@ title: '(번역) React에서 UI와 로직 분리하기:헤드리스 컴포넌트
 date: '2023-09-13 00:00:00'
 author: soobing
 tags: react headless ui
-categories: react
+categories: translate react
 draft: false
 ---
 

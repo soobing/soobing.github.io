@@ -1,9 +1,9 @@
 ---
-title: '[react-query] useMutation에서 variable 옵셔널하게 사용하기'
+title: 'React Query useMutation에서 variable 옵셔널하게 사용하기'
 date: '2023-02-15 00:00:00'
 author: soobing
 tags: react react-query troubleshooting
-categories: react troubleshooting
+categories: react react-query troubleshooting
 draft: false
 ---
 

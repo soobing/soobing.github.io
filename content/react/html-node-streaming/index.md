@@ -3,7 +3,7 @@ title: (번역) 스트리밍 HTML과 DOM 비교 알고리즘
 date: '2024-03-21 00:00:00'
 author: soobing
 tags: webdev javascript experimental
-categories: react
+categories: translate react
 draft: false
 ---
 

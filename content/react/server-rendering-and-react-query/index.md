@@ -1,9 +1,9 @@
 ---
-title: '[React-Query] 서버에서 prefetching 한 데이터 사용하기'
+title: '서버에서 React Query  prefetching 한 데이터 사용하기'
 date: '2023-12-10 00:00:00'
 author: soobing
 tags: react react-query hydrate dehydrate
-categories: react
+categories: react react-query
 draft: false
 ---
 Next.js나 Remix 같은 프레임워크 내에서 React-Query를 사용한다면, 서버 렌더링 될 때 요청 후 응답받은 데이터를 SPA 방식으로 전환되고 나서도 유지할 수 있을까요? 어떻게 가능할까요? React Query의 `hydrate`와 `dehydrate`는 서버에서 미리 가져온 데이터를 클라이언트 사이드에서 재사용 할 수 있게 해줍니다. 이번 글을 통해 서버 렌더링과 어떻게 이를 가능하게 하는지 `hydrate`와 `dehydrate`에  대해서 알아봅시다.

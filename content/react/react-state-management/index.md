@@ -99,5 +99,5 @@ react의 상태관리 종류 4가지를 알아보고, 각각의 종류별로 왜
 -----------
 ## TO-BE-CONTINUED
 - Global State → Client State + Server State 로 분리해야하는 이유
-- React-Query 도입기
+- React Query 도입기
 - Recoil 도입기

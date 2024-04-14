@@ -1,9 +1,9 @@
 ---
-title: '2024년 자바스크립트의 5가지 가장 혁신적인 제안'
+title: '(번역) 2024년 자바스크립트의 5가지 가장 혁신적인 제안'
 date: '2023-12-20 00:00:00'
 author: soobing
 tags: javascript
-categories: javascript
+categories: translate javascript
 draft: false
 ---
 

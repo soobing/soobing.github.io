@@ -3,7 +3,7 @@ title: (번역) 시그널(Signal)에 대한 소개
 date: '2023-11-27 00:00:00'
 author: soobing
 tags: preact state signal
-categories: react
+categories: translate react
 draft: false
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: '[TypeScript] 타입 호환성 문제 해결하기: as const vs. satisfies'
+title: '타입스크립트 타입 호환성 문제 해결하기 "as const vs satisfies"'
 date: '2024-03-31 00:00:00'
 author: soobing
 tags: typescript assertion as-const satisfies

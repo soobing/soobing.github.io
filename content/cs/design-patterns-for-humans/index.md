@@ -3,7 +3,7 @@ title: (번역) 우리들을 위한 디자인 패턴
 date: '2023-08-27 00:00:00'
 author: soobing
 tags: cs design-pattern
-categories: cs
+categories: translate cs
 draft: false
 ---
 > 원글: https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/readme.md

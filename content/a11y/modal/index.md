@@ -3,7 +3,7 @@ title: 모달 구현시 고려해야할 접근성
 date: '2022-03-30 00:00:00'
 author: soobing
 tags: a11y modal aria-hidden
-categories: 접근성
+categories: a11y
 draft: true
 ---
 

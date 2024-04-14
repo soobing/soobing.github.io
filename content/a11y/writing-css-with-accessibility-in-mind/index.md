@@ -3,7 +3,7 @@ title: (번역) 접근성을 고려하여 CSS 작성하기
 date: '2024-02-18 00:00:00'
 author: soobing
 tags: css translate
-categories: a11y
+categories: translate a11y
 draft: false
 ---
 > 원글: https://medium.com/@matuzo/writing-css-with-accessibility-in-mind-8514a0007939

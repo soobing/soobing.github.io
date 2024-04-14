@@ -1,9 +1,9 @@
 ---
-title: react-query 시작하기 (feat. Tanstack)
+title: React Query  시작하기 (feat. Tanstack)
 date: '2023-02-05 00:00:00'
 author: soobing
 tags: react state management react-query
-categories: react
+categories: react react-query
 draft: false
 ---
 ## Introduction

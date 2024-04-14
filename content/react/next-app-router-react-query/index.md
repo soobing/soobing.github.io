@@ -1,9 +1,9 @@
 ---
-title: '[React-Query] Next.js app router에서 사용하면서 고민했던 것들'
+title: 'Next.js app router에서 React Query 사용하면서 고민했던 것들'
 date: '2024-01-07 00:00:00'
 author: soobing
 tags: next react-query
-categories: react
+categories: react react-query
 draft: false
 ---
 
