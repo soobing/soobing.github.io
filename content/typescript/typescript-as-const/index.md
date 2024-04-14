@@ -89,7 +89,7 @@ const foo = 'foo' as const;
 const bar = foo as const; // 'const' 어셜션은 열거형(enum) 멤버, 문자열, 숫자, 불리언, 배열, 객체 리터럴에 대한 참조에만 적용될 수 있습니다.
 ```
 
-## **객체**
+## 객체
 
 객체와 배열에서 "as const"가 훨씬 더 흥미로워집니다. 객체의 경우, "as const"는 모든 속성을 읽기 전용(readonly)으로 변경하고 값의 범위를 좁힙니다.
 
