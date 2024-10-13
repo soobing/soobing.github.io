@@ -1,5 +1,5 @@
 ---
-title: '환경 변수(process.env)를 구조 분해 할당하면 안되는 이유'
+title: '환경 변수(process.env)를 구조 분해 할당하면 안되는 이유 🦷'
 date: '2024-06-26 00:00:00'
 author: soobing
 tags: config next.js process.env destructuring 환경변수 구조-분해-할당
