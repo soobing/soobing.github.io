@@ -149,6 +149,11 @@
 <ul>
 <li><strong><code>{ next: { revalidate: 3600 } }</code>:</strong> 데이터를 가져온 후 최대 3600초(1시간) 동안 캐시된 데이터를 사용하고, 그 이후에는 백그라운드에서 데이터를 재검증합니다.</li>
 </ul>
+<p><strong>✔️ 버전별 기본값</strong></p>
+<ul>
+<li><a href="https://nextjs.org/docs/14/app/api-reference/functions/fetch#optionscache">Next.js v14</a> 에서는 기본적으로 <code>force-cache</code>로 설정되어 있어 별도로 설정하지 않으면 요청한 데이터는 서버의 데이터 캐시에 저장되며, 동일한 요청 시 캐시된 데이터가 반환됩니다.</li>
+<li><a href="https://nextjs.org/docs/app/api-reference/functions/fetch#optionscache">Next.js v15</a> 부터 fetch 함수의 cache 옵션 기본값이 ‘no-store’로 변경되었습니다. 따라서, 별도로 설정하지 않으면 매 요청마다 새로운 데이터를 가져오게 됩니다.</li>
+</ul>
 <p><strong>✔️ 예제</strong></p>
 <pre class="grvsc-container default-dark" data-language="tsx" data-index="1"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk3">// 캐시를 사용하여 데이터를 가져오기</span></span></span>
 <span class="grvsc-line"><span class="grvsc-source"><span class="mtk11">fetch</span><span class="mtk1">(</span><span class="mtk8">&#39;/api/data&#39;</span><span class="mtk1">, { </span><span class="mtk12">cache:</span><span class="mtk1"> </span><span class="mtk8">&#39;force-cache&#39;</span><span class="mtk1"> });</span></span></span>
