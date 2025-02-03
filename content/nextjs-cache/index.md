@@ -76,8 +76,8 @@ export default async function Page() {
 - **`{ next: { revalidate: 3600 } }`:** 데이터를 가져온 후 최대 3600초(1시간) 동안 캐시된 데이터를 사용하고, 그 이후에는 백그라운드에서 데이터를 재검증합니다.
 
 **✔️ 버전별 기본값**
-- [Next.js v14](https://nextjs.org/docs/14/app/api-reference/functions/fetch#optionscache) 에서는 기본적으로 `force-cache`로 설정되어 있어 별도로 설정하지 않으면 요청한 데이터는 서버의 데이터 캐시에 저장되며, 동일한 요청 시 캐시된 데이터가 반환됩니다.
-- [Next.js v15](https://nextjs.org/docs/app/api-reference/functions/fetch#optionscache) 부터 fetch 함수의 cache 옵션 기본값이 'no-store'로 변경되었습니다. 따라서, 별도로 설정하지 않으면 매 요청마다 새로운 데이터를 가져오게 됩니다.
+- [Next.js v14](https://nextjs.org/docs/14/app/api-reference/functions/fetch#optionscache) 에서는 기본적으로 `'force-cache'`로 설정되어 있어 별도로 설정하지 않으면 요청한 데이터는 서버의 데이터 캐시에 저장되며, 동일한 요청 시 캐시된 데이터가 반환됩니다.
+- [Next.js v15](https://nextjs.org/docs/app/api-reference/functions/fetch#optionscache) 부터 fetch 함수의 cache 옵션 기본값이 `'no-store'`로 변경되었습니다. 따라서, 별도로 설정하지 않으면 매 요청마다 새로운 데이터를 가져오게 됩니다.
 
 **✔️ 예제**
 
