@@ -1,9 +1,14 @@
-import React, { useMemo } from 'react';
-import { Tabs, Tab } from '@mui/material';
+import React, { useMemo, useState, useEffect } from 'react';
 import PostCardColumn from '../post-card-column';
 import './style.scss';
 
 function PostTabs({ tabIndex, onChange, tabs, posts, showMoreButton }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const tabPosts = useMemo(() => {
     if (tabs[tabIndex] === 'All') return posts;
     return posts.filter((post) => post.categories.includes(tabs[tabIndex]));
@@ -12,17 +17,19 @@ function PostTabs({ tabIndex, onChange, tabs, posts, showMoreButton }) {
   return (
     <div className="post-tabs-wrapper">
       <div className="post-tabs">
-        <Tabs
-          className="mui-tabs"
-          value={tabIndex}
-          onChange={onChange}
-          variant="scrollable"
-          scrollButtons="desktop"
-        >
+        <div className="custom-tabs" role="tablist">
           {tabs.map((title, index) => (
-            <Tab label={title} key={index} />
+            <button
+              key={index}
+              role="tab"
+              aria-selected={tabIndex === index}
+              className={`custom-tab ${tabIndex === index ? 'active' : ''}`}
+              onClick={(e) => onChange(e, index)}
+            >
+              {title}
+            </button>
           ))}
-        </Tabs>
+        </div>
       </div>
       <PostCardColumn
         posts={showMoreButton ? tabPosts.slice(0, 4) : tabPosts}

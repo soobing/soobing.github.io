@@ -42,10 +42,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: metaConfig.ga,
-        head: true,
+        trackingIds: [metaConfig.ga],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          : true,
+        },
       },
     },
     {
@@ -78,60 +83,91 @@ module.exports = {
               exclude: 'Table of Contents',
               tight: false,
               ordered: false,
-              fromHeading: 2,
-              toHeading: 6,
+              froming: 2,
+              toing: 6,
               className: 'table-of-contents',
             },
           },
-          // TODO: prismjs 삭제
-          // {
-          //   resolve: `gatsby-remark-prismjs`,
-          //   options: {
-          //     classPrefix: 'language-',
-          //     inlineCodeMarker: null,
-          //     aliases: {},
-          //     showLineNumbers: false,
-          //     noInlineHighlight: false,
-          //     languageExtensions: [
-          //       {
-          //         language: 'superscript',
-          //         extend: 'javascript',
-          //         definition: {
-          //           superscript_types: /(SuperType)/,
-          //         },
-          //         insertBefore: {
-          //           function: {
-          //             superscript_keywords: /(superif|superelse)/,
-          //           },
-          //         },
-          //       },
-          //     ],
-          //     prompt: {
-          //       user: 'root',
-          //       host: 'localhost',
-          //       global: false,
-          //     },
-          //     escapeEntities: {},
-          //   },
-          // },
           {
-            resolve: `gatsby-remark-vscode`,
-            // All options are optional. Defaults shown here.
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
           },
-          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-autolink-ers`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
       },
     },
-    `gatsby-theme-material-ui`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map((node) => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ 'content:encoded': node.html }],
+                });
+              });
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { frontmatter: { date: DESC } }
+                  filter: { frontmatter: { draft: { eq: false } } }
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: metaConfig.title,
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
+    },
   ],
 };

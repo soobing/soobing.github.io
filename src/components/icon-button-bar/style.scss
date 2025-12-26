@@ -1,11 +1,33 @@
 @use '../../styles/variables'as *;
 
+.icon-button-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    transform: scale(1.1);
+  }
+}
+
 .icon {
-    font-size: 20px;
-    color: var(--about-link-icon-color);
+  width: 20px;
+  height: 20px;
+  color: var(--about-link-icon-color);
 }
 
 .social-links .icon {
-    font-size: 30px;
-    color: var(--bio-link-icon-color);
+  width: 30px;
+  height: 30px;
+  color: var(--bio-link-icon-color);
 }

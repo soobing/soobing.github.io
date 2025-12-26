@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import { navigate } from 'gatsby-link';
 import React, { useCallback } from 'react';
 import PostCard from '../post-card';
@@ -16,14 +15,12 @@ function PostCardColumn({ posts, showMoreButton, moreUrl }) {
           <PostCard key={index} post={post} />
         ))}
         {showMoreButton && (
-          <Button
+          <button
             className="more-post-card-button"
             onClick={onMoreButtonClick}
-            variant="contained"
-            disableElevation
           >
             More
-          </Button>
+          </button>
         )}
       </div>
     </div>

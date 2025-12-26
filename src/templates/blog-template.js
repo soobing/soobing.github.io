@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
-import Seo from '../components/seo';
+import { Seo } from '../components/seo';
 import PostHeader from '../components/post-header';
 import PostNavigator from '../components/post-navigator';
 import Post from '../models/post';
@@ -9,33 +9,15 @@ import PostContent from '../components/post-content';
 import Utterances from '../components/utterances';
 
 function BlogTemplate({ data }) {
-  const [viewCount, setViewCount] = useState(null);
-
   const curPost = new Post(data.cur);
   const prevPost = data.prev && new Post(data.prev);
   const nextPost = data.next && new Post(data.next);
-  const { siteUrl, comments } = data.site?.siteMetadata;
+  const { comments } = data.site?.siteMetadata;
   const utterancesRepo = comments?.utterances?.repo;
-
-  useEffect(() => {
-    if (!siteUrl) return;
-    const namespace = siteUrl.replace(/(^\w+:|^)\/\//, '');
-    const key = curPost.slug.replace(/\//g, '');
-
-    fetch(
-      `https://api.countapi.xyz/${
-        process.env.NODE_ENV === 'development' ? 'get' : 'hit'
-      }/${namespace}/${key}`,
-    ).then(async (result) => {
-      const data = await result.json();
-      setViewCount(data.value);
-    });
-  }, [siteUrl, curPost.slug]);
 
   return (
     <Layout>
-      <Seo title={curPost?.title} description={curPost?.excerpt} />
-      <PostHeader post={curPost} viewCount={viewCount} />
+      <PostHeader post={curPost} />
       <PostContent html={curPost.html} />
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />
       {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
@@ -44,6 +26,11 @@ function BlogTemplate({ data }) {
 }
 
 export default BlogTemplate;
+
+export function Head({ data }) {
+  const curPost = new Post(data.cur);
+  return <Seo title={curPost?.title} description={curPost?.excerpt} />;
+}
 
 export const pageQuery = graphql`
   query($slug: String, $nextSlug: String, $prevSlug: String) {
@@ -92,7 +79,6 @@ export const pageQuery = graphql`
 
     site {
       siteMetadata {
-        siteUrl
         comments {
           utterances {
             repo

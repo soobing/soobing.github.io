@@ -3,7 +3,6 @@
   justify-content: center;
   width: 100%;
 
-
   .post-card-column {
     display: flex;
     flex-direction: column;
@@ -16,10 +15,24 @@
 
     .more-post-card-button {
       height: 40px;
+      padding: 0 24px;
       font-weight: 500;
       font-size: 15px;
       background-color: var(--button-background-color);
       color: var(--tab-hover-text-color);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+
+      &:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
     }
   }
 }

@@ -12,51 +12,42 @@
   .post-tabs {
     display: flex;
     justify-content: center;
-    height: 40px;
     width: 100%;
     max-width: $content-max-width + 40px;
     margin-bottom: 12px;
+    overflow-x: auto;
 
-    .mui-tabs {
-      .MuiTab-root {
+    .custom-tabs {
+      display: flex;
+      gap: 4px;
+      padding: 4px;
+
+      .custom-tab {
         height: 40px;
-        min-height: auto;
         min-width: auto;
         padding: 10px 12px;
         font-family: $font-family;
         color: var(--tab-text-color);
         font-weight: 500;
         font-size: 12px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
         transition: all 200ms ease;
-
-        :hover {
-          color: var(--tab-hover-text-color);
-          transition: all 200ms ease;
-        }
-      }
-
-      .Mui-selected {
-        background-color: var(--tab-selected-background-color);
-        color: var(--tab-hover-text-color);
+        white-space: nowrap;
         border-radius: 8px;
-        font-weight: 600;
-        transition: all 200ms ease;
-      }
 
-      .MuiTabScrollButton-root {
-        height: 40px;
-        width: 20px;
-      }
+        &:hover {
+          color: var(--tab-hover-text-color);
+          background-color: var(--tab-selected-background-color);
+        }
 
-      .MuiTabs-scrollable {
-        height: 40px;
-      }
-
-      .MuiTabs-indicator {
-        display: none;
+        &.active {
+          background-color: var(--tab-selected-background-color);
+          color: var(--tab-hover-text-color);
+          font-weight: 600;
+        }
       }
     }
   }
-
-
 }
