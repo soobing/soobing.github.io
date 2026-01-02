@@ -11,9 +11,12 @@ function Navigation({ type = 'horizontal' }) {
   ];
 
   const isActive = (path) => ({ location: { pathname } }) => {
+    const normalizedPathname = pathname.endsWith('/') && pathname !== '/' 
+      ? pathname.slice(0, -1) 
+      : pathname;
     const everyPaths = routes.map(({ path }) => path);
-    const isMatched = path === pathname;
-    const isBlogPost = path === '/posts' && !everyPaths.includes(pathname);
+    const isMatched = path === normalizedPathname;
+    const isBlogPost = path === '/posts' && !everyPaths.includes(normalizedPathname);
 
     if (isMatched || isBlogPost) return { className: 'active' };
     return {};

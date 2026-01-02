@@ -1,8 +1,7 @@
-import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
-function Seo({ description, title }) {
+export function useSiteMetadata() {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -10,6 +9,7 @@ function Seo({ description, title }) {
           siteMetadata {
             title
             description
+            siteUrl
             author {
               name
             }
@@ -19,45 +19,28 @@ function Seo({ description, title }) {
       }
     `,
   );
+  return site.siteMetadata;
+}
 
-  const metaDescription = description || site.siteMetadata.description;
+// Gatsby Head API를 위한 SEO 컴포넌트
+export function Seo({ title, description, children }) {
+  const siteMetadata = useSiteMetadata();
+  const metaDescription = description || siteMetadata.description;
+  const metaTitle = title ? `${title} | ${siteMetadata.title}` : siteMetadata.title;
+
   return (
-    <Helmet
-      htmlAttributes={{ lang: 'en' }}
-      title={title}
-      defaultTitle={site.siteMetadata.title}
-      meta={[
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:site_title`,
-          content: title,
-        },
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: 'og:author',
-          content: site.siteMetadata.author.name,
-        },
-        {
-          property: 'og:image',
-          content: site.siteMetadata.ogImage,
-        },
-
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-      ]}
-    />
+    <>
+      <html lang="ko" />
+      <title>{metaTitle}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={metaTitle} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta property="og:author" content={siteMetadata.author.name} />
+      <meta property="og:image" content={siteMetadata.ogImage} />
+      <meta property="og:site_name" content={siteMetadata.title} />
+      {children}
+    </>
   );
 }
 

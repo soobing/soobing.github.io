@@ -11,7 +11,7 @@ function CategoryPageHeader() {
     <StaticQuery
       query={graphql`
         query SearchIndexQuery {
-          allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+          allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
             edges {
               node {
                 frontmatter {

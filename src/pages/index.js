@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { graphql } from 'gatsby';
 import { throttle } from '../utils/helpers';
 import Layout from '../layout';
-import Seo from '../components/seo';
+import { Seo } from '../components/seo';
 import MainTitle from '../components/main-title';
 import RoundNavigation from '../components/round-navigation';
 import Navigation from '../components/navigation';
@@ -20,7 +20,6 @@ function HomePage({ data }) {
   }, []);
   return (
     <Layout showHeader={false}>
-      <Seo title="Home" />
       <div className="main-page">
         <section className="content">
           <MainTitle />
@@ -33,9 +32,13 @@ function HomePage({ data }) {
 
 export default HomePage;
 
+export function Head() {
+  return <Seo title="Home" />;
+}
+
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           id

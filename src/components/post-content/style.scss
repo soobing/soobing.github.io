@@ -1,7 +1,4 @@
 @use '../../styles/markdown-style'as *;
-// TODO: prismjs 삭제
-// @use 'prismjs/themes/prism-tomorrow'as *;
-@import 'gatsby-remark-vscode/styles.css';
 
 .post-content {
   display: flex;

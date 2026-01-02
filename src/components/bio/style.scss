@@ -34,7 +34,7 @@
     flex-direction: column;
     word-break: keep-all;
 
-    .react-rotating-text-cursor {
+    .rotating-text-cursor {
       animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
     }
 
@@ -49,7 +49,7 @@
       line-height: 1.2;
 
       .title {
-        .react-rotating-text-cursor {
+        .rotating-text-cursor {
           font-size: 35px;
           line-height: 35px;
         }
@@ -59,7 +59,7 @@
         font-size: 40px;
 
         .title {
-          .react-rotating-text-cursor {
+          .rotating-text-cursor {
             font-size: 45px;
             line-height: 45px;
           }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
-import Seo from '../components/seo';
+import { Seo } from '../components/seo';
 import Bio from '../components/bio';
 // import TimeStampSection from '../components/timestamp-section';
 // import ProjectSection from '../components/project-section';
@@ -12,7 +12,6 @@ function AboutPage({ data }) {
   // const { timestamps, projects } = about;
   return (
     <Layout>
-      <Seo title="About" />
       <Bio author={author} language={language} />
       {/* <TimeStampSection timestamps={timestamps} />
       <ProjectSection projects={projects} /> */}
@@ -21,6 +20,10 @@ function AboutPage({ data }) {
 }
 
 export default AboutPage;
+
+export function Head() {
+  return <Seo title="About" />;
+}
 
 export const pageQuery = graphql`
   query {
