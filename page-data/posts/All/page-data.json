@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-templates-category-template-js",
-    "path": "/posts/All",
-    "result": {"pageContext":{"currentCategory":"All","categories":["All","framework","review","troubleshooting","config","bundler","react","next","translate","typescript","browser","infra","a11y","react-query","javascript","cs","feature","test"],"edges":[]}},
-    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
+{"componentChunkName":"component---src-templates-category-template-js","path":"/posts/All/","result":{"pageContext":{"currentCategory":"All","categories":["All","reflection","framework","review","troubleshooting","config","bundler","react","next","translate","typescript","browser","infra","a11y","react-query","javascript","cs","feature","test"],"edges":[]}},"staticQueryHashes":["1073350324","2009502679","3312986757"],"slicesMap":{}}
