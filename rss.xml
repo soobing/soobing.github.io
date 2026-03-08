@@ -1,4 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[LESS BUT BETTER]]></title><description><![CDATA[soobing의 개발블로그]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 03 Jan 2026 04:38:21 GMT</lastBuildDate><item><title><![CDATA[2025년 회고]]></title><description><![CDATA[어느 회사 면접이었는지 기억나지 않지만, 내 회고글을 보고 비꼬듯 질문 받았던 경험 때문에 언제부턴가 회고글을 쓰지 않았다. 내 생각을 블로그에 남기지 않기로 마음먹었던 것 같다. 근데 경력이 쌓이면서 (벌써…]]></description><link>https://soobing.github.io/reflection-2025/</link><guid isPermaLink="false">https://soobing.github.io/reflection-2025/</guid><pubDate>Sat, 03 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;어느 회사 면접이었는지 기억나지 않지만, 내 회고글을 보고 비꼬듯 질문 받았던 경험 때문에 언제부턴가 회고글을 쓰지 않았다. 내 생각을 블로그에 남기지 않기로 마음먹었던 것 같다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[LESS BUT BETTER]]></title><description><![CDATA[soobing의 개발블로그]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Mar 2026 13:30:01 GMT</lastBuildDate><item><title><![CDATA[Claude Code로 서비스를 만들며 배운 것 1 — 만드는 것과 팔리는 것은 다르다]]></title><description><![CDATA[1. 처음엔 클코의 필요성을 못 느꼈다. 25년 3월쯤 MCP가 나오며 업계에 큰 충격을 줬을 때, 나는 이미 VS Code에서 Cursor로 IDE를 바꾸고 넘어간 상태였다.
+기존 Copilot…]]></description><link>https://soobing.github.io/building-with-claude-code-1/</link><guid isPermaLink="false">https://soobing.github.io/building-with-claude-code-1/</guid><pubDate>Sat, 07 Mar 2026 15:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-처음엔-클코의-필요성을-못-느꼈다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EC%B2%98%EC%9D%8C%EC%97%94-%ED%81%B4%EC%BD%94%EC%9D%98-%ED%95%84%EC%9A%94%EC%84%B1%EC%9D%84-%EB%AA%BB-%EB%8A%90%EA%BC%88%EB%8B%A4&quot; aria-label=&quot;1 처음엔 클코의 필요성을 못 느꼈다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 처음엔 클코의 필요성을 못 느꼈다.&lt;/h2&gt;
+&lt;p&gt;25년 3월쯤 MCP가 나오며 업계에 큰 충격을 줬을 때, 나는 이미 VS Code에서 Cursor로 IDE를 바꾸고 넘어간 상태였다.
+기존 Copilot과는 다르게 프로젝트 전체를 파악하고 코드를 추천해주는 Cursor의 능력에 놀랐고, MCP 연동으로 이것저것 많이 해볼 수 있다는 점에도 또 한 번 놀랐다.
+그렇게 이미 agentic coding을 사용하고 있었기 때문에, 굳이 Claude Code를 써야 하나 싶었다. 어차피 프로젝트를 파일 단위 이상으로 파악하는 컨셉은 비슷하다고 생각했으니까.&lt;/p&gt;
+&lt;h2 id=&quot;2-링크드인에서-하도-난리길래-입문&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%EB%A7%81%ED%81%AC%EB%93%9C%EC%9D%B8%EC%97%90%EC%84%9C-%ED%95%98%EB%8F%84-%EB%82%9C%EB%A6%AC%EA%B8%B8%EB%9E%98-%EC%9E%85%EB%AC%B8&quot; aria-label=&quot;2 링크드인에서 하도 난리길래 입문 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 링크드인에서 하도 난리길래.. 입문&lt;/h2&gt;
+&lt;p&gt;25년 말부터 내 링크드인에는 Claude Code 사용법 관련 글밖에 뜨지 않았다. 다들 하도 대단하다고 하길래, Pro를 구독하기 전에 일단 API로 먼저 써보기 시작했다.
+그런데 막상 뭘 만들어야 할지 모르겠었다.
+만들고 싶은 게 딱히 없어서 토큰을 썩히고 있었는데,
+어느 날 친한 친구가, 미용실을 하는 동생을 위해 &lt;strong&gt;엑셀 시트로 순수익을 계산할 수 있도록 수식을 세팅해줬다&lt;/strong&gt;는 얘기를 했다.&lt;/p&gt;
+&lt;p&gt;“오, 미용실 정산 프로그램…?”&lt;/p&gt;
+&lt;p&gt;주변 자영업자들이 매출을 내는 데만 급급해서 정작 &lt;strong&gt;자신의 순수익을 제대로 계산하지 못하는 경우&lt;/strong&gt;가 많다는 걸 옆에서 본 적이 있기 때문에, 그런 분들을 위해 한번 무언가 만들어봐야겠다는 생각이 들었다.
+그래서 친구가 만든 엑셀 시트를 받아, 웹사이트 형태로 구현해봤다.&lt;/p&gt;
+&lt;h2 id=&quot;3-자영업자를-위한-순수익-정산-프로그램&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-%EC%9E%90%EC%98%81%EC%97%85%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%88%9C%EC%88%98%EC%9D%B5-%EC%A0%95%EC%82%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8&quot; aria-label=&quot;3 자영업자를 위한 순수익 정산 프로그램 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. ‘자영업자를 위한 순수익 정산 프로그램’&lt;/h2&gt;
+&lt;p&gt;이 프로젝트를 시작하면서 API 요금제로 쓰던 토큰을 다 써버렸고, 결국 Pro 라이선스를 구매했다.
+중간중간 제한에 걸리긴 했지만, 육아하면서 틈날 때마다 프롬프트를 입력하는 식으로 사용하다 보니 그렇게까지 불편하진 않았다.
+이걸 하면서 두 가지 큰 충격을 받았다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Claude Code의 능력&lt;/li&gt;
+&lt;li&gt;열심히 만들었는데… 친구 동생이 필요 없다고 함&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;엑셀 스프레드시트가 이미 있어서였는지, 자세한 기획을 주지 않았는데도 꽤 그럴듯하게 만들어냈다. Supabase를 붙여 DB를 연동하니 테이블 구조도 명확하게 잡아줬고, 이메일 가입 기능도 금방 만들어줬다.
+프론트는 말할 것도 없었다. 진짜 한 번도 코드를 보지 않았다.
+서비스 하나를 프롬프트 몇 번으로, 그것도 깔끔하고 반응형으로 턱 만들어내는 걸 보니 너무 충격적이어서 머리가 멍해졌다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/1b3dcf2b9f2794a8dfd6465112e87f0e/1.gif&quot; alt=&quot;미용실 순수익 정산 프로그램 데모&quot;&gt;&lt;/p&gt;
+&lt;p&gt;“와… 나는 이제 필요 없어지는 건가? ㅋㅋㅋ”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;그런데 또 한 번의 충격이 있었다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;신나서 친구에게 보여주며 “내가 이거 만들었다!” 하고 자랑했는데,&lt;br&gt;
+친구가 친구 동생에게 한 번 써보라고 보여준 뒤 돌아온 반응이 완전 싸늘했다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB6KdGcBRrRUQT/8QAGhABAAMAAwAAAAAAAAAAAAAAAQIQEQAyQv/aAAgBAQABBQKJENqEh5pR1xrzX//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABYQAAMAAAAAAAAAAAAAAAAAAAAwMf/aAAgBAQAGPwIi/wD/xAAdEAACAQQDAAAAAAAAAAAAAAABERAAITFRcYGh/9oACAEBAAE/IWtXO6IaQCQL6opN78Q+NHIYfuf/2gAMAwEAAgADAAAAEAwDAP/EABURAQEAAAAAAAAAAAAAAAAAABAB/9oACAEDAQE/ECn/xAAVEQEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAgEBPxAh/8QAHRABAAEEAwEAAAAAAAAAAAAAAREAECExQYGhYf/aAAgBAQABPxB22okpZjj2kjAd219HLKDzOqPBMGCe7BIxZYogm/WyjFiirtXu3//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;카카오톡 반응&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f687050ca4291fdcbe188092881474f9/80e3c/2.jpg&quot;
+        srcset=&quot;/static/f687050ca4291fdcbe188092881474f9/4ec73/2.jpg 180w,
+/static/f687050ca4291fdcbe188092881474f9/158ba/2.jpg 360w,
+/static/f687050ca4291fdcbe188092881474f9/80e3c/2.jpg 720w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;와.. ㅋㅋ 충격이 어마어마 했다.
+프론트 구현 능력은 AI에게 뒤쳐진다고 쳐도.. 앞으로 세상에 필요한 많은 서비스를 만들 수 있겠다고 생각하며 들떠 있었는데, 순식간에 쭈구리가 됐다.&lt;/p&gt;
+&lt;p&gt;마침 이런 뉴스도 떴다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://zdnet.co.kr/view/?no=20260224162240&quot;&gt;[사스포칼립스 위기 ㊥] SaaS에서 AI 플랫폼으로…글로벌 기업 ‘대이동’&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;전 세계적으로 소프트웨어 업계에서 생성형 인공지능(AI)가 빠르게 확산되면서 기존 서비스형 소프트웨어(SaaS) 중심의 매출 구조가 흔들리고 있다. AI가 단순 기능 추가 수준을 넘어 비즈니스 모델 자체를 재편할 수 있다는 인식이 커지면서 개인을 넘어 소프트웨어(SW) 기업을 대체할 것이란 우려가 커지고 있기 때문이다.
+이로 인해 일각에서는 SaaS와 멸망(Apocalypse)을 합친 ‘사스포칼립스(SaaSpocalypse)‘라는 표현까지 등장했다. AI 에이전트가 업무를 자율적으로 수행하는 구조로 발전함에 따라 서비스 사용자 수를 기준으로 과금하던 기존 구독 모델이 붕괴할 수 있다는 전망이 힘을 얻고 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;4-유저가-한-명이라도-있는-서비스를-만들어보자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-%EC%9C%A0%EC%A0%80%EA%B0%80-%ED%95%9C-%EB%AA%85%EC%9D%B4%EB%9D%BC%EB%8F%84-%EC%9E%88%EB%8A%94-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90&quot; aria-label=&quot;4 유저가 한 명이라도 있는 서비스를 만들어보자 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 유저가 한 명이라도 있는 서비스를 만들어보자&lt;/h2&gt;
+&lt;p&gt;일단 대충 Claude Code의 능력은 파악했고, 뭐라도 만들고 싶은 마음이 가득했다.
+그런데 내가 세상에 필요하다고 생각한 걸 만든다고 해서, 사람들이 당연히 써주는 건 아니었다.
+왜 내가 만든 소프트웨어를 써야 하는지 설명하고, 결국에는 내가 직접 PR도 하고 마케팅도 해야 한다는 걸 알게 됐다.
+늘 요구사항만 받아서 개발하던 내가, 마케팅까지 해보겠다고 Threads에 “미용실 정산 시스템” 써볼 사람 있냐는 글도 올려봤는데…&lt;/p&gt;
+&lt;p&gt;아무도 댓글을 달지 않았다…^^..&lt;/p&gt;
+&lt;p&gt;그래서 방향을 바꿨다.
+&lt;strong&gt;유저가 한 명이라도 있는 서비스를 만들자.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;바로 &lt;strong&gt;우리 집 가계부 정산 시스템&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;일단 무조건 사용하는 유저는 두 명이다.
+나랑 남편. ㅋㅋ&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.88888888888889%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAYAAAB836/YAAAACXBIWXMAAAsTAAALEwEAmpwYAAACdElEQVR42q1VW27aQBT1J8onr00gdsAKWAFrYgHsAgRILACpAiEVEFH5KYUmgMEUSDHmEdszPp07ZRw7oQmQXvlqPK/jM/eeO9YgzDAMDIdDbDYb6sLzPFxiap1pmiiXy/Jdo8H9fo/1eo3D4eAvvNTJaH+z2ZR9DTca5xy73U6SoJb6kmGQEQ1eelwyxph013VlGwIMxuVaD2JoapCob7db+bVbTOFoino+n0cul0Or1fJjdKlZliUxfEDaTFkm2TiOc3VyVOxDDBeLhX/ca+MXOnJQS8RyNpvJWL4ncDV+PB5RKBTQbrd9tn5SbNv2nY6tZPSeM5dB13VZKepDPkMS53K5lHG86Kji+X20sFwtJYnQkRUbJdTXmzk/D+pyJsHOJsUw5piMJ3DsU5a9gL9K1Ac6FF9yOSZzGz+nz5j94njUXdFnmC896AsPxopLluSMcVkEpD3Hcf3xEKDtcPyYeBhMgNEM+NIy8fX+gJEOfH8U/sDAT8wIZDQa4Vu/D0vEXWY3cA9oKkamJcRtCt9wbPceNpaHp1Of5pjY4DAuGfqXg9jnij55KCnBoJKNxw94Wq9UdCQIfVTptS/YDQaD0IX8hiFhSeqi3e0POD7b8p1xBfgX1BHaM4Xw9yKOttDrmxgqdBIn6fDTt416IUD6t5CuztUzVQ+V2ke17jMkGUynU1kx6hYmJyBqqb7pBLRWzal5teZT/5R/mQRsNBooFouoVCpnvVarST83V61WUSqVUK/XX34B2WwWkUgEiUQCsVgs5PF4HKlUCul0GslkEtFoNDRPe+7u7pDJZF4YkvI7nQ56vd5N3u12pS59wP8Zwz/bbAH/1T662AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;가계부 정산 시스템&quot;
+        title=&quot;&quot;
+        src=&quot;/static/435825b581b5985a07cb029a2b4035cc/37523/3.png&quot;
+        srcset=&quot;/static/435825b581b5985a07cb029a2b4035cc/e9ff0/3.png 180w,
+/static/435825b581b5985a07cb029a2b4035cc/f21e7/3.png 360w,
+/static/435825b581b5985a07cb029a2b4035cc/37523/3.png 720w,
+/static/435825b581b5985a07cb029a2b4035cc/302a4/3.png 1080w,
+/static/435825b581b5985a07cb029a2b4035cc/8ae78/3.png 1096w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;우리는 5년째 가계부를 빡세게 쓰고 있는데, 월급이 들어오면 고정비, 변동비를 하나하나 나눠서 통장 간 정산을 해야 하는 금액이 꽤 크고 복잡하다.&lt;/p&gt;
+&lt;p&gt;이건 실제로 복잡한 정산 로직이 들어가다 보니, 이전처럼 뚝딱 만들어지진 않았다. QA까지 포함해서 한 15일 정도 걸린 것 같다.&lt;/p&gt;
+&lt;p&gt;그 얘기는 2탄에서 이어서 써보려고 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2025년 회고]]></title><description><![CDATA[어느 회사 면접이었는지 기억나지 않지만, 내 회고글을 보고 비꼬듯 질문 받았던 경험 때문에 언제부턴가 회고글을 쓰지 않았다. 내 생각을 블로그에 남기지 않기로 마음먹었던 것 같다. 근데 경력이 쌓이면서 (벌써…]]></description><link>https://soobing.github.io/reflection-2025/</link><guid isPermaLink="false">https://soobing.github.io/reflection-2025/</guid><pubDate>Sat, 03 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;어느 회사 면접이었는지 기억나지 않지만, 내 회고글을 보고 비꼬듯 질문 받았던 경험 때문에 언제부턴가 회고글을 쓰지 않았다. 내 생각을 블로그에 남기지 않기로 마음먹었던 것 같다.&lt;/p&gt;
 &lt;p&gt;근데 경력이 쌓이면서 (벌써 7년차..) 매년 치열하게 살아왔는데도 기록해두지 않으니까 지난 일들이 잘 기억나지 않았다. 그리고 ChatGPT가 등장하면서 AI의 도움을 많이 받다 보니, 내 생각을 글로 정리하는 능력이 퇴화 하는게 느껴졌다. 단순히 기술을 소개하는 형태의 글 보다는 AI 시대일수록, 내 언어와 경험이 드러나는 기록이 더 중요해진 것 같다.&lt;/p&gt;
 &lt;p&gt;그래서 올해부터는 다시 회고글도 써보고,  내가 이해한 방식대로 기술 블로그도 써보려고 한다. 😊&lt;/p&gt;
 &lt;hr&gt;
