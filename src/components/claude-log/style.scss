@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 $panel-width: 320px;
 $panel-height: 450px;
 $header-height: 52px;
@@ -27,7 +29,7 @@ $text-muted: #6e6e73;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(135deg, $accent 0%, darken($accent, 12%) 100%);
+  background: linear-gradient(135deg, $accent 0%, color.adjust($accent, $lightness: -12%) 100%);
   border: none;
   cursor: pointer;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18), 0 1px 4px rgba(0, 0, 0, 0.1);
