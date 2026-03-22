@@ -1,4 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[LESS BUT BETTER]]></title><description><![CDATA[soobing의 개발블로그]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Mar 2026 00:12:09 GMT</lastBuildDate><item><title><![CDATA[Claude Code로 서비스를 만들며 배운 것 1 — 만드는 것과 팔리는 것은 다르다]]></title><description><![CDATA[1. 처음엔 클코의 필요성을 못 느꼈다. 25년 3월쯤 MCP가 나오며 업계에 큰 충격을 줬을 때, 나는 이미 VS Code에서 Cursor로 IDE를 바꾸고 넘어간 상태였다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[LESS BUT BETTER]]></title><description><![CDATA[soobing의 개발블로그]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 Mar 2026 14:14:22 GMT</lastBuildDate><item><title><![CDATA[Claude Code로 서비스를 만들며 배운 것 2 — 그럴싸해보이지만 생각보다 견고하지 않다.]]></title><description><![CDATA[…]]></description><link>https://soobing.github.io/building-with-claude-code-2/</link><guid isPermaLink="false">https://soobing.github.io/building-with-claude-code-2/</guid><pubDate>Sat, 21 Mar 2026 15:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;지난편&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A7%80%EB%82%9C%ED%8E%B8&quot; aria-label=&quot;지난편 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;지난편&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://soobing.github.io/building-with-claude-code-1&quot;&gt;지난편&lt;/a&gt;에서 유저가 한명이라도 있는 서비스를 만들어보자! 해서 시작된 우리집 가계부 서비스.
+사실 너무 우리에게 최적화된 서비스라, 이걸 또 쓰고 싶어 하는 사람이 있을까 싶었지만.. 혹시 몰라 멀티 테넌트 구조로 설계해두었고, 계정 로그인과 DB도 유저별로 분리되는 형태로 개발해두었다.&lt;/p&gt;
+&lt;a class=&quot;link-card&quot; href=&quot;https://soobing.github.io/building-with-claude-code-1&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+  &lt;svg class=&quot;link-card__icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&quot;/&gt;&lt;path d=&quot;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&quot;/&gt;&lt;/svg&gt;
+  &lt;span class=&quot;link-card__content&quot;&gt;
+    &lt;span class=&quot;link-card__title&quot;&gt;Claude Code로 서비스를 만들며 배운 것 1 — 만드는 것과 팔리는 것은 다르다&lt;/span&gt;
+    &lt;span class=&quot;link-card__url&quot;&gt;soobing.github.io/building-with-claude-code-1&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/a&gt;
+&lt;h2 id=&quot;월급이-들어오면-어떻게-처리하는가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9B%94%EA%B8%89%EC%9D%B4-%EB%93%A4%EC%96%B4%EC%98%A4%EB%A9%B4-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94%EA%B0%80&quot; aria-label=&quot;월급이 들어오면 어떻게 처리하는가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;월급이 들어오면 어떻게 처리하는가?&lt;/h2&gt;
+&lt;p&gt;기존에 우리집 가계부가 어떤 형식으로 작성되었는지에 대한 설명이 먼저 필요할 것 같다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 72.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACyElEQVR42p1TS08TURSmgA+eRk0lhFZMISGyUJMmJipJWfkj3KCu7EI3Llz4YAFakZKQtEkXtDwE0kANRaI4pCkEplhL2oJJKa12WjuttnS0QINTpjyu5046pBAeiTe5OXPPOd93vznn3Lzm5ubCjo6OKqXyrhS+JWNjY8V52SWRSIqqq6sv1dTUSGUy2UV8FmKAKVKrW6QY19raWjU8PFzAB/r6+i5/sc8mPn4YTVqtk2jSYmnC/qmpqUIw+fX19SflcvkJbPFZAJrN5jsO+yz3ftScJElb0mAwyHjCtra2ssHBQblOp7ul1WobOjs7K7IiRHlHLI1Gc95kMl1Rq9U3u7q65FjxnoS6uroyhUJRmOtDCIly9wG8IrFYXLrHY7fbG30+33Oo3UubzfbK6XQ2HaFwl9jtdjc5XS7Vu5GRdq/X+wawt/mMeDz+GpLQ2uoqh+3KyspcDgFWDLXjlYtyCdfX10mcn1pb28A2Eom08IhgMKja2dlBISrIplIpHJgrKSm5AKEzQ0OmboIYX+3t7abGxz/FjUajDvznYFdA3uc0yyLA/+U4Dvn9/qc8YSgUbsc3BAJ+joWEWCy2q7Cnp+cBdNM4MDBgIAjirV6vf4g7jWMMw5CZTBpR1PcN0AP4wDMeRFFU+/b2FopGIzwh3DgnNCTLm19bW1u+v4bR6C8ynWYxjt0AhdCHF3yGxWKRzc/PN4ZC0RtQXMXExMQ1QSEMeqlKpTqrVCql/f395TBWux0lSfKqx+NpgF+9vrCw0DA9PS09bMQEZae9i4tEmKaDLpfLFw6HKQATwi8fukAFP/25G/srKyuLlxnm21aGQz8j9GYmk0HLyzEKQnx8PwbzHKuQpmnPH4ZBX91ONgEWCh/IjtKxL+kgwlPJZHIJT8DvGL2JbSKR+PE/hMIqmJmZuedwOJ44HM5H8KIeW63W+8cR/QNPMLVm+fNEGQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;가계부 구조 다이어그램&quot;
+        title=&quot;&quot;
+        src=&quot;/static/05e52298bec02326c8d533c00ad7331b/37523/1.png&quot;
+        srcset=&quot;/static/05e52298bec02326c8d533c00ad7331b/e9ff0/1.png 180w,
+/static/05e52298bec02326c8d533c00ad7331b/f21e7/1.png 360w,
+/static/05e52298bec02326c8d533c00ad7331b/37523/1.png 720w,
+/static/05e52298bec02326c8d533c00ad7331b/d9199/1.png 960w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;위 다이어그램처럼, 매월 고정 수입에서 이미 정해져 있는 고정 지출, 금융 저축, 금융 지출, 의료비·교통비 등 그달 발생한 변동 지출까지 모두 제외한 나머지 금액을 전부 공금통장에 입금시킨다.
+둘이 합친 공금통장 입금액은 다시 공금을 굴리기 위한 통장들로 나눠서 관리하는데, 기본적으로 공금 통장의 목적에 맞게 예산이 정해져 있다. 그리고 매달 공금 통장에서 목적이 있는 통장들(경조사, 차량유지, 여행, 선물 등등)로 정해진 예산만큼 자동이체를 시킨다.&lt;/p&gt;
+&lt;h2 id=&quot;엑셀에서-시스템으로&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%97%91%EC%85%80%EC%97%90%EC%84%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9C%BC%EB%A1%9C&quot; aria-label=&quot;엑셀에서 시스템으로 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;엑셀에서 시스템으로&lt;/h2&gt;
+&lt;p&gt;우리는 가계부를 5년째 열심히 쓰고 있고, 연말에는 꼭 연말정산하는 시간을 갖는다.
+올해 얼마나 벌었고, 얼마나 썼고, 어디에 돈이 많이 들어갔는지, 투자 수익은 어떻게 되는지… 등등.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABOUlEQVR42q2SXY7CIBSFicaNaFyDb1qn8+4iNXULLsYm2mj/tAWqUmjrnLkQo89GH04+4IaTc7mwqExxPgtkpxKiuqHgF1RXjatqcLkZSFpbWtkzeVGk2u2V7iArhZPUOFYdsmMMxqWBaRqnm6phTAP9UK016kqgronaPOotFNHum7YldWiJf/e7O2dcSHDOURSFY5IkjkII8LLENY8hBUccx4iiCPv9HuF2izAMkWUp0jQhZjgcDtjtdmCSLiqlnMlms8F0OsV8Pn/qx/+FR/Q8D77vP+uz2cytLW1tMplgsViQoZTous4lXC6XYIy9rV6v5zgajV6GJbUXBIEr9vv9tzQYDJzheDx+GdqWV6vV5wnt49spWX7FsKRkeZ7TXzy7lr+S0BjjhvKVhM+hUNJgvf7IcDgc4h8P2OgYFbQSGQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;가계부 엑셀 화면&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e78eeea5d3fc54713410ff62be1ab135/37523/2.png&quot;
+        srcset=&quot;/static/e78eeea5d3fc54713410ff62be1ab135/e9ff0/2.png 180w,
+/static/e78eeea5d3fc54713410ff62be1ab135/f21e7/2.png 360w,
+/static/e78eeea5d3fc54713410ff62be1ab135/37523/2.png 720w,
+/static/e78eeea5d3fc54713410ff62be1ab135/302a4/2.png 1080w,
+/static/e78eeea5d3fc54713410ff62be1ab135/07a9c/2.png 1440w,
+/static/e78eeea5d3fc54713410ff62be1ab135/3c1e5/2.png 2854w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그런데 벌써 5년치 데이터가 쌓이다 보니, 매해 연말에 남편이 집계할 때마다 머리가 아파했고(돈이 안 맞거나 비거나..), 생각보다 많은 시간을 써야 했다.
+그래서 시스템을 잘 만들어서 데이터를 차곡차곡 쌓고, 집계도 실시간으로 볼 수 있게 하고 싶었는데…! 너무 필요한 서비스를 내가 직접 만들어버린 거지.&lt;/p&gt;
+&lt;h2 id=&quot;그래서-딸깍으로-서비스를-만들었는가-nope&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B7%B8%EB%9E%98%EC%84%9C-%EB%94%B8%EA%B9%8D%EC%9C%BC%EB%A1%9C-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8A%94%EA%B0%80-nope&quot; aria-label=&quot;그래서 딸깍으로 서비스를 만들었는가 nope permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;그래서 딸깍으로 서비스를 만들었는가? Nope!&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;아무래도 정산 프로세스가 꽤 복잡하다 보니, 딸깍 만들어지지는 않았다. 그럴싸하게는 만들어주지만, 생각보다 빵꾸가 꽤 많았고, 그래도 1차적으로 사용 가능하게 만드는 데 15일 정도 소요되었던 것 같다. (하루 평균 2시간 정도 투자한다고 가정)
+지금 내가 가져온 건 월급 정산 부분만인데, 우리집 예산을 운영하려면 월급 정산뿐만 아니라 공금 통장 관리, 용돈 관리, 현금성 자산 관리, 투자 부분까지 꽤 빡센 세부 로직이 들어가서 개발이 필요했다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/07c5feaab26d9f53b5ea74b3b7fd4a88/3.gif&quot; alt=&quot;가계부 정산 시스템 데모&quot;&gt;&lt;/p&gt;
+&lt;p&gt;우리는 더치페이도 자주 하는데, 더치페이에 대한 정산과 현금성 자산 관리도 구현했고,&lt;/p&gt;
+&lt;div class=&quot;image-row&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 152.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAACXBIWXMAABYlAAAWJQFJUiTwAAACvUlEQVR42q1WaVPbMBD1///In2pLZ5jOMKUxBEggduIYR7Z8yefrPtkhARKOppp50WrlfXtokXB834frupjP5+j7Hq8HdYf0+/scs9kMZ2dncIqiQJIkyLLs2Xgfxxy8/kZrjcvLSzgfeVZKYTKZYDqdIgiCF3uHhnPI477nuq6R5znKskRVVW+i3F93XQcnTVMYY6zBVwftaE+HLFvbtnDI+lHh3xuvo3WYEj0R9MJIt2uCaTIKFp2yMSWapgHtjakQhqHYGJCubSXlqmK6hYVSGxRF/rwmSKDFURwrK3O/rish6Ow+244pQ9Zt20jKQt10A/blfbT9gb1W9KNNO66lenBU0SPMgCdBmA3yG6T9gGN7o12U93A81eF8UuDXbQkv7k/CSgthoDs8bjoshJjkXvx10JZYJXIoGwlzI2nHJWem3n8JtE8MLChbwkXU4jFssRIvWv4Y4nIHbYZZFW9B/UpSvV12mAqijITyc+MVcB9y3Pk5nnSNMBHIvNaAn7DYhwkTIVxsevx0G3y7ahAIuUNlIK4CleMxULj3N1gEscgartwFk9XQAXFxPEpGdzVvJRghpGIZFfDk3OdLhQdineFm1eB6LSklx8m2cBcdLm4ayWwkDDXDrQQGa8EybjCLxFFyvH77WERSx5XUUHrSSU1nT5ip79AjNaLj6X8CWr5Nq8HGMY0oyg4kthhlqyt36xfyAfD7smbK4kGNfahGj9sTZMvosceYemLeLwFrbdvm4rrA9985fgjO/xSCXHqrgbfpbX0IX/V2HWUfEPJnth6acy4zW+BOCnwfEIOe8zwcdE/pOy1EQl32u9RGeXswLPZWv4XKj4P7TiOXWWlq1HLJnQp7Y/MJ4K3Lt+XUYV+97QNDYr4VpwzyWEK+CZ7nIYqif379ngkZJv8NYYT/JWU+znwemS7lU/EXGYQfe6SnpE0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;더치페이 정산 화면 1&quot; title=&quot;&quot; src=&quot;/static/641ab7884d44016e442c10df43305c84/37523/4.png&quot; srcset=&quot;/static/641ab7884d44016e442c10df43305c84/e9ff0/4.png 180w,
+/static/641ab7884d44016e442c10df43305c84/f21e7/4.png 360w,
+/static/641ab7884d44016e442c10df43305c84/37523/4.png 720w,
+/static/641ab7884d44016e442c10df43305c84/302a4/4.png 1080w&quot; sizes=&quot;(max-width: 720px) 100vw, 720px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;/span&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 93.88888888888887%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAABqklEQVR42pVUSaoCMRANggcQPYQ77+Fx+j5uFD2ASy8guHMpzoo0igNO7eyTV59qYn6ktaBIutL16tWQmPl8jm63i9lsBp88n89YffJ4PGRtt9uo1+sw+/0eq9UK6/X6zdkH4jtXwH6/j2azCYMEYbBOp4PhcCh7BbaD2KvxRbX1fD5ju91it9vhdDq9MXUByVZSpgMdf5UoinA4HHA8HkEcAbzf77jdbnEtfmkKfajEoPKffzW8Xq9xap9E/+HqBjI80BqRPseHHWMKtPGMdlv4vVwu4zTfAGlgylTSdtOw0/lmlIyvNp+GOKmu0hQaL5eLdPlTY5LAWUv6xk0JwxC9Xi+xGT4hEV5fbZBJum7fMFR2kjKN0+kUg8FAInFIdci/CeTea2FIEI4IdbPZyKiojSu/adcLoIw4NpPJJCYjKeuhRrAd3O8kEYbuzLlAalssFhiNRsKIyv14PJZyUblnFsZ9Nfgu2s+U2ovFItLpNLLZLHK5HAqFAvL5PDKZjNhSqRSCIPhjaCvrxLm0GVIajQZKpRIqlQrK5TJqtRqq1arsaeNZq9XCC6hgsdffon0fAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;더치페이 정산 화면 2&quot; title=&quot;&quot; src=&quot;/static/8b39f23c5ac1e14afeee8f86e93afee7/37523/5.png&quot; srcset=&quot;/static/8b39f23c5ac1e14afeee8f86e93afee7/e9ff0/5.png 180w,
+/static/8b39f23c5ac1e14afeee8f86e93afee7/f21e7/5.png 360w,
+/static/8b39f23c5ac1e14afeee8f86e93afee7/37523/5.png 720w,
+/static/8b39f23c5ac1e14afeee8f86e93afee7/302a4/5.png 1080w,
+/static/8b39f23c5ac1e14afeee8f86e93afee7/26a94/5.png 1102w&quot; sizes=&quot;(max-width: 720px) 100vw, 720px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;특히 복잡한 공금 관리 시스템을 구현하는 건 버그도 많이 나오고, 쉽지 않았다.
+설명을 조금 덧붙이면.. 일단 공금 통장이 존재하고, 공금통장 하위에 경조사, 차량유지, 여행, 선물 통장이 있다. 매달 정해진 예산만큼 돈이 부어지고, 각자 사용한 금액은 공금통장으로 청구를 하기도 하고, 공금통장에서 직접 지출이 일어나기도 한다. 그리고 부족한 경우에는 처음 입금했던 공금 통장에서 다시 수혈하기도 한다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/UlEQVR42mNgIAyYgZgXiLmBmIWBGHD04EG7fQcOT9uxY9fE7du3hwGF2GVkZDjz8vL01q1bt33FimWbly5dvmXTpk1bsrKytLW0tNhAhu/Zsydi7/6DvfsPHuw9cOCALdzAfft2Bx8+cvTE4aNHTwMlqmEGAjWbb9++7dbSpUveLFq06NXmzZtvV1RUGAPlWUEuP378eM3REydO7j9w4OShQ4dCGIj0LtCrnFJAWgxqEBNBXatWrWL+//8/KxSDNDCFhobyR0dH8wUGBooB2UJRUVGCycnJQiAxb29vQaAYSA8jmj5MYG9vz6Knp8cN5YIUcYLEQBjIBoUdI0jC2NiYX0VFhR2rIbt27dI8c/Kk+5YtW4KA4aQP0nzx4kW7latXR+7cudP32LFjnGfOnOHav/+Qz7p1GyPPnz/vCFIze/Zs4xVLl0YAw9ITGPaqcAMvXb7c9+De3f+3b936f+3atRlKQNtvXr/+9sqFC79u3rr1BWThtm3btB48fPjx+s3bP+7cuf1GXV2d9+r161PvXr/8//7dO/8vXbnSDTdw2rRpgvPnz1dYs2aN/NKlSwVBXl27dq0k0BCZBQsWSM+cOZO1vr6eBRjTYosXL5YEyYHUAH0kCEw60uvXr5cFulaIgWYAFFtAFzCBMCzQYXxkMTR1IADng+Ro4joAfLQDkazx4L0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;공금 관리 시스템&quot;
+        title=&quot;&quot;
+        src=&quot;/static/4e34588ed80df6cdcff9255257f602c1/37523/6.png&quot;
+        srcset=&quot;/static/4e34588ed80df6cdcff9255257f602c1/e9ff0/6.png 180w,
+/static/4e34588ed80df6cdcff9255257f602c1/f21e7/6.png 360w,
+/static/4e34588ed80df6cdcff9255257f602c1/37523/6.png 720w,
+/static/4e34588ed80df6cdcff9255257f602c1/00d43/6.png 1000w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;원하는-것을-만들기는-했으나-견고한가-신뢰할-만한가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9B%90%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%84-%EB%A7%8C%EB%93%A4%EA%B8%B0%EB%8A%94-%ED%96%88%EC%9C%BC%EB%82%98-%EA%B2%AC%EA%B3%A0%ED%95%9C%EA%B0%80-%EC%8B%A0%EB%A2%B0%ED%95%A0-%EB%A7%8C%ED%95%9C%EA%B0%80&quot; aria-label=&quot;원하는 것을 만들기는 했으나 견고한가 신뢰할 만한가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;원하는 것을 만들기는 했으나.. 견고한가? 신뢰할 만한가??&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;지금도 간혹 버그를 발견한다. 이제는 모든 버그를 다 잡았다고 생각이 들기도 하지만, 아무래도 코드를 자세히 들여다보지 않고 바이브 코딩으로만 만들었기에 머릿속에 그려지는 것이 하나도 없고, 여전히 안갯속에 있는 느낌이다. &lt;strong&gt;그래서 이 시스템이 정말 신뢰할 만한지 잘 모르겠다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그래서 아직도 내가 만든 정산 시스템을 사용하면서, 이전에 기록하던 엑셀 시트 기입을 병행하고 있다. 나중에는 개발한 시스템과 엑셀 시트 작성도 연동할 계획이긴 하지만, 아직은 구현한 시스템에 대한 확신이 부족하다.&lt;/p&gt;
+&lt;p&gt;확신을 가지려면 어떻게 해야 할까? 많은 테스트 케이스를 작성하고, 그 테스트를 모두 통과하도록 만들면 괜찮을까? 이부분은 AI의 도움을 어디까지 받아야하고 내가 검토를 해서 비는 부분을 찾아 넣어야 하지 않을까? 등등 고민이 많이 생긴다.&lt;/p&gt;
+&lt;p&gt;웃기지만.. 견고하지 않은 느낌을 받았을떄, 한편으로는 기분이 좋기까지 했다. AI로 딸깍해서 쉽고 빠르게 많은 것을 만들 수 있게 되었지만, 그만큼 ‘디렉션이 명확’해야 한다는 것을 체감했기 때문일까?
+이 부분에 있어서는 이쪽 지식을 가지고 있느냐 없느냐의 차이가 정말 클 것 같다는 생각이 들었다. 😊&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Claude Code로 서비스를 만들며 배운 것 1 — 만드는 것과 팔리는 것은 다르다]]></title><description><![CDATA[1. 처음엔 클코의 필요성을 못 느꼈다. 25년 3월쯤 MCP가 나오며 업계에 큰 충격을 줬을 때, 나는 이미 VS Code에서 Cursor로 IDE를 바꾸고 넘어간 상태였다.
 기존 Copilot…]]></description><link>https://soobing.github.io/building-with-claude-code-1/</link><guid isPermaLink="false">https://soobing.github.io/building-with-claude-code-1/</guid><pubDate>Sat, 07 Mar 2026 15:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-처음엔-클코의-필요성을-못-느꼈다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EC%B2%98%EC%9D%8C%EC%97%94-%ED%81%B4%EC%BD%94%EC%9D%98-%ED%95%84%EC%9A%94%EC%84%B1%EC%9D%84-%EB%AA%BB-%EB%8A%90%EA%BC%88%EB%8B%A4&quot; aria-label=&quot;1 처음엔 클코의 필요성을 못 느꼈다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 처음엔 클코의 필요성을 못 느꼈다.&lt;/h2&gt;
 &lt;p&gt;25년 3월쯤 MCP가 나오며 업계에 큰 충격을 줬을 때, 나는 이미 VS Code에서 Cursor로 IDE를 바꾸고 넘어간 상태였다.
 기존 Copilot과는 다르게 프로젝트 전체를 파악하고 코드를 추천해주는 Cursor의 능력에 놀랐고, MCP 연동으로 이것저것 많이 해볼 수 있다는 점에도 또 한 번 놀랐다.
