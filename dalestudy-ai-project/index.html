@@ -1,0 +1,502 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.15.0"/><meta name="description" content="26년 3~4월 동안 진행한 프로젝트 :) AI FOMO로 가득하던 시기에, 이 프로젝트를 만나다 육아휴직 중에도 AI FOMO로 링크드인에서 AI 관련 소식을 놓치지 않겠다는 마인드로 계속 챙겨봤고 Claude Code로 이것저것 써보던 참이었다. 달레스터디에는 원래 leetcode를 함께 푸는 알고리즘 스터디로 처음 조인했다. 육아휴직 중에 AI로 뭔가 만들어보고는 싶은데 딱히 할 게 없고, 만들어도 ‘사람들이 진짜 필요로 하는 걸 만들고 있나?’ 하는 회의감이 들던 때였다. 그렇게 AI FOMO로 가득하던 시점에, 마침 AI 프로젝트(AI 스터디 3기) 팀원 모집 글이 올라왔다. 사실 이미 모집 공고 시기는 지난 상태이긴 하지만 아쉬운 마음에 댓글을 남겨봤다.  ▲ 모집이 이미 마감된 뒤였지만 아쉬운 마음에 댓글을 남겨봄. 🤣 오픈소스에서는 AI를 어떻게 활용할까? 하는 호기심도 가득했고, 회사에서 사용하는 깃헙 엔터프라이즈에서는 AI가 코드 리뷰도 다 해주고, 업무 프로세스…" data-gatsby-head="true"/><meta property="og:title" content="[달레스터디] AI 프로젝트 진행 후기 | LESS BUT BETTER" data-gatsby-head="true"/><meta property="og:description" content="26년 3~4월 동안 진행한 프로젝트 :) AI FOMO로 가득하던 시기에, 이 프로젝트를 만나다 육아휴직 중에도 AI FOMO로 링크드인에서 AI 관련 소식을 놓치지 않겠다는 마인드로 계속 챙겨봤고 Claude Code로 이것저것 써보던 참이었다. 달레스터디에는 원래 leetcode를 함께 푸는 알고리즘 스터디로 처음 조인했다. 육아휴직 중에 AI로 뭔가 만들어보고는 싶은데 딱히 할 게 없고, 만들어도 ‘사람들이 진짜 필요로 하는 걸 만들고 있나?’ 하는 회의감이 들던 때였다. 그렇게 AI FOMO로 가득하던 시점에, 마침 AI 프로젝트(AI 스터디 3기) 팀원 모집 글이 올라왔다. 사실 이미 모집 공고 시기는 지난 상태이긴 하지만 아쉬운 마음에 댓글을 남겨봤다.  ▲ 모집이 이미 마감된 뒤였지만 아쉬운 마음에 댓글을 남겨봄. 🤣 오픈소스에서는 AI를 어떻게 활용할까? 하는 호기심도 가득했고, 회사에서 사용하는 깃헙 엔터프라이즈에서는 AI가 코드 리뷰도 다 해주고, 업무 프로세스…" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:author" content="soobing" data-gatsby-head="true"/><meta property="og:image" content="/og-image.png" data-gatsby-head="true"/><meta property="og:site_name" content="LESS BUT BETTER" data-gatsby-head="true"/><style data-href="/styles.f40280cbe7aa9f6a3645.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}@keyframes fadeInAnimation{0%{opacity:0}to{opacity:1}}.horizontal-navigation{align-items:center;display:flex;flex-direction:row;height:40px;justify-content:center;position:relative;width:200px}.horizontal-navigation .label{animation:fadeInAnimation 1s ease;animation-fill-mode:forwards;animation-iteration-count:.5;color:var(--content-text-color);display:none}.horizontal-navigation .label:hover{color:var(--highlight)}.horizontal-navigation .line{border:.5px solid var(--content-text-color);height:1px;width:150px}.horizontal-navigation .list{display:flex;flex-direction:row;justify-content:space-between;position:absolute;top:27px;width:100%}.horizontal-navigation .list li{display:flex;justify-content:center;position:relative;width:50px}.horizontal-navigation .list li:after{border-left:1.2px solid var(--content-text-color);content:"";height:7px;left:50%;position:absolute;top:-10px;transform:translate(-50%);width:1px}.horizontal-navigation .list .active:after{background-color:var(--highlight);content:"";height:8px;left:50%;position:absolute;top:-11px;transform:translate(-50%);width:8px;z-index:2}.horizontal-navigation:hover .label{display:flex}.vertical-navigation{display:flex;flex-direction:row;margin:75px 0 0 20px;position:relative;width:70px}.vertical-navigation .label{color:var(--content-text-color)}.vertical-navigation .line{border:.5px solid var(--content-text-color);height:86px;margin-left:0}.vertical-navigation .list{display:flex;flex-direction:column;height:100px;justify-content:space-between;left:11px;position:absolute}.vertical-navigation .list li{line-height:1;position:relative}.vertical-navigation .list li:after{border-top:1.2px solid var(--content-text-color);height:0}.active:after,.vertical-navigation .list li:after{content:"";left:-14px;position:absolute;top:50%;transform:translateY(-50%);width:8px}.active:after{background-color:var(--highlight);height:8px;z-index:2}.page-header-wrapper{display:flex;height:60px;justify-content:center;width:100%}.page-header-wrapper .page-header{align-items:center;display:flex;justify-content:space-between;max-width:720px;width:100%}.page-header-wrapper .page-header .link{color:var(--primary-text-color);font-size:17px;font-weight:700}@media(min-width:768px){.page-header-wrapper .page-header .link{font-size:20px;font-weight:700}}.page-footer-wrapper{align-items:center;display:flex;height:62px;justify-content:center;margin-top:auto;width:100%}.page-footer-wrapper .page-footer{max-width:720px;text-align:center;width:100%}.page-footer-wrapper .page-footer .link{color:var(--primary-text-color);font-size:20px;font-weight:700;margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.claude-log-wrapper{align-items:flex-end;bottom:20px;display:flex;flex-direction:column;gap:12px;position:fixed;right:20px;z-index:100}.claude-log-button{align-items:center;background:linear-gradient(135deg,#cc785c,#b35738);border:none;border-radius:50%;box-shadow:0 4px 20px rgba(0,0,0,.18),0 1px 4px rgba(0,0,0,.1);cursor:pointer;display:flex;height:50px;justify-content:center;transition:transform .2s ease,box-shadow .2s ease;width:50px}.claude-log-button:hover{box-shadow:0 8px 28px rgba(0,0,0,.22),0 2px 6px rgba(0,0,0,.1);transform:scale(1.1)}.claude-log-button.is-active,.claude-log-button:active{transform:scale(.95)}.claude-log-panel{animation:panelSlideIn .3s cubic-bezier(.34,1.56,.64,1);background:#fff;border-radius:18px;box-shadow:0 8px 40px rgba(0,0,0,.12),0 2px 10px rgba(0,0,0,.07),0 0 0 .5px rgba(0,0,0,.06);display:flex;flex-direction:column;height:450px;overflow:hidden;width:320px}@media(max-width:575px){.claude-log-panel{border-radius:0;bottom:0;height:100dvh;left:0;position:fixed;right:0;top:0;width:100vw;z-index:200}}@keyframes panelSlideIn{0%{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.claude-log-header{align-items:center;background:#fff;border-bottom:1px solid rgba(0,0,0,.06);display:flex;flex-shrink:0;height:52px;justify-content:space-between;padding:0 16px}.claude-log-title{align-items:center;color:#1d1d1f;display:flex;font-size:13px;font-weight:600;gap:8px;letter-spacing:-.01em}.claude-log-indicator{animation:indicatorPulse 2.4s ease-in-out infinite;background:#cc785c;border-radius:50%;flex-shrink:0;height:7px;width:7px}@keyframes indicatorPulse{0%,to{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.82)}}.claude-log-close{background:none;border:none;border-radius:6px;color:#6e6e73;cursor:pointer;font-size:15px;line-height:1;padding:6px 8px;transition:color .15s ease,background .15s ease}.claude-log-close:hover{background:rgba(0,0,0,.05);color:#1d1d1f}.claude-log-body{flex:1 1;overflow-y:auto;padding:12px 12px 16px;scrollbar-color:rgba(0,0,0,.12) transparent;scrollbar-width:thin}.claude-log-body::-webkit-scrollbar{width:4px}.claude-log-body::-webkit-scrollbar-track{background:transparent}.claude-log-body::-webkit-scrollbar-thumb{background:rgba(0,0,0,.12);border-radius:2px}.claude-log-empty{color:#6e6e73;font-size:13px;padding:40px 16px;text-align:center}.claude-log-entry{animation:entryFloatUp .4s ease-out forwards;background:transparent;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.07),0 1px 3px rgba(0,0,0,.04);opacity:0;padding:16px 18px}.claude-log-entry+.claude-log-entry{margin-top:8px}@keyframes entryFloatUp{0%{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}.claude-log-entry-text{color:#1d1d1f;font-size:13.5px;line-height:1.65;margin:0 0 10px;overflow-wrap:break-word;word-break:keep-all}.claude-log-entry-date{color:#6e6e73;display:block;font-size:11px;letter-spacing:.04em}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{outline:none;text-decoration:none}html{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--button-text-color:#363f47;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,.05);--bio-link-icon-color:rgba(0,0,0,.54);--about-link-icon-color:#a8a8a8;--chip-background-color:#f3f3f4;--link-text-color:var(--highlight);--post-card-border-color:rgba(0,0,0,.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:var(--highlight-opacity);--markdown-border-color:#e1e4e8;--highlight:#ff5c00;--highlight-opacity:rgba(255,92,0,.7)}html[data-theme=dark]{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--button-text-color:#363f47;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--about-link-icon-color:#a8a8a8;--link-text-color:var(--highlight);--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:var(--highlight);--markdown-border-color:#e1e4e8}*{appearance:none;box-sizing:border-box}html{font-size:14px;height:100%;overflow-y:scroll;width:100%}body{background-color:var(--background-color)!important}a{color:var(--link-text-color)}.page-wrapper{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:var(--primary-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;min-height:100vh;padding-left:15px;padding-right:15px;word-break:keep-all}.page-wrapper,.page-wrapper .page-content{align-items:center;display:flex;flex-direction:column;width:100%}.page-wrapper .page-content{justify-content:space-around;max-width:720px}.main-page{display:flex;height:100vh;justify-content:center;width:100%}.main-page .content{align-items:center;display:flex;flex-direction:row;justify-content:space-around;max-width:720px;width:100%}.rotating-text{display:inline}.rotating-text-cursor{animation:blink 1s step-end infinite;display:inline-block;margin-left:2px}@keyframes blink{0%,to{opacity:1}50%{opacity:0}}.icon-button-bar{gap:8px}.icon-button,.icon-button-bar{align-items:center;display:flex}.icon-button{border-radius:50%;justify-content:center;padding:8px;transition:background-color .2s ease,transform .2s ease}.icon-button:hover{background-color:rgba(0,0,0,.08);transform:scale(1.1)}.icon{color:var(--about-link-icon-color);height:20px;width:20px}.social-links .icon{color:var(--bio-link-icon-color);height:30px;width:30px}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}.bio{color:var(--primary-text-color);display:flex;flex-direction:column;justify-content:space-between;margin-bottom:120px;margin-top:120px;width:100%}@media(min-width:768px){.bio{align-items:center;flex-direction:row}}.bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio .introduction .rotating-text-cursor{animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio .introduction strong{display:inline-block;font-weight:600}.bio .introduction.korean{font-size:32px;font-weight:100;line-height:1.2}.bio .introduction.korean .title .rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio .introduction.korean{font-size:40px}.bio .introduction.korean .title .rotating-text-cursor{font-size:45px;line-height:45px}}.bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio .introduction.english{font-size:45px}}.bio .introduction.english .name{font-size:35px;font-weight:600}.bio .introduction.english .job{font-size:35px}.bio .introduction.english .description{font-size:20px;font-weight:200;margin-top:8px}.bio .introduction.english .social-links{display:flex;margin-top:20px}.main-title--header{font-size:65px;line-height:1}.main-title--who{color:var(--highlight);font-family:montserrat;font-size:16px;line-height:1}.round-navigation__wrapper{background:#e6e6e6;border-radius:100%;box-shadow:0 4px 4px rgba(0,0,0,.25);height:165px;position:relative;width:165px}.round-navigation__wrapper .current-line{display:block;height:165px;left:50%;position:absolute;top:0;transform:translate(-50%) rotate(0deg);width:.5px}.round-navigation__wrapper .current-line--orange{background-color:var(--highlight);border:1px solid var(--highlight);height:82.5px;left:-1px;position:absolute;width:.5px;z-index:2}.round-navigation__wrapper .link{display:flex;height:20px;margin:auto;position:absolute;width:20px}.round-navigation__wrapper .link :hover{color:var(--highlight)}.round-navigation__wrapper .link a{color:var(--content-text-color)}.round-navigation__wrapper .line{background-color:#000;border:1px solid #000;margin:auto;width:20px}.round-navigation__wrapper .label,.round-navigation__wrapper .line{position:absolute;top:50%;transform:translateY(-50%)}.round-navigation__wrapper .link--12{left:50%;top:0;transform:translate(-50%) rotate(90deg)}.round-navigation__wrapper .link--12 .label{left:-32px;transform:translateY(-50%) rotate(-90deg)}.round-navigation__wrapper .link--3{right:0;top:50%;transform:translateY(-50%)}.round-navigation__wrapper .link--3 .label{left:28px}.round-navigation__wrapper .link--6{bottom:0;left:50%;transform:translate(-50%) rotate(270deg)}.round-navigation__wrapper .link--6 .label{left:-40px;transform:translateY(-50%) rotate(90deg)}.post-header{border-bottom:1px solid var(--post-card-border-color);display:flex;flex-direction:column;justify-content:center;margin-bottom:40px;margin-top:80px;padding-bottom:10px;width:100%;word-break:keep-all}.post-header .categories{margin-left:10px}.post-header .categories .category{color:var(--primary-text-color);margin-right:4px}.post-header .categories .category:hover{text-decoration:underline}.post-header .title{color:var(--primary-text-color);font-size:32px;font-weight:600;line-height:1.3;margin-bottom:6px}.post-header .info{color:var(--secondary-text-color);display:flex;flex-wrap:wrap;font-size:16px;font-weight:500;line-height:1.5;width:100%}.post-header .info .author{margin-right:4px}.post-header .info strong{color:var(--primary-text-color);font-weight:600}.post-navigator{column-gap:1.4%;display:grid;grid-template-columns:49.3% 49.3%;width:100%}.post-navigator .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;padding:15px;transition:transform .2s;width:100%}.post-navigator .post-card.prev{margin-right:auto}.post-navigator .post-card.next{margin-left:auto}.post-navigator .post-card .direction{color:gray;font-size:14px;font-weight:500;margin-bottom:5px}.post-navigator .post-card .title{font-size:16px;font-weight:600;line-height:1.4;margin-bottom:7px}.markdown .octicon{fill:currentColor;display:inline-block;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E");content:" ";display:inline-block;height:16px;width:16px}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-wrap:break-word;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{border-bottom:.05em solid;border-color:var(--link-text-color);color:var(--link-text-color);text-decoration:none}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color);height:0;margin:15px 0;overflow:hidden}.markdown hr:after,.markdown hr:before{content:"";display:table}.markdown hr:after{clear:both}.markdown table{border-collapse:collapse;border-spacing:0}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-bottom:0;margin-top:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-bottom:10px;margin-top:0}.markdown blockquote{margin:0}.markdown ol,.markdown ul{margin-bottom:0;margin-top:0;padding-left:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:hsla(44,6%,50%,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-bottom:0;margin-top:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{appearance:none;margin:0}.markdown :checked+.radio-label{border-color:#0366d6;position:relative;z-index:1}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{background-color:#b31d28;color:#fafbfc}.markdown .pl-c2{background-color:#d73a49;color:#fafbfc}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{color:#22863a;font-weight:700}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{color:#005cc5;font-weight:700}.markdown .pl-mi{color:#24292e;font-style:italic}.markdown .pl-mb{color:#24292e;font-weight:700}.markdown .pl-md{background-color:#ffeef0;color:#b31d28}.markdown .pl-mi1{background-color:#f0fff4;color:#22863a}.markdown .pl-mc{background-color:#ffebda;color:#e36209}.markdown .pl-mi2{background-color:#005cc5;color:#f6f8fa}.markdown .pl-mdr{color:#6f42c1;font-weight:700}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{color:#032f62;text-decoration:underline}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-bottom:0!important;padding-top:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-bottom:8px!important;padding-top:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da;color:#444d56;display:inline-block;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown:after,.markdown:before{content:"";display:table}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{line-height:1.6;margin-bottom:24px;margin-top:0}.markdown hr{background-color:var(--markdown-border-color);border:0;height:.1em;margin:24px 0;padding:0}.markdown blockquote{background-color:rgba(250,251,252,.169);border-left:.25em solid var(--markdown-blockquote-border-color);color:var(--content-text-color);padding:.5em 1em}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{color:var(--primary-text-color);font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:40px}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em;margin-top:70px}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{color:#6a737d;font-size:.85em}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-bottom:0;margin-top:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{word-wrap:break-all;display:list-item;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{font-size:1em;font-style:italic;font-weight:600;margin-top:16px;padding:0}.markdown dl dd{margin-bottom:16px;padding:0 16px}.markdown table{display:block;overflow:auto;width:100%}.markdown table th{font-weight:600}.markdown table td,.markdown table th{border:1px solid var(--markdown-table-border-color);padding:6px 13px}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{background-color:transparent;box-sizing:initial;display:block;margin:0 auto;max-width:100%}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{background-color:rgba(27,31,35,.05);border-radius:3px;font-size:85%;font-weight:700;margin:0;padding:.2em .4em}.markdown pre{word-wrap:normal}.markdown pre>code{background:transparent;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{background-color:#151515;border-radius:3px;border-radius:14px;font-size:85%;line-height:1.6;overflow:auto;padding:20px 0}.markdown pre code{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown .commit-tease-sha{color:#444d56;display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%}.markdown .full-commit .btn-outline:not(:disabled):hover{border-color:#005cc5;color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{color:rgba(27,31,35,.3);cursor:pointer;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;min-width:50px;padding-left:10px;padding-right:10px;text-align:right;-webkit-user-select:none;user-select:none;vertical-align:top;white-space:nowrap;width:1%}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{line-height:20px;padding-left:10px;padding-right:10px;position:relative;vertical-align:top}.markdown .blob-code-inner{word-wrap:normal;color:#24292e;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;overflow:visible;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{background:#ffea7f;cursor:pointer}.markdown .tab-size[data-tab-size="1"]{tab-size:1}.markdown .tab-size[data-tab-size="2"]{tab-size:2}.markdown .tab-size[data-tab-size="3"]{tab-size:3}.markdown .tab-size[data-tab-size="4"]{tab-size:4}.markdown .tab-size[data-tab-size="5"]{tab-size:5}.markdown .tab-size[data-tab-size="6"]{tab-size:6}.markdown .tab-size[data-tab-size="7"]{tab-size:7}.markdown .tab-size[data-tab-size="8"]{tab-size:8}.markdown .tab-size[data-tab-size="9"]{tab-size:9}.markdown .tab-size[data-tab-size="10"]{tab-size:10}.markdown .tab-size[data-tab-size="11"]{tab-size:11}.markdown .tab-size[data-tab-size="12"]{tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents{align-items:flex-start;display:flex;flex-direction:column;justify-content:center;position:fixed;right:0;top:75px;width:340px}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{border-bottom:none;color:var(--secondary-text-color);font-size:14px;height:30px;padding:6px 2px;width:100%}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;max-height:560px!important;width:100%!important}.markdown .gatsby-resp-image-wrapper img{height:auto!important;max-height:560px!important;max-width:100%!important;position:relative!important;width:auto!important}.markdown .image-row{align-items:flex-start;display:flex;gap:12px;margin:24px 0}.markdown .image-row img{display:block;height:auto;width:50%}.markdown .link-card{align-items:center;border:1px solid var(--post-card-border-color);border-radius:8px;color:var(--primary-text-color)!important;display:flex;gap:12px;margin:8px 0 24px;padding:16px 20px;text-decoration:none!important;transition:background-color .15s ease}.markdown .link-card:hover{background-color:var(--button-background-color)}.markdown .link-card .link-card__icon{flex-shrink:0;height:20px;opacity:.5;width:20px}.markdown .link-card .link-card__content{display:flex;flex-direction:column;gap:2px;overflow:hidden}.markdown .link-card .link-card__title{font-size:15px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.markdown .link-card .link-card__url{color:var(--secondary-text-color);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.markdown .gatsby-resp-image-wrapper+em{color:#6a737d;display:block;font-size:15px;font-style:italic;text-align:center}.post-content{display:flex;flex-direction:column;justify-content:center;margin-bottom:20px;width:100%}.post-content .divider{border-bottom:1px solid var(--post-card-border-color);box-shadow:0 50px 100px -20px rgba(50,50,93,.25),0 30px 60px -30px rgba(0,0,0,.3);height:.5px;margin:100px auto auto;width:100px}.category-page-header-wrapper{align-items:center;display:flex;flex-direction:column;justify-content:center;margin-bottom:30px;margin-right:auto;margin-top:30px}.category-page-header-wrapper .category-page-title{border-bottom:3px solid var(--primary-text-color);font-size:40px;font-weight:700;margin-bottom:15px;padding-bottom:7px;text-align:center;width:fit-content}.category-page-header-wrapper .category-page-subtitle{font-size:20px;font-weight:500;padding-bottom:10px;text-align:center}.search-wrapper{position:relative;width:230px}.search-input-wrapper{align-items:center;background:hsla(0,1%,74%,.051);border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.16);display:flex;padding:8px 12px;width:100%}.search-icon{flex-shrink:0;margin-right:8px}.search-icon,.search-input{color:var(--primary-text-color)}.search-input{background:transparent;border:none;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;outline:none;width:100%}.search-input::placeholder{color:var(--secondary-text-color)}.search-results{background:var(--background-color);border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.16);left:0;list-style:none;margin-top:4px;max-height:300px;overflow-y:auto;padding:8px 0;position:absolute;right:0;top:100%;z-index:100}.search-results li{color:var(--primary-text-color);cursor:pointer;font-size:14px;padding:10px 16px;transition:background-color .15s ease}.search-results li:hover{background-color:var(--tab-selected-background-color)}.no-results{background:var(--background-color);border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.16);color:var(--secondary-text-color);font-size:14px;left:0;margin-top:4px;padding:16px;position:absolute;right:0;text-align:center;top:100%;z-index:100}.post-card-wrapper{display:flex;justify-content:center;min-height:150px;width:100%}.post-card-wrapper .post-card{border:1px solid var(--post-card-border-color);border-radius:6px;color:var(--primary-text-color);cursor:pointer;display:flex;flex-direction:column;height:100%;margin-bottom:15px;max-width:720px;padding:15px;transition:transform .2s;width:100%}.post-card-wrapper .post-card:hover{border:1px solid var(--highlight);box-shadow:1.95px 1.95px 2.6px rgba(0,0,0,.15)}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;line-height:1.4;margin-bottom:7px}.post-card-wrapper .post-card .description{-webkit-line-clamp:3;-webkit-box-orient:vertical;color:var(--primary-text-color);display:-webkit-box;font-size:13px;line-height:20px;margin-bottom:10px;overflow:hidden;text-overflow:ellipsis}.post-card-wrapper .post-card .info{color:var(--about-link-icon-color);display:flex;font-size:14px;justify-content:space-between;margin-top:auto}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-card-column-wrapper{display:flex;justify-content:center;width:100%}.post-card-column-wrapper .post-card-column{align-items:center;display:flex;flex-direction:column;width:100%}.post-card-column-wrapper .post-card-column .post-card-wrapper{margin-bottom:10px}.post-card-column-wrapper .post-card-column .more-post-card-button{background-color:var(--button-background-color);border:none;border-radius:8px;color:var(--tab-hover-text-color);cursor:pointer;font-size:15px;font-weight:500;height:40px;padding:0 24px;transition:opacity .2s ease,transform .2s ease}.post-card-column-wrapper .post-card-column .more-post-card-button:hover{opacity:.9;transform:translateY(-2px)}.post-card-column-wrapper .post-card-column .more-post-card-button:active{transform:translateY(0)}.post-tabs-wrapper{align-self:flex-start;display:flex;flex-direction:column;justify-content:center;top:0;width:100%}.post-tabs-wrapper .post-tabs{display:flex;justify-content:center;margin-bottom:12px;max-width:760px;overflow-x:auto;width:100%}.post-tabs-wrapper .post-tabs .custom-tabs{display:flex;gap:4px;padding:4px}.post-tabs-wrapper .post-tabs .custom-tabs .custom-tab{background:transparent;border:none;border-radius:8px;color:var(--tab-text-color);cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:12px;font-weight:500;height:40px;min-width:auto;padding:10px 12px;transition:all .2s ease;white-space:nowrap}.post-tabs-wrapper .post-tabs .custom-tabs .custom-tab.active,.post-tabs-wrapper .post-tabs .custom-tabs .custom-tab:hover{background-color:var(--tab-selected-background-color);color:var(--tab-hover-text-color)}.post-tabs-wrapper .post-tabs .custom-tabs .custom-tab.active{font-weight:600}</style><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-G4M2VQ5W05"></script><script>
+      
+      function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='G-G4M2VQ5W05',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+      if(true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G4M2VQ5W05', {"anonymize_ip":true,"send_page_view":false});
+      }
+      </script><link rel="icon" href="/favicon-32x32.png?v=f0a745ad7f96c7bba80b6cc5406e5e1a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=f0a745ad7f96c7bba80b6cc5406e5e1a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=f0a745ad7f96c7bba80b6cc5406e5e1a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=f0a745ad7f96c7bba80b6cc5406e5e1a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=f0a745ad7f96c7bba80b6cc5406e5e1a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=f0a745ad7f96c7bba80b6cc5406e5e1a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=f0a745ad7f96c7bba80b6cc5406e5e1a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=f0a745ad7f96c7bba80b6cc5406e5e1a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=f0a745ad7f96c7bba80b6cc5406e5e1a"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="alternate" type="application/rss+xml" title="LESS BUT BETTER" href="/rss.xml"/><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2442604587832508" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/><title data-gatsby-head="true">[달레스터디] AI 프로젝트 진행 후기 | LESS BUT BETTER</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">LESS BUT BETTER</a></div><nav class="horizontal-navigation"><hr class="line"/><ul class="list"><li><a href="/"><span class="label">HOME</span></a></li><li><a href="/about/"><span class="label">ABOUT</span></a></li><li><a class="active" href="/posts/"><span class="label">POSTS</span></a></li></ul></nav></div></header><main class="page-content"><header class="post-header"><h1 class="title">[달레스터디] AI 프로젝트 진행 후기</h1><div class="info">May 05, 2026<!-- --> |<div class="categories"><a class="category" href="/posts/retrospective/">retrospective</a></div></div></header><div class="post-content"><div class="markdown"><blockquote>
+<p>26년 3~4월 동안 진행한 프로젝트 :)</p>
+</blockquote>
+<h2 id="ai-fomo로-가득하던-시기에-이-프로젝트를-만나다" style="position:relative;"><a href="#ai-fomo%EB%A1%9C-%EA%B0%80%EB%93%9D%ED%95%98%EB%8D%98-%EC%8B%9C%EA%B8%B0%EC%97%90-%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EB%A7%8C%EB%82%98%EB%8B%A4" aria-label="ai fomo로 가득하던 시기에 이 프로젝트를 만나다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>AI FOMO로 가득하던 시기에, 이 <strong>프로젝트</strong>를 만나다</h2>
+<p>육아휴직 중에도 AI FOMO로 링크드인에서 AI 관련 소식을 놓치지 않겠다는 마인드로 계속 챙겨봤고 Claude Code로 이것저것 써보던 참이었다.</p>
+<p>달레스터디에는 원래 leetcode를 함께 푸는 알고리즘 스터디로 처음 조인했다. 육아휴직 중에 AI로 뭔가 만들어보고는 싶은데 딱히 할 게 없고, 만들어도 ‘사람들이 진짜 필요로 하는 걸 만들고 있나?’ 하는 회의감이 들던 때였다. 그렇게 AI FOMO로 가득하던 시점에, 마침 <a href="https://github.com/orgs/DaleStudy/discussions/19"><strong>AI 프로젝트(AI 스터디 3기) 팀원 모집</strong></a> 글이 올라왔다.</p>
+<p>사실 이미 모집 공고 시기는 지난 상태이긴 하지만 아쉬운 마음에 댓글을 남겨봤다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 40.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABFElEQVR42o2R2U7DMBBF/f9fxlPFE0WCKulGaBpqO97iLZexI0BIpGKk42vPjJcZM+schJBQSiGEgGLzPK/wEytmrcPHTeDcXdFdbrDOg+13DV6enqGMgTYWazav+Co0ZBoKbOh7HNsWQo4YhgGcc4yjqkgpv1+vta4qKa8gKFaV4kZxSMGRMh3o4ozRBYTJIKWIGBPpQoyx8rWuvhR/K+VnmjtqXcoZ7K0fcO45vJ/gqYeBEnxIVXNe+lVujinTAet4H6uydn/EZvOA7fYRr80BTXvEjvRw6nChy7r3K5WnasPvYexUH8FimsGFoE2CnI4+ZqEkKG0xKlM3uCncxbqlOlaSR20wUZmltD+hUuI/KJ/yCZlXbmmgnQkqAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="모집이 이미 마감된 뒤였지만 아쉬운 마음에 남긴 댓글"
+        title=""
+        src="/static/ee2670baf44d075e977cf5ffd948741a/37523/01-recruit-comment.png"
+        srcset="/static/ee2670baf44d075e977cf5ffd948741a/e9ff0/01-recruit-comment.png 180w,
+/static/ee2670baf44d075e977cf5ffd948741a/f21e7/01-recruit-comment.png 360w,
+/static/ee2670baf44d075e977cf5ffd948741a/37523/01-recruit-comment.png 720w,
+/static/ee2670baf44d075e977cf5ffd948741a/302a4/01-recruit-comment.png 1080w,
+/static/ee2670baf44d075e977cf5ffd948741a/07a9c/01-recruit-comment.png 1440w,
+/static/ee2670baf44d075e977cf5ffd948741a/f02b9/01-recruit-comment.png 1554w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ 모집이 이미 마감된 뒤였지만 아쉬운 마음에 댓글을 남겨봄. 🤣</em></p>
+<p>오픈소스에서는 AI를 어떻게 활용할까? 하는 호기심도 가득했고, 회사에서 사용하는 깃헙 엔터프라이즈에서는 AI가 코드 리뷰도 다 해주고, 업무 프로세스에 있어서 AI를 활용한 자동화가 많이 되어 있는데.. 정작 나는 서비스 개발을 하는 부서라서 이런 걸 경험해 볼 기회가 없었기 때문에 참여 의지가 뿜뿜했다.</p>
+<p>혹시나 하는 마음에 연락을 드려놨는데.. 프로젝트 리더인 Evan이 기회를 주셨다. 마침 한 분이 첫 스터디만 참여하고 사정상 그만둔 참이었다고 한다. 😊 역시 한번 여쭤보길 잘했다.</p>
+<p>아무튼 3-4월 동안 프로젝트를 진행하는데, 매주 정기 스크럼 미팅이 있고 프로젝트를 진행하는 사람들끼리 필요에 의해서 평일 저녁에도 계속해서 프로젝트를 진행해야 했기에.. 주말 일정을 바쁘게 잡지 않고, 오랜만에 다른 개발자들과 함께 개발에 대해서 2개월가량 집중하는 시간을 가질 수 있었던 것 같다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAADDklEQVR42pWTzW8bRRjGd+3U8a4/1l/r3dreOHETO3YSxxhqSL1OvEoTNySt2gNSg1ShHiLUKCJqaBEStBK0ISSkVRukKlBICY1aKYoo7aECDtBW6g0JJE5UXLhx4l/4MXYkBAoXDo/mnZln3pnnneeVVF+QQEBDVX0oiipGFa/XK6C04PG0E4vphMNhFDFv7jfR5Cpe9W+O3x/AHwwglYtd5PMFOq1OzJiJFgwhSdK/4HK7kWV5z3oLskRbmxuXS97lnHqlRk+5QKbcj9nbhRoKEo3GSCRT7E8k0eMmhhFntD6EU69Sr9s4To1hu0b5wCGiqiUSyyjtEbq0HNLczAiGnSd+eBB9rEisu4Ny6QUmXp5icvIYlZeqOMNVvrq9xvbWOvcffM3jp9+zsfElE8lZlufvMbvwETVrhnHrJNJzpQpWPIUZNjA0nVhYp7cwyIgzRn20Qf9ACXt4mO07n7F2bZWr63fZun+Pq9c/oeZ/nW92nvLjz79y1n4fJzmPlBCyujLdLXlaOIqZTNBwXmTKOcT05GEmxhscE69dWlnk4nsXeOPcAlfWb4j4A/rTNnOnRti89g7TY1UyZg0pEtHJ5fKkUhY+8ePFvjy3l8/z+colNq9/yvnT87x97i1WV5d58tPvPPzuW7bu3uLi4iXUgI/p187wy29/UnWOoEWCSNGoTjabI9OZRhEJ7VKJlTfPsLq0xJWPbzFlD3H61RPc2d7hh0fPuPzhDRZXlplfOEtIizC38C7P/oCxxnFiUWM3YUdaWMbcT0hITuoG6YRJZzpFVA8TiwSwMhal4w2soza52ZMMTIySPVimXfjVEOcqlSqaFmrNheQYuWyeDitNKBRpGXyP1xQPXvt5gmsz2F9c5sLNTaQDqT08RVGQ4oZJt6jheH+JbKoDVTi+ZWaXq2VUWcRuzU9wZIi2fI6pIydY29jB19vT4smyC7cwfjMOBMTZnoE+SgcrDBSKFItlmiXYJf6jM0QnSEGVNlVhn2df6zKPiP+zc3qF3L6+QWGdHvHbBZol2JPwf+AvhsiVEin8sZ0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Discord 음성 채널에서 진행한 스프린트"
+        title=""
+        src="/static/55061cd6b9f5fafea31975cfe2a82333/37523/02-discord-sprint.png"
+        srcset="/static/55061cd6b9f5fafea31975cfe2a82333/e9ff0/02-discord-sprint.png 180w,
+/static/55061cd6b9f5fafea31975cfe2a82333/f21e7/02-discord-sprint.png 360w,
+/static/55061cd6b9f5fafea31975cfe2a82333/37523/02-discord-sprint.png 720w,
+/static/55061cd6b9f5fafea31975cfe2a82333/302a4/02-discord-sprint.png 1080w,
+/static/55061cd6b9f5fafea31975cfe2a82333/07a9c/02-discord-sprint.png 1440w,
+/static/55061cd6b9f5fafea31975cfe2a82333/669cd/02-discord-sprint.png 3024w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ Discord 음성 채널에서 진행한 스프린트. 정기 스크럼 외에도 평일 저녁에 이렇게 모여 함께 작업했다.</em></p>
+<h2 id="무엇을-만들지-문제-정의부터-해보자" style="position:relative;"><a href="#%EB%AC%B4%EC%97%87%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%A7%80-%EB%AC%B8%EC%A0%9C-%EC%A0%95%EC%9D%98%EB%B6%80%ED%84%B0-%ED%95%B4%EB%B3%B4%EC%9E%90" aria-label="무엇을 만들지 문제 정의부터 해보자 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>무엇을 만들지 ‘문제 정의’부터 해보자!</h2>
+<p>달레스터디는 <a href="https://github.com/DaleStudy/leetcode-study">leetcode study</a> 말고도 여러 프로젝트가 함께 굴러가고 있다. 그래서 이 중 어디에 어떻게 기여하면 좋을지 고민했는데, 가장 메인이 되는 리트코드 스터디를 개선해보자는 쪽으로 의견이 모였다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.77777777777778%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACQElEQVR42lWT2W/TQBDG/f/zwgPwWgHlUJCogJYqoDb0UJuW0kDqtM1l11fstdP4vr3+WG+aFCyNvMfsb76ZnRVURYEX+gjyBGkcIYlC+L4P13XheR63Zp7nKfIiQ5qmyLKMWzOOoghhGCKOY25CtydCv5qAHF+jKyq4urNgEwsKC6RpOlRVBWHzLKtZwBr/fnVd82C6rmOxWHCw8GxzG3/ODOgfJLzvEHyTU5RMTVVV/BCly8OHRxG+PA/BkfUj0HUXkGWZC5jP5xBanw+xKXponyT42fJg9hzubPoFhiRBXCyJdlDh6Z6Kg2nwAHtU2AA1TeMqhZzVoHsX4fVpAPOARevp2BkHeNUL8KRjYHJfcEBJa4hOCT2g65RpReHdLziMEMLhgpIquJjP8MOokFclDKbkxUWEXanCiZHiZT+B4tG1qv+LSOFrIwyHQ0iSBMuyIOzNT3CwOF95YJ4ArQnFjVvwuR03gZa0egV9IJuWhsv+MQaDa0ynU8xmMwiUbVas8qtEnKjEL4PVrqQcKBo+9ocEW99PsdXuQlIJVvcSsZa6PT7HaDziadu2DWGtvrFrgvMzCxtigKxcqtgZp9jaldF+d4iNj/u4kXW+XvgJiCXh8vcRRqMJax0NjuNAaBKpH/qg2J7AfjuA9mkC6qTLy2Bg/00f/u4QGcujqhrlFHmgQlc6EKd91jIaTHO2BCZJwjs+Zf8kjJGNHQRfb+GZ98ial8HWwxFBKDvI8mzt67k2At9GzMYReyHNi2nsL3GHNwag7vbtAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="FigJam 보드에 개선 아이디어를 마구 붙인 모습"
+        title=""
+        src="/static/f97090fd5f1ef84dbfa694446ebefcbb/37523/03-figjam-ideas.png"
+        srcset="/static/f97090fd5f1ef84dbfa694446ebefcbb/e9ff0/03-figjam-ideas.png 180w,
+/static/f97090fd5f1ef84dbfa694446ebefcbb/f21e7/03-figjam-ideas.png 360w,
+/static/f97090fd5f1ef84dbfa694446ebefcbb/37523/03-figjam-ideas.png 720w,
+/static/f97090fd5f1ef84dbfa694446ebefcbb/302a4/03-figjam-ideas.png 1080w,
+/static/f97090fd5f1ef84dbfa694446ebefcbb/07a9c/03-figjam-ideas.png 1440w,
+/static/f97090fd5f1ef84dbfa694446ebefcbb/2e92a/03-figjam-ideas.png 2508w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ FigJam 보드 — 코드 리뷰, 복잡도 자동 분석, 개인화 솔루션, 운영 자동화 등 아이디어를 마구 붙였다.</em></p>
+<p>먼저 FigJam에 리트코드 스터디를 하면서 ‘이건 개선되면 좋겠다’ 싶었던 의견들을 마구 모았고, 그중 우리가 해결하면 좋을 것들을 추려 종합했다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 41.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABI0lEQVR42nWS186DMAyFef9nQ2KUJcQeZYPYcOXmuEpV/ePiyE7ifB6Jsm0brev6r3AOjeNIz+eT8jynsiypaRpq2/ajtWtpF/EKgs/zpPu+f+m6LjqOg/q+Z5DjOGSaJlmWRWEYUlEUvJ9kGS2WTsc4vIE4VFWVHo8HX4A1DIN9wFARqsMaPkBpmrIAjJOEZtd6A9dlYaCm6wzSNO0D9H2f5nlmWFVVFAQBZaIatDgMA+91aLnraYsC2hko2o2iiOW6LmeX84E/TRP7EhjHMa8RU9c1J4OV81Z23+WZoBpAv4NgAUQ1gNu2zbGybVgkgkUn+76LGbY1wzzPo0zMBAC8qLQyEFbu/fwJixib/A3KdpwiS83D/RYqgFAdgN+Sl//SC95XUqVMZJ4qAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="하트로 투표해 최종 후보를 추린 모습"
+        title=""
+        src="/static/fb8e1104c0e49789c877bafed926fd80/37523/04-figjam-vote.png"
+        srcset="/static/fb8e1104c0e49789c877bafed926fd80/e9ff0/04-figjam-vote.png 180w,
+/static/fb8e1104c0e49789c877bafed926fd80/f21e7/04-figjam-vote.png 360w,
+/static/fb8e1104c0e49789c877bafed926fd80/37523/04-figjam-vote.png 720w,
+/static/fb8e1104c0e49789c877bafed926fd80/302a4/04-figjam-vote.png 1080w,
+/static/fb8e1104c0e49789c877bafed926fd80/07a9c/04-figjam-vote.png 1440w,
+/static/fb8e1104c0e49789c877bafed926fd80/5b6ee/04-figjam-vote.png 1672w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ 하트로 투표해 최종 후보를 추린 모습.</em></p>
+<p>최종적으로 4가지 정도*(개인화 솔루션 제공, 알고리즘 패턴 태깅, 시간/공간 복잡도 자동 분석)*를 개선 과제로 추렸다. 팀원이 7명이라, 리더인 Evan이 두 팀에 걸치는 방식으로 2인 1조 × 4팀을 꾸려 각자 맡은 문제를 풀기로 했다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAADe0lEQVR42i2Sa0zbZRTGO6MCLdexf6+09EIHhS1jXvbBDEYdoFDiZUHFD9PoSNTEaPSLcYboMJvxkgnDrHQO1CGXwcYSDUuMX4yaJcZPmrjgJgK2hbV0tKX0wgR+Hor/5OQ55z3v/3mf9zyv6sMBL+/5vBzv7eGE96yEl26fj5O+ft6X+t2+Hrr7Zf1MH91jPj4Y6qf3i/N89NUgR1/ooP7g/TS4D3Do0IPUSa5aW98gGF/FH4kSvB3FvxgiEIlxK7rCYjTO4vIWJvCHl1lOpAlJfT2SYH4djna+TFGJDqvDhdnqxFTuRNXR8SytLS20eTy0tnp48ki7oNSPPUGL53E8rY/S1uahvf0pWmTd7XbjbmigSXDP3vvQW3ZjMDsw7FIwCao0mnzyCwrIzVOzv7aWsS97GLtyldGRYbpPdOE93cWFgU+5du0njr/9Flv7i4pLUKvzUfRmLI5q9EJUYtBjsAihomhRhF2lUuGqrGSwt4vBke/4+PRZ3nzpGd5540Wufv8jIxfHaT/ikX07yJPDFUXBaHbicD2A2VYltRmjpQJVsZxmKbdy8tQpPj/nY2pqiqHhi1wYnWRsYoLzA+f45bcZfvj5V7xi2Jm+zzh2rJPCwiIUgwXFVIHWaEWn3SmENlRbDZermmRylVQqSSAQZCkcJrIUJhqNkkynSUlvc2ODf9fFCfkmJ6+gUWvYpSuj1GCTsFIsobc4twmrhDAYmCUcDjE7O8v8/DwLCwusrq6yHE8QkhcQiYnjS5Es4cjIqMxQg8lkwVxmwyhKddqy7SsXFhRSXb2HcMhPJpMms7bGhqgJhUJcFiXffDtFNBYjncmQTmeQV8bQ18NZc/QGLUaTIqig1ZUKoR1VwRZhjRDeCrCyEicej2eVxUTR9PQ0v/9xnWXJE6kUK8lUVuGlS5ezCrWiSqvdml+5GGvBYqvcvnJNdY0QxLLqUvLj2v8qNzc3iacyhGMJbieSzMl81+/cYXx8Ak1+AeW6IpxGDXZ9HuXaHGx2eTb50nA6d3Pj5l/Zuf3j9xMMBsWcAHNzc/x542a2NzPzN6+89jpPP/c8nZ2d7CwupbBSjfpADnfvu4e79u5AsZtR2R0OrFYb+2r309jUTH19g+Aj2dz98GEOH26kubGZg41NvFpfxyd1D+GsqqLC7qTIWUxOTS45rjzurcpF57DyH6oFbp8hAfb5AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Google Meet으로 진행한 밤 시간대 페어 프로그래밍"
+        title=""
+        src="/static/a9a4ab0d227d886c04846a365f471f22/37523/05-google-meet.png"
+        srcset="/static/a9a4ab0d227d886c04846a365f471f22/e9ff0/05-google-meet.png 180w,
+/static/a9a4ab0d227d886c04846a365f471f22/f21e7/05-google-meet.png 360w,
+/static/a9a4ab0d227d886c04846a365f471f22/37523/05-google-meet.png 720w,
+/static/a9a4ab0d227d886c04846a365f471f22/302a4/05-google-meet.png 1080w,
+/static/a9a4ab0d227d886c04846a365f471f22/07a9c/05-google-meet.png 1440w,
+/static/a9a4ab0d227d886c04846a365f471f22/669cd/05-google-meet.png 3024w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ Google Meet으로 진행한 밤 시간대 페어 프로그래밍. (캐나다의 Evan과 만나려면 한국은 밤 9시~)</em></p>
+<p>나는 Evan과 한 팀이 되어, 스터디원들이 leetcode study를 끝까지 완주하도록 돕고 알고리즘 학습 목적에 맞게 공부하고 있는지 길잡이가 되어주는 <a href="https://github.com/DaleStudy/github/issues/6"><strong>개인화된 솔루션 제공</strong></a>(이슈 #6) 문제를 맡기로 했다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACmUlEQVR42m1U2XKbQBDk//8qqfJz8pQ4tsuOkIS4YdkbWDo9SConsSl1LTU7zNU9yvL8hLrpYV3EZBycj/Bh/gjaP72LM4yeoVVE0w3IfIiwPsAFcY6YlxXLmj5gTQkpbXxfb0j7GecFM8/7faZHjaFuYEcFbBt/cvGOjTZrNOqyYpWe7x7BzqAznPOYlMYyz7vvuizI3K9nlF++onl4gH59hS8KpKbB1rb7ib6Hoj3/9h36mMPnFeJR7C1mJlnrd9+t65CFooL6fcDw9oaR0Hm+B5XLREcMA/ThgOrxEf5yQTw3WAqxd1gYzJ0uCBcmIRKTZ85ymHWLjgG01oSBtXZvVSBP8A51VZM0A29mzC7t9khSZAT30QiyECPaYUTHGQbOYknXAW/7lD4iyYe39zVtH+4z149oTwWa0xkV2zWsFCGADGBzjmVEGLbW5kfEacI8GqzKSdlY2M1KiO/uz84yM1qUxzNqzqfgR82lxEIZbWQssWJJ2/Lu5cdPTOMAN3hERXtasDDxSqltlI74SwGZuzRoXl7RksnxwApJSKhrbCRDAFZlzkz49ARXliSgI7tiV4icfajIuFLYxhEbz8z3CopV9ecCmtQ7MmV42rZjO3pvf2SS8/MLPBPEjm330qZj+xMikYzdsdE/s5PfGayrCj3nF9junTU5RezOOhRFyUIUvI6IZt0pCFxFNRiYiStr/b4UmdEBFcuuGLSS4TOoyMMwiChAHsvZHNmB0hNlsyDaq5xk9UJc/mF+D3hhdWVdoWbAUU3XNbrtpjwzB64mzY/nfe8NgZts8L9sJGBRlyhbCdhiogzuGdNN2IZyaLg1kiQG/iH4dAuYPtEhhy7bcYdUEimXu/IFq/ybENe5vtv/3pD7pvwBIlXU4K89ueAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="AI 프로젝트 1기 보드"
+        title=""
+        src="/static/17d06ebbfb29b44b3e37cb3dd783f8a7/37523/06-project-board.png"
+        srcset="/static/17d06ebbfb29b44b3e37cb3dd783f8a7/e9ff0/06-project-board.png 180w,
+/static/17d06ebbfb29b44b3e37cb3dd783f8a7/f21e7/06-project-board.png 360w,
+/static/17d06ebbfb29b44b3e37cb3dd783f8a7/37523/06-project-board.png 720w,
+/static/17d06ebbfb29b44b3e37cb3dd783f8a7/302a4/06-project-board.png 1080w,
+/static/17d06ebbfb29b44b3e37cb3dd783f8a7/07a9c/06-project-board.png 1440w,
+/static/17d06ebbfb29b44b3e37cb3dd783f8a7/8d9a9/06-project-board.png 2244w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ <a href="https://github.com/orgs/DaleStudy/projects/33/views/1">AI 프로젝트 1기 보드</a>. 빨간 표시가 내가 맡아 완료한 이슈들이다.</em></p>
+<h2 id="evan--ai와-함께-페어-프로그래밍" style="position:relative;"><a href="#evan--ai%EC%99%80-%ED%95%A8%EA%BB%98-%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" aria-label="evan  ai와 함께 페어 프로그래밍 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Evan &#x26; AI와 함께 ‘페어 프로그래밍’</h2>
+<p>프로젝트를 진행하는 방식 자체가 정말 흥미로웠는데, 리더인 Evan과 같은 팀이 된 것은 큰 행운이었다. 에반이 어떤 형태로 프로젝트를 진행하면 될지 좀 처음에 이끌어주셨는데 그 부분이 제일 흥미롭고 이번 스터디에서 큰 배움이 있었던 것 같다.</p>
+<p>우리는 페어 프로그래밍으로 진행하되, Evan과 나 둘만이 아니라 AI(Claude Code)를 한 명 더 끼워서 개발했다. 나도 Claude Code를 쓰고는 있었지만, 지금 생각하면 일종의 고정관념 때문에 AI에게 그렇게 많은 권한을 주지 않았다. 많은 일을 맡기기보다는, 딱 내가 필요하거나 막힌 부분에만 도움을 받는 식이었다.</p>
+<p>그런데 이번 스터디에서는 달랐다. 풀려는 문제의 아이디어를 잡고, 그 스케치를 GitHub 이슈로 만들고 description을 쓰고, 코드로 구현하고 PR을 올리는 그 모든 과정에 Claude Code를 적극 활용했다. 나는 정말 ‘검토만’ 하는 방식으로 개발해본 게 처음이었다.</p>
+<p>처음부터 이렇게 다 맡기지는 못했는데, ‘일단 한번 AI에게 맡겨보자’는 오픈 마인드의 Evan을 옆에서 보면서 나도 마음을 많이 열게 됐다 ㅋㅋ 그렇게 만든 결과물이, 지금도 돌아가고 있는 <a href="https://github.com/DaleStudy/leetcode-study/pulls">리트코드 스터디 PR</a>에 아래처럼 학습 현황을 자동으로 달아주고 있다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 123.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAABYlAAAWJQFJUiTwAAACdElEQVR42qVVDW/aQBTr//9pm6ZNk7a1rNBCCSSQ7+TynXj2o1SbtFLSRjrdKXA+n/38cuPaEaVrEAQHZHnJdY2cc5IVSNLc3rVt/+po2g5RnKEoKvTdgJtxAqqmxd1yhdXDGo/rJ9wt7nG/fOCGDl3fYxjHi6PtevT9gJFgN+DTdh0OxxCBf0Acx2iaBlVVYe4zTc+APU+I4wS73R7OOZ5GVsNgoPrTbMCRizzPEYaRAR7DGK7wsfi9QFU372BINlEUIU1TMuuff+wxUZ93MZwo5uZpi9XqgSxDu2rX9WbK+wC5SJIEh8MRIZnq+mmaGWPpORuwbVt43g5PW8/Wputf19U8DOMMU7hZ9SZmKiE9680Gvh/YWkZJ47quzf23TWFRBocQKdNxHp8+f8H96hF54bAn8J416u18uAv1+QKoU31GL0kyApRI8wJfv303IEXvBBgYYFXV1wCOBpgRSKqVZYVftwuaFKLIHbXdIaZpitYlLf9hqM0K+jBMBni3WDKOEdelMfODI3UergOUhtpQs0kMZFGUDj9+3rIDHW0thrqBAPtrTYmi5NQ1yMBRpyUNCViXkuFsiA5VsV8VPbERkAB19d0+MFZplrPfJQYWJ6nl/qqkqAmcNBwtds5VNhoWun5zbLw1Zx3+Wl8cz4DSJiQL9UK5qfhlWcaRWyT7l4YxvTkMUGZsvD3W641FcOt5lg7VnFKkhqt5VvRqbpIB0qyks7quWApYEbwUuf8ATgTsLGb6MEnLE3hhkVxvtvOag063yJFdzPjJBM1RnJrT+niptK7v2Ow0BdmpbASmWtOV9a7gQcr4LIYqhXPb+sgjwD/ztKJBdzMRxAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="봇이 PR마다 자동으로 남기는 학습 현황 댓글"
+        title=""
+        src="/static/2ebd8b7560c4988e2b43c2f429270a65/37523/07-pr-bot-comment.png"
+        srcset="/static/2ebd8b7560c4988e2b43c2f429270a65/e9ff0/07-pr-bot-comment.png 180w,
+/static/2ebd8b7560c4988e2b43c2f429270a65/f21e7/07-pr-bot-comment.png 360w,
+/static/2ebd8b7560c4988e2b43c2f429270a65/37523/07-pr-bot-comment.png 720w,
+/static/2ebd8b7560c4988e2b43c2f429270a65/302a4/07-pr-bot-comment.png 1080w,
+/static/2ebd8b7560c4988e2b43c2f429270a65/07a9c/07-pr-bot-comment.png 1440w,
+/static/2ebd8b7560c4988e2b43c2f429270a65/c4451/07-pr-bot-comment.png 1450w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ 봇이 PR마다 자동으로 남기는 “학습 현황” 댓글. 이번 주 제출 문제의 유형 일치 여부, 카테고리별 누적 진행도, 그리고 gpt-4.1-nano API 사용량·비용까지 한 번에 보여준다.</em></p>
+<p>우리가 만든 <strong>개인화 솔루션</strong>은 단순한 정답 풀이 설명과는 다르다. 정답 풀이는 인터넷에 널려 있지만, “유형에 맞게 문제를 풀었는지”와 “진행 상황”은 봐주지 않는다. 그래서 각 멤버에게 개개인에 맞게 리뷰 해주는 걸 목표로 삼았다. 봇이 PR마다 자동으로 하는 일은 크게 두 가지다.</p>
+<ul>
+<li><strong>유형(접근법) 일치 분석</strong>: <code class="language-text">problem-categories.json</code>에 문제별 <em>의도한 접근법</em>을 정의해두고, 이번 풀이가 그 의도대로 풀렸는지 판정한다. (예: two-sum을 Hash Map O(n)으로 의도했는데 브루트포스로 풀면 짚어준다.)</li>
+<li><strong>누적 학습 현황</strong>: 별도 DB 없이 GitHub API로 그 사람의 merged PR·파일 트리를 매번 계산해, Blind 75 카테고리별 진행도를 개인 대시보드처럼 PR 댓글로 자동 업데이트한다.</li>
+</ul>
+<hr>
+<h2 id="두-번의-챌린지" style="position:relative;"><a href="#%EB%91%90-%EB%B2%88%EC%9D%98-%EC%B1%8C%EB%A6%B0%EC%A7%80" aria-label="두 번의 챌린지 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>두 번의 챌린지</h2>
+<p>이 문제를 풀려면 달레스터디의 <a href="https://github.com/DaleStudy/github">github 레포지토리</a>(Cloudflare Worker로 도는 GitHub App)에 기여해야 했다. 이미 이 프로젝트가 <code class="language-text">gpt-4.1-nano</code>를 쓰고 있었던 덕분에, AI 기능을 구현하는 것 자체는 프롬프트를 다듬는 것 외에 크게 어렵지 않았다. 진짜 챌린지는 오히려 ‘운영’에서 나왔다.</p>
+<h3 id="챌린지--cloudflare-workers의-subrequest-한도" style="position:relative;"><a href="#%EC%B1%8C%EB%A6%B0%EC%A7%80--cloudflare-workers%EC%9D%98-subrequest-%ED%95%9C%EB%8F%84" aria-label="챌린지  cloudflare workers의 subrequest 한도 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>챌린지 ① Cloudflare Workers의 subrequest 한도</h3>
+<p>다른 팀도 같은 Worker 위에 AI 기능을 얹다 보니, 여러 AI 핸들러가 한 번의 Worker 실행에서 순차로 돌면서 <strong>50 subrequest 한도를 함께 나눠 쓰는</strong> 구조적 문제가 있었다. 학습 현황 댓글 하나만 해도 GitHub API 및 OpenAI 호출이 겹쳐, 제출 파일이 10개만 넘어가도 한도(무료 플랜 50회)에 부딪혔고 응답을 제대로 못 가져오는 일이 생겼다.</p>
+<p>해결은 두 갈래로 접근했다. 먼저 유저의 merged PR을 PR마다 REST로 개별 조회하던 것을 <strong>GraphQL 배치 조회</strong>로 바꾸고, 파일별로 쪼개 부르던 OpenAI 호출도 <strong>한 번의 배치 분석</strong>으로 합쳐 호출 수 자체를 줄였다(<a href="https://github.com/DaleStudy/github/pull/15">PR #15</a>).</p>
+<p>그다음, 애초에 여러 AI 핸들러가 한 예산을 공유하는 게 근본 원인이었으므로, 각 핸들러를 <code class="language-text">ctx.waitUntil()</code> + self-fetch로 <strong>별도 Worker 호출로 분리해 각자 독립된 50 subrequest 예산</strong>을 갖게 했다(<a href="https://github.com/DaleStudy/github/pull/16">PR #16</a>).</p>
+<blockquote>
+<p>💡 관련 이슈: <a href="https://github.com/DaleStudy/github/issues/10">#10 리트코드 스터디 재수하시는 분들 풀이한 문제 카운팅 해결</a> · PR <a href="https://github.com/DaleStudy/github/pull/15">#15</a>, <a href="https://github.com/DaleStudy/github/pull/16">#16</a></p>
+</blockquote>
+<p>덕분에 Cloudflare Workers라는 서버리스 런타임을 처음으로 다뤄보는 기회가 되었다.</p>
+<h3 id="챌린지--스테이징-환경-구성과-테스트-코드의-중요성" style="position:relative;"><a href="#%EC%B1%8C%EB%A6%B0%EC%A7%80--%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%95-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%EA%B3%BC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1" aria-label="챌린지  스테이징 환경 구성과 테스트 코드의 중요성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>챌린지 ② 스테이징 환경 구성과 ‘테스트 코드’의 중요성</h3>
+<p>규모가 큰 오픈소스가 아니다 보니 스테이징(stage) 환경이 따로 없었다. 개발 환경이 없으니 코드를 곧장 production에 배포해 테스트해야 했는데, 이게 불편할 뿐 아니라 <strong>스터디가 진행 중이라 실제 사용자가 있는데 이렇게 개발해도 되나?</strong> 하는 찜찜함이 컸다. 실제로 이 시기에 PR 세 개가 연속으로 리버트(#17·#18·#19)되기도 했다. 알고 보니 기능 버그가 아니라 앞서 말한 Cloudflare subrequest 한도 때문이었지만, 어쨌든 운영에 바로 영향이 갔다는 점이 스테이징 환경 이슈(<a href="https://github.com/DaleStudy/github/issues/21">#21</a>)를 파게 된 계기였다.</p>
+<p>스테이징 환경을 구축하려면 어떻게 해야 하는지 딥하게 들여다볼 수 있었지만, 메인테이너인 <a href="https://github.com/DaleSeo"><strong>달레(DaleSeo)</strong></a>의 의견은 매우 중요했는데, 오히려 관리 포인트가 너무 늘어난다는 피드백에 스테이징 환경 구축은 중단하기로 했다. 건설적으로 서로 코드 리뷰를 주고받았던 경험이 재미있었는데, 내가 한 가지 아차 싶었던 것은 테스트 코드로 이 문제를 해결할 수는 없는지에 대한 답변이었다. 테스트 코드를 안 짠 지 오래되었다 보니.. 테스트 코드를 아주 중요하게 생각하는 나였는데 그걸 애초에 고려하지 않았다는 점이 부끄러웠고 반성하는 시간이었다.</p>
+<p>아래는 그 원인 규명과 스테이징 도입을 두고 달레와 주고받은 리뷰 스레드다. 달레는 유료 플랜(월 $5, 한도 1,000회) 전환과, subrequest 호출 수를 세는 <code class="language-text">fetch</code> 래퍼로 CI에서 한도 초과를 미리 잡는 아이디어까지 코드로 제안해줬다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 82.22222222222221%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAACTUlEQVR42oVUCZKbQAzk/99LZSvJYoNhuMwN5jS4o9bgLW9qk1AldMyhVmtmnG/ff+EtyODXI0y/IluAbMZnLZKKnUxfSzTuOBUDkmGHUzUtfr67CKMISZqi7TrM84xhHDFNEyaxp2nGuq54/R74/D0ksIs4nFyWJbJrgbrtUUuCvL6hKCuUVYtCpKpK1HVtExwya6JJk9G+3++axCEi13Xhnn24XohLEOLHOcLJC/B+8mBMiDhOJOEVwzCIjLjdBoxSwe3waS9SgW44jBPiJEUq5eZ5jqIokCaJxGSTLEVdZmiaRja5oet6dH2vtDRta+1Db9tmN2Q2I/ydPQ+hieBfLgjCEGFo1DdxCs9cD9/ImEGaZbqGNtFzXiR+I3RpyZcgEO4a4Yq8VYqIgzZWK6+MkcfqGC+PuYzVdYNeUM7zYhEGgUUURTGiOFZtJGsYRorACLLLJUAi1BA9Y6SAYKjJ7UPavIsoh+aAzs1ClmtsedzkuTmTPhPaJJHwngnPmfqsaF3vcHpBmOfFh7CbbAztqzQpu+bWFq0byPirT03hGp5ZZ5RzpBwIdMLf913hawli/03Y1T/9TbQzSsnsGjMTUVlWmqA5GtF27QdPPDbkrVd/VN/GOz06qxxup2075YpNoeax8X0rnufrdXx2n6UyYSWdZULGCrllT70sKxz+qsqi4gDbz+NCXtgAI40IjhOgN0Lm26u36LVjhbR5/bZNSp7EiY+Fy7LonaTwMXgVxv738YFwxnlF31VYJMPji1fk+bI8jgX/EukJfgMxnsTny7NLawAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="달레와 주고받은 코드 리뷰 스레드 1"
+        title=""
+        src="/static/1e70a2beb063e673a82b44784b1daacd/37523/08-dale-review-1.png"
+        srcset="/static/1e70a2beb063e673a82b44784b1daacd/e9ff0/08-dale-review-1.png 180w,
+/static/1e70a2beb063e673a82b44784b1daacd/f21e7/08-dale-review-1.png 360w,
+/static/1e70a2beb063e673a82b44784b1daacd/37523/08-dale-review-1.png 720w,
+/static/1e70a2beb063e673a82b44784b1daacd/302a4/08-dale-review-1.png 1080w,
+/static/1e70a2beb063e673a82b44784b1daacd/07a9c/08-dale-review-1.png 1440w,
+/static/1e70a2beb063e673a82b44784b1daacd/2a333/08-dale-review-1.png 1484w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 96.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAAC2klEQVR42p1U23bbOAzU/39bH7dt0iS+xJKsGyXqLktOpjOg3LPb7r5sTsYQQBIEwRlGWZ4jTmK42qPrRyzLiuW2Yl5umOeb+foe5xnTvNicoqyRE3XTGhxROW/jUVUmeH76guv1imuWI0lTQ5pecT6/I2Ps/H5BXTcYxxHDMKDrOvT9YN9936O3WM/NmbBpPCsMCR7I88ISycqPkwQ6SVU5lGVFlKyyNF82LwoURckTzYgUOByOeCMOO17fDrhcYpxOZzz/eLGYkr5fLmGDOCFinihDypNltJqvqqPGexyOR1t84hGPx1NITmsbKTkXWyWsMmfl12tmVVZVZacoymDVkqhlP5Qs2Y/2zp0M7Jti2lmT1Tf1sWkC5HvfQgV1bRizHiqrczV869G2rU0OC4P/gN/t4yK8Etnl9DYmu20bomma0He8pemGnhhEFdJmXTfciHVdaQnGlkVjf8f6y068EK2JNpbp0wLJpWSTe1zzAa4cUbsBTTsgrUZkjr4fAzeNl/+EuNoNk41H23ZHnWbIzzFakrWtOiac4ZvRSNuPCyYumP4l0e/Y7h+I7h+f8FRJfklRi3+5Q1a1yHeUTipoaBv2qv/PZBNbtbK4SFlrXnsRV+RUg3OcmYwkr4obFZWSeQzjjHFabOGj2kflFnsk1I+c23pn4+9s8GYDq3wiaDtckNlbsH/AjsyEHa872yUm+Txkp5hkJq5Jp66u7bsixbRGqpAvujnSrCbdjDbilpQgIsteKCspQeROqPHAy9p4Kb6KoyGReNntG3mL30ihSPL56+s3vLy+4fv3Zzw9PePl5dU0LGuSJKTv45mW8yTN4+lEqQat61X6wbkqLtILoaTSpnNu/66sGrVAxF/0DlIVA1Wl+eNuJTV9a840zbirhyr77RheEz1DKd9C9VDMH8b9vWO/9FTp+Hr7gtQG3vpkvuZoQ0sodjsObh8fwOcn/wP+z5/W/QTRjqS026OmVwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="달레와 주고받은 코드 리뷰 스레드 2"
+        title=""
+        src="/static/66c69dade5daa53dd1b18aedd9c25cec/37523/09-dale-review-2.png"
+        srcset="/static/66c69dade5daa53dd1b18aedd9c25cec/e9ff0/09-dale-review-2.png 180w,
+/static/66c69dade5daa53dd1b18aedd9c25cec/f21e7/09-dale-review-2.png 360w,
+/static/66c69dade5daa53dd1b18aedd9c25cec/37523/09-dale-review-2.png 720w,
+/static/66c69dade5daa53dd1b18aedd9c25cec/302a4/09-dale-review-2.png 1080w,
+/static/66c69dade5daa53dd1b18aedd9c25cec/07a9c/09-dale-review-2.png 1440w,
+/static/66c69dade5daa53dd1b18aedd9c25cec/2a333/09-dale-review-2.png 1484w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<hr>
+<h2 id="회고" style="position:relative;"><a href="#%ED%9A%8C%EA%B3%A0" aria-label="회고 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>회고</h2>
+<p>프로젝트가 끝나고 마지막 주에 다 같이 회고하는 시간을 가졌는데 정말 유익했다. 2개월이라는 짧지 않은 기간을 달려왔기에 뿌듯함도, 아쉬움도 있었다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.88888888888889%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAADGElEQVR42j2U6VLbSBSF/f5vkF9TNTM1qZqEyUICBMYQwA6YJbYLbBZjG7xIsrWvrdVfrvHUqHT6tlrqc0/fRTXf87EtC13TsUxL5jbLxRJL1vxA3tk2lm2RZSnra7VarYf/sX6uqoqVYG1rYRrhRC526ODGHk4s88jBj0KiUOE5AZ4bolROVSKbIC8r8qIiK0pBhdyUq1d/1LTI4Ebv82iOsEqXgBhHRlccaZMF8+mSpeZhGi5ZUpJnYJgOk7nOwnKw5YRJVqDKjejamsSoLG6CB04WLY7NFn01wFOK/lmIMU4phMScpty1PJIQLqch5y8RzXFA/cnncCAnUxuJNbcKiFCcLC94c/sn/5jfaGc9/CSlu1+yGG4+1B5LLj+nxO6Ko1nJ7rhi69bn927E237KIqrWEaY2Tqc03Cv2jRP+uH/PmfuTM+8aN1GMrkruzxMern2ebxXHf5vM9YLmTHGpFXx/8jgVldOgZG+UcziRpDyoEdvOIedBh4uwy9Z4l7fPH4UwZdCEzoHiat/FmlUsH0XdveJNR3GqwZeezee7gHf3BR8HBTeWKLQql8XK5od7zbZRp+V1OA/bOEksRCbaUFHlSEIkk9mKpcTww0PK6STjeJLTnBf81g5pG+Umhv1gwNbLDl/MOttWndvwkUE2lvKJaX210Z5SqgIk6RQxr+SNWUH9pWRnWHA8lXgOc+7sakPYE8K/5Ijd5IFhMeXTfJ8Dt/Eaw14jpnvoc9NwMUcVh3tzTCtnndBIiONig0iQFP+VjVk4aNWCnjFHS1wmhcZzMcMWhZ26z+1JwuNFijZQdI9iPLsUkhKVV6hM5lkudViKA+mWtUI9NWnoFzSMS/6dntIUe6K30AObyM3pNAwm/YjxXUTvyib0M6wg5uLZo61F/JxF0hgJfpxRrlvPUg675jE71nc+6QfsmEd80PcwPJNSQXPbkNIJGfaEpGUSCaGnMrYlbu/aDu/7Cd9GUp9pTlGW1NI0kx72CZKAJE3EhvgqoCwK+SFkxGFGIt7zXDZIi2ViE9njhCmuwInECtZr65/DL+6gD2Z8AIp3AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="FigJam 회고 보드"
+        title=""
+        src="/static/ed031ae5a7b3c40163504fb71e535def/37523/10-figjam-retro.png"
+        srcset="/static/ed031ae5a7b3c40163504fb71e535def/e9ff0/10-figjam-retro.png 180w,
+/static/ed031ae5a7b3c40163504fb71e535def/f21e7/10-figjam-retro.png 360w,
+/static/ed031ae5a7b3c40163504fb71e535def/37523/10-figjam-retro.png 720w,
+/static/ed031ae5a7b3c40163504fb71e535def/302a4/10-figjam-retro.png 1080w,
+/static/ed031ae5a7b3c40163504fb71e535def/07a9c/10-figjam-retro.png 1440w,
+/static/ed031ae5a7b3c40163504fb71e535def/2ef06/10-figjam-retro.png 2448w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ FigJam 회고 보드 — What went well? / What problems did we face? / Learnings &#x26; action items 세 축으로 정리했다.</em></p>
+<p><strong>좋았던 점</strong></p>
+<ul>
+<li>페어 프로그래밍으로 각자 AI를 사용하는 방식을 볼 수 있었던 점.</li>
+<li>실제 운영 중인 오픈소스 스터디에 기여한 점</li>
+<li>캐나다/한국 반반 참여하는 스터디라 흥미로웠다.</li>
+<li>사용해보지 않았던 기술 (Cloudflare, Github, Bun)을 경험해 볼 수 있어서 좋았다.</li>
+<li>앞으로의 개발 방식이 어떻게 바뀔지 체험해볼 수 있었다. (혼자서 개발하는 사이드 프로젝트만으로는 개발 방식의 변화를 느끼기 어려웠음)</li>
+</ul>
+<p><strong>아쉬웠던 점</strong></p>
+<ul>
+<li>AI를 활용해서 개발하다 보니, 새로운 기술을 내가 습득한 것 같지는 않다.</li>
+<li>그냥 AI가 그 기술을 이용하는 것 보았을 뿐… 내 능력은 그대로…</li>
+<li>개인적으로 보람이 있기는 했지만, 스터디에 필요한 기능을 넣었는지는…😊 잘 모르겠음. (2기 때는 니즈를 먼저 파악해보기)</li>
+</ul>
+<p><strong>앞으로는?</strong></p>
+<p>AI를 사용하는 것에 그치는 것이 아니라 어떻게 잘 활용할지에 대한 스터디를 진행하면 좋겠다.</p>
+<ul>
+<li>Claude 공식 문서 읽기</li>
+<li>LLM 동작 원리에 대한 탐구</li>
+<li>RAG 등등.. 여러 기법에 대한 트렌드 학습</li>
+</ul>
+<p>AI 내에서 각자 관심 있는 기술을 공유하는 시간을 갖고 싶다. (그래야 내가 관심 갖고 찾아보고 공부할 것 같음…)</p>
+<p>요 정도로 회고를 했던 것 같다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 83.88888888888889%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEo0lEQVR42kWT2U+UBxTFPxfcKlRwYDaGYRZGAdlX2RkGIQwzbOIIKLsVdJDKqiyyCiK7BWQVWRRxEApC2trWNm2aEGNCGk2f+9j/4tevT304yX25555zz71CfGw42RYTmRlGrOY0Ms3pmDPTsVozxDqNrGyziByiPGJRHNNy+JAzxw5LOCScxvm4nNNOahSSYMyhVnQSH4T+jq/Z3ZzH8WKaV0tP2XAss/PWwc7uJq83Vnj36/c4HNuYT5VQFNxIlI+VE0fUSGQaLCmFNKU8pii8g/qoPqKlSQiP2mvZXZ9hd3We3fmnjA/3MToxyndbr3m395b9zwcszK/i75KILeAu+do2QgxxFGRcwJwSSUHYfS77tpEsrUN51B/hyXAPP367yPLYI3YXZmiqLKPIamHbscoPK0vsH+wzM79MhqqCArGxLHyTsqRSZqsu0lt8lTh5B2b3YoySapROouXl1UXW9/aIsV6nd2iI1oZ6KoquM7nyktb2TtrHnvDy1Q7xLq1c0Y7Rbi2gOV3KjUg3pm8qmKsu5Kqsn0zpCAbnDITC6zYy8gtRhcbjI0LlG4w+MARdpBHfGBPnLybScr+T9OAuKlLttNlU3LVoqEozMFHji+ORjuZrtViDJghQioReBi8GG/Kozk2mKssk2o2nKDuVO+WVXMvLwZaVQ3djCxu7W/y+/54/Pn7g4NMBv/z2My9eLrK5ucbM7AhD44PkXslGuBQXy950GyN3i5hvrWX1gZ21oYcM2xux2yqZHJimv3uYmefPeb29yc7SHI5XL7hZVoIpLJCRwR5GxCB7O1swJUQjZCXHsr8lpjzVwcZgI4stlSwPNHEr5xo2YyldDbeoszczs7LC/PAAU3W36WtvpbuqEnuakfu1txkfecjs7CTRcTEIeanRPOuq4Vm7nebbVyguMlFdnY/JkkBaVCCZEeeIjQ9jeGqcub5OpppqeTr6mIWOFjrycxjouCeSTbD2Zh1zXi5CnTWfrjvXWOi8QUyCHxFx5wiNPY9fmBL/UBmmUG9McUFMfDPKaEs9Xb0PWXizx2RfP42WNBqaW1jbcvDs1ToFJaUI3go1EYF+xEcEcyklip57pbTXFZJqjMRD7o5B742X1htNYijnjFEE5Fjwzc/FNycdz8QQJOEhaCOjCbFkoA7yQ/CQyfFU6zjtKqPEZubD+20+/fU3NXY7Eg8Fai89Uq0GQa/kaLgfJ8uMnO0vRbU/QEB1Dqq8BJyMYQgSCYLSFUEmV6LV+eAhKi2xJPH54wH/AG09I5w9647GW49cr8XJR8eX0RdRPalE/lM3mr5yypMiCSxO5kxTESd9/Diqlf5P6CKRM1F/gz/X5xgenSPVlI5cocJbJJSqVJyMCEB62cLxhAji+ipJSU9h7NZVLF9l42zLwCUhhkNyUaFc7olOZ8BNtPegqpzx+hp0XhqUCiXeGj1qtRapp4oTUUE4m40Iaj33yvOwidcRHXGBpfYK/I3xHDL4cUTqhuDmdhapVI6rqxv+/kEEB4WjFIe4nnFFJlPynwN3qYxjGiUKg5ovlDL04ne5uTpz/NQpjFG+ePqKO1a4c9jVmX8Bm6+xgycRFK4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="마지막 미팅"
+        title=""
+        src="/static/29185f24f66127814f317658977598a8/37523/11-last-meeting.png"
+        srcset="/static/29185f24f66127814f317658977598a8/e9ff0/11-last-meeting.png 180w,
+/static/29185f24f66127814f317658977598a8/f21e7/11-last-meeting.png 360w,
+/static/29185f24f66127814f317658977598a8/37523/11-last-meeting.png 720w,
+/static/29185f24f66127814f317658977598a8/302a4/11-last-meeting.png 1080w,
+/static/29185f24f66127814f317658977598a8/07a9c/11-last-meeting.png 1440w,
+/static/29185f24f66127814f317658977598a8/658ca/11-last-meeting.png 2389w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ 마지막 미팅. 다들 표정이 너무 귀여워서 이 사진만큼은 얼굴을 가리고 싶지 않아서 동의를 구했다 :)</em></p>
+<hr>
+<h2 id="달레줄레-팟캐스트-출연" style="position:relative;"><a href="#%EB%8B%AC%EB%A0%88%EC%A4%84%EB%A0%88-%ED%8C%9F%EC%BA%90%EC%8A%A4%ED%8A%B8-%EC%B6%9C%EC%97%B0" aria-label="달레줄레 팟캐스트 출연 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>달레줄레 팟캐스트 출연</h2>
+<p>프로젝트가 끝나고 5월 가정의 달을 쉬어간 뒤, 6월에 새로운 주제로 다시 스터디에서 만나기로 하고 있었다. 그러던 중, 우리 프로젝트에 줄레(번개발)님이 함께해주셔서였을까 <strong>달레줄레 팟캐스트</strong>에 출연할 기회가 생겼다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 122.22222222222221%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAABYlAAAWJQFJUiTwAAADU0lEQVR42o1V2XLaQBDkB1K5bANC4jAGCSEQSBwCIjDmsAHbqaRSuSoPqUqe8pYPyLd3psdZ4lRiOw/DrvaY6e3pGTIHhxaePssil7ORzRZ0NMbvet1HqxWh3Y5QLB4jn3dgWcU7LXO52eDbl89IRilevnyNIOjq5U6nj7DTQ6lU1YOFQuleR3uHb66v8OP7N9TcJqJuTxzF6PUSDAYjGYdwnPKDqP5weHCYx6PHz+G6PkaCMor64rSHRqOFMIzFIj1oaHjQoW2Xlav0xQzv3n7EcnmB1eoCs9lCKdjtrjGZzMRSxHGCllBxn+OMJdzkxGFTeKtUXRwJYpMQkyQeZGA+35HE3IuwID+HOQep52PaiVDzAslqV5/K5Ph+G81miKoEUy4fyjIjP3mexddXb/D1wydM0jl22yssFmucni6Ugvl89dvhQxwawonMFTSV8glqtQY8r4lKpbY/+L+ZzlBf5KorkplOzwTVUm2xPJe1vu6pBv9XhyZ6tVqHWxdkIh/3xIXfCFAuVpDPWcJbQcy+4U9HW+7Y/+RTHJb0gn0cwvFGsGs9OI0xbDdBsTFCyZ+g3JqhJGuWU0fersIuu2IeCnblbtl4rSGi8TnagwXi9Epsh+5ojXiyQZisEcnYSVaI5UzFT1D2BrBL7l8olcOjIwvJcCzCfo/Vco12q6NP9htNmYdo+oGu0cJ2FwXr19Mt524Oj4+FQ6lnIw/HqaiYjwT9wUFeLHdjIvxslmXo/LNiFCE3KN40PZUSm6LfTzAeT7W2WdN1SZTvt0RKgQZk3bOtcZ1B73S4WFyooFnLq9VGRX12tta6Pj/fYSuC5/dmc6l1vl5vpb392SMzZsJIFDJFfXLiKYobgQcqKbNO4zlSxIbL59+u+VsI2xJ9JWjO5OlzRTmdznVOwbP8iHQ+X0oTDtUxn82KIvcMQKT7pLAzR9FAm0EQdLQnsjkYIyVEy3U2YJ7l3Bj39g6JkOT3+yPdZGNNkol2bXYdOojjoZYiHbNMucZzTBbvMFn0s69ldmomghcMSo5mbozPY3C2OO41RK98wV8OGWW7vVbuxuNU/1t4kCiIhuj5H0NHtOFwoqh5L0le6JPVoeHQZJRkMwCrx4y3zXTy29+Hv7o8s/wTGNq6ZE9eTNEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="번개발님이 Discord에 공유해준 녹음 안내"
+        title=""
+        src="/static/80ce06811d819f3ab9e0299801e6952a/37523/12-podcast-notice.png"
+        srcset="/static/80ce06811d819f3ab9e0299801e6952a/e9ff0/12-podcast-notice.png 180w,
+/static/80ce06811d819f3ab9e0299801e6952a/f21e7/12-podcast-notice.png 360w,
+/static/80ce06811d819f3ab9e0299801e6952a/37523/12-podcast-notice.png 720w,
+/static/80ce06811d819f3ab9e0299801e6952a/302a4/12-podcast-notice.png 1080w,
+/static/80ce06811d819f3ab9e0299801e6952a/33d1d/12-podcast-notice.png 1150w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ 번개발님이 Discord에 공유해준 녹음 안내.</em></p>
+<p>오~~ 인생 첫 팟캐스트 녹음이라니 ㅎㅎ 한국 개발 쪽에서는 팟캐스트가 흔치 않아서, 더 참여해보고 싶었고 특별하게 다가왔다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC20lEQVR42m2UW2xMQRjHz+5qVenutkm1RB94ICJSirhEIy67Ea+eaJXEJSIEIS5JpSiNamu3u5Zdm1JC2RBEtWnFJSS8icSbJ7w00Xbb0u6lZ8/uz8ycXYkwOb/M5Jvz/ec/M+c7WkVFBeXl5TidThwOB06BI4fdzvFiJyfEnFOMncXF2ItmMG/ufFYsW8OSyhVUVVaxcvlSFi1cgN3uQNM0CxarFavVJrD+hYxrFgtadmybMkUmsHVrDdfDNwh13MLvC/Hh4xfONpynsHAa2uVAiHNtVwQeGj3tXGz3c8Hj44LXz0VBU/tVfIEA7deCeINhLnu8nDrTSOT5ayI9r3ja94EYcCvSTX5+HpoYE08lGNdlGDKZDOl0WvWIJw3ZuIkMtnrDNLTewxuO0HrFx4Pn79l98BjTpUMlGE8wMDjMyK8YP+NJJpI6iZSh+nhyEl1PkUqlMARSs/74SdZVLsa9ehU3OzsIhHzU1m1jan6+KaiLF38MRxkeHSMmBdIZEyPDpBAzDEMIGpjvGnR4m3jR94aAOKaGM/V0Pe6nuS2gLlIJyi3GYjHGx8dVL53kmnSmK1Fz88lkkv7ubr7+hP63n9i3dw/ffsFAEqrXu0xBmRSNRhkbG1MJuq4rV3Kh5OQkqexYnmtKCD/t6qT33WdudEaoq6slfLeHYOczZs2ekxUUCdGREUZHR0kkEio51+SWJ2JxtYi6EnEU9x/cxxPwE+wI0nypkba2FnbU1mCz2dDSaUO5GBoaYnBokLgQlE6kQ9lLx3IR5Vggt//w4V0OHtrP6fqz+LzN3L53h8NHD1NQUIDmdrtwCdxut8Llcv3Dn7lNG6leW01N3Xbxqbzk+wR0PemlqaWJHbt2moIWS7YqREVIclUi7efIxfLy8lSluLdsxh8KEXnUS4soigNHjrBm3QamScGSkhL+R2lpKWVlZX8xU8TMebOmZxQWiH+Ag6Iiu0L+D34DoteubSjis4EAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Riverside 녹음 현장"
+        title=""
+        src="/static/fca6c5de914fcd75be080effc44273ff/37523/13-riverside-recording.png"
+        srcset="/static/fca6c5de914fcd75be080effc44273ff/e9ff0/13-riverside-recording.png 180w,
+/static/fca6c5de914fcd75be080effc44273ff/f21e7/13-riverside-recording.png 360w,
+/static/fca6c5de914fcd75be080effc44273ff/37523/13-riverside-recording.png 720w,
+/static/fca6c5de914fcd75be080effc44273ff/302a4/13-riverside-recording.png 1080w,
+/static/fca6c5de914fcd75be080effc44273ff/07a9c/13-riverside-recording.png 1440w,
+/static/fca6c5de914fcd75be080effc44273ff/669cd/13-riverside-recording.png 3024w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ Riverside 녹음 현장. Jule, Dale, Sam, Evan, 그리고 나(soobing)까지 화면 공유로 질문지를 함께 보며 이야기를 나눴다.</em></p>
+<p>그렇게 녹음을 마쳤다.</p>
+<p><a href="https://dalejule.com/episodes/22/">EP.22 AI 스터디 초대석: 개발자들은 AI를 어떻게 공부할까?</a></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 92.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB+UlEQVR42p1U2VLjMBDkh/mp/SGeCOQAk42TmMSWLcn3od5p2YGCjRfYqZoa2bE6Pd0j3TgVYtjeoWlbDMMA55xUSanjevgr+74HwxiD3W6HxWKB1Wrlf7vBFE6y7d8//t94B+w7NPoMbaz8s4XWxq8TlUKlGdJMI06Ur+c48d9cB3TOL4ZTgPzXLY7RCZvnF2yeAl+Xqw0eHtd4CrZ4WK79+/vFEr/D/Uhk2n+FYYsqPqBuGuR5gaqqUdc1KkluYe1Fo2+3TBOMADVNC2st8qL0gGyPhiml/J9gMstdYfcBsOs6ZKKP1haZ6MekXtSP2sWJaKkynGV90fUcK79vFvBwPCE6xV5HghXCsiwrydLLwLSsxVjLqvqaIYHSVAuLbGJMpiNba3MYSa59F1LbOYaNmBEeIuwld+ER4T7ym8wEQinIyo+StM/nQpjPusyBHufNvAFxA0Euz1yzUgYaxOfhk/MfACmyYpvCgsBsmwbwPXM0ZzSIbbfi/ixDhhUTCpOiVUc0zOQgNUKXnfy7zqppaN3Xc8hIRRf9GqLcPaLYr5Fv71G9vvhjycF3Q/f9wfa3B8ciTVBFAcrjswcb6uLt8vjR5cDgCHSiS1+XYzbi4iS6u5yQKzkLeC14N6ZiDI/hjxl+jkJOQqQrBJFGFOeITIum/3fzfwAYwXsB3TindAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="공개된 EP.22 AI 스터디 초대석"
+        title=""
+        src="/static/9bca7d6f8201336df87d51145b4e3483/37523/14-podcast-ep22.png"
+        srcset="/static/9bca7d6f8201336df87d51145b4e3483/e9ff0/14-podcast-ep22.png 180w,
+/static/9bca7d6f8201336df87d51145b4e3483/f21e7/14-podcast-ep22.png 360w,
+/static/9bca7d6f8201336df87d51145b4e3483/37523/14-podcast-ep22.png 720w,
+/static/9bca7d6f8201336df87d51145b4e3483/302a4/14-podcast-ep22.png 1080w,
+/static/9bca7d6f8201336df87d51145b4e3483/07a9c/14-podcast-ep22.png 1440w,
+/static/9bca7d6f8201336df87d51145b4e3483/3707e/14-podcast-ep22.png 1878w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p><em>▲ 공개된 <a href="https://dalejule.com/episodes/22/">EP.22 “AI 스터디 초대석: 개발자들은 AI를 어떻게 공부할까?”</a>. Apple·Spotify·YouTube·팟빵에서 들을 수 있다.</em></p>
+<p>팟캐스트가 한국에서는 흔치 않은데, 달레·줄레 두 분 모두 캐나다에 계셔서인지 꾸준히 개발 이야기를 업로드하고 계신 점이 무척 흥미로웠다. 어떻게 팟캐스트를 하게 되셨냐고 여쭤봤는데, 집안일이나 손을 사용할 수 없는 일을 하면서 팟캐스트를 많이 듣는데, 한국 개발자들이 진행하는 개발 팟캐스트는 많지 않아서 꾸준히 개발 관련 지식을 공부도 할 겸 하여 업로드하신다고 하셨다. 뭐든지 꾸준히, 자신이 좋아하는 것을 해나가는 모습이 보기 좋았다.</p>
+<h2 id="마무리" style="position:relative;"><a href="#%EB%A7%88%EB%AC%B4%EB%A6%AC" aria-label="마무리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>마무리</h2>
+<p>혼자였다면 몰랐을 AI로 인한 ‘개발 방식의 변화’를 이번 프로젝트를 진행하면서 몸으로 체감할 수 있었다. 다만, AI가 기술을 활용하는 걸 구경하는 데서 그치지 않고, 원리까지 파고들어 ‘AI를 잘 부리는’ 개발자가 되는 것이 중요할 것 같다.</p></div><div class="divider"></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/building-with-claude-code-2/"><div class="direction">이전 글</div><div class="title">Claude Code로 서비스를 만들며 배운 것 2 — 그럴싸해보이지만 생각보다 견고하지 않다.</div></a></div><div class="post-navigator-card-wrapper"></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2026<!-- --> <a href="https://github.com/soobing">soobing</a> powered by<a href="https://soobing.github.io/"> soobing.github.io</a></p></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/dalestudy-ai-project/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-27cfedf0d706c768f8b1.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-08e55e66d2232f0be05f.js\"],\"component---src-pages-about-js\":[\"/component---src-pages-about-js-5feced829ea71fef4e6d.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-be5d5586a9acd272181b.js\"],\"component---src-templates-blog-template-js\":[\"/component---src-templates-blog-template-js-979040ce7fd6301e320c.js\"],\"component---src-templates-category-template-js\":[\"/component---src-templates-category-template-js-f2bfb2fdb095dacd2c04.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="9243dfc353356c340dd3";</script><script src="/webpack-runtime-bd93d429c906c462f985.js" async></script><script src="/framework-6c4efa83a254625ee5b1.js" async></script><script src="/app-27cfedf0d706c768f8b1.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
